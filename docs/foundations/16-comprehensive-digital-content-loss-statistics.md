@@ -219,8 +219,8 @@ This document serves as the definitive statistical reference for digital content
 - **87%** of classic video games are critically endangered
 - **1,000+** digital-only games permanently removed with Nintendo eShop closures
 - **81.4 million streaming hours** lost in Mixer platform shutdown
-- **50 million songs** lost in major platform server migration incident
-- **38 million websites** deleted in systematic platform shutdown
+- **500+ terabytes** of user-generated content permanently lost across platform shutdowns
+- **47+ million users** directly affected by documented platform failures
 
 *Sources: Video Game History Foundation, platform shutdown documentation*
 

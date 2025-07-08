@@ -21,7 +21,12 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Explore Documentation →
+          </Link>
+          <Link
+            className="button button--outline button--lg margin-left--md"
+            to="https://everarchive.org">
+            Visit Main Site
           </Link>
         </div>
       </div>
@@ -33,8 +38,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Canonical Library Documentation"
+      description="Complete documentation for EverArchive's infrastructure for preserving human creativity through the Deep Authorship model.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
