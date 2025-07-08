@@ -45,7 +45,7 @@ Additional research needed on:
 ### Related Documentation
 - [05-creator-sovereignty](05-creator-sovereignty) - Creator control principles
 - [08-zero-knowledge-encryption-for-core-layer](08-zero-knowledge-encryption-for-core-layer) - Privacy preservation technology
-- [06-infrastructure-not-platform](06-infrastructure-not-platform) - Non-extractive design principles
+- [Foundations/06-infrastructure-not-platform](foundations06-infrastructure-not-platform) - Non-extractive design principles
 
 ## Overview
 
@@ -233,7 +233,7 @@ Different versions of Progressive Trust implementation should maintain interoper
 ### Cross-Category Dependencies
 - **[05-creator-sovereignty](05-creator-sovereignty)**: Progressive Trust technically implements creator sovereignty across identity states
 - **[08-zero-knowledge-encryption-for-core-layer](08-zero-knowledge-encryption-for-core-layer)**: Technical foundation for sovereignty preservation across identity levels
-- **[06-infrastructure-not-platform](06-infrastructure-not-platform)**: Ensures identity verification serves creators rather than extracting value from them
+- **[Foundations/06-infrastructure-not-platform](foundations06-infrastructure-not-platform)**: Ensures identity verification serves creators rather than extracting value from them
 
 ### Emergent Properties
 When Progressive Trust combines with Creator Sovereignty and Zero-Knowledge Encryption, it creates the capability for "sovereign verification" - the ability to prove identity claims without surrendering control over creative work. This enables new forms of institutional collaboration that preserve creator autonomy.
@@ -281,7 +281,7 @@ When Progressive Trust combines with Creator Sovereignty and Zero-Knowledge Encr
 
 ### Cross-References Within This Document
 - [05-creator-sovereignty](05-creator-sovereignty) - Creator control implementation
-- [06-infrastructure-not-platform](06-infrastructure-not-platform) - Non-extractive design principles
+- [Foundations/06-infrastructure-not-platform](foundations06-infrastructure-not-platform) - Non-extractive design principles
 - [12-civilizational-memory-infrastructure](12-civilizational-memory-infrastructure) - Global participation framework
 
 ---

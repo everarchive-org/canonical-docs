@@ -32,7 +32,7 @@ No significant gaps identified. Minor optimization and customization patterns re
 ### Primary Sources
 - [🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical Library/Foundations/README](-distributed-creatives-everarchive-canonical-libraryfoundationsreadme) - Foundational concepts overview (Schema Projector #4)
 - [📚 Canonical Library/Tome II - The Architecture/2.7 - Standards Interoperability Strategy for DAP Ecosystem.md](-canonical-librarytome-ii---the-architecture27---standards-interoperability-strategy-for-dap-ecosystemmd) - Complete technical architecture and research foundation
-- [📚 Canonical Library/Tome II - The Architecture/2.2 - Deep Authorship Package Technical Specification.md](-canonical-librarytome-ii---the-architecture22---deep-authorship-package-technical-specificationmd) - DAP format specifications and interoperability design
+- [02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md](02-tome-ii-the-architecture02-deep-authorship-package-technical-specificationmd) - DAP format specifications and interoperability design
 - [📚 Canonical Library/Tome II - The Architecture/2.3 - Discovery & Access Infrastructure.md](-canonical-librarytome-ii---the-architecture23---discovery--access-infrastructuremd) - Discovery system integration with Schema Projector
 
 ### Supporting Context
@@ -41,7 +41,7 @@ No significant gaps identified. Minor optimization and customization patterns re
 - [2025-07-06-Foundations-Index](2025-07-06-foundations-index) - Complete foundations context and dependencies
 
 ### Related Documentation
-- [📚 Canonical Library/Tome III - The Operations/3.1 - Governance Constitution.md](-canonical-librarytome-iii---the-operations31---governance-constitutionmd) - Open source invariant requirements
+- [03-tome-iii-the-operations/01-governance-constitution.md](03-tome-iii-the-operations01-governance-constitutionmd) - Open source invariant requirements
 - [📚 Canonical Library/Features/8 Emerging Capabilities/8.1 Advanced Publishing Content/67-schema-projector-rendering-engine.md](-canonical-libraryfeatures8-emerging-capabilities81-advanced-publishing-content67-schema-projector-rendering-enginemd) - Advanced Schema Projector capabilities
 
 ## Overview
@@ -105,18 +105,18 @@ The framework requires:
 - **Context**: When institutions require METS-compliant packages for preservation workflows
 - **Method**: 
   ```xml
-  <mets:mets xmlns:mets="http://www.loc.gov/METS/"
-             xmlns:dap="https://everarchive.org/schemas/dap/v1.0">
-    <mets:amdSec ID="dap-layers">
-      <mets:digiprovMD ID="core-layer">
-        <mets:mdWrap MDTYPE="OTHER" OTHERMDTYPE="DAP-CORE">
-          <mets:xmlData>
-            <dap:coreLayer encrypted="true" sovereignty="creator"/>
-          </mets:xmlData>
-        </mets:mdWrap>
-      </mets:digiprovMD>
-    </mets:amdSec>
-  </mets:mets>
+  &lt;mets:mets xmlns:mets="http://www.loc.gov/METS/"
+             xmlns:dap="https://everarchive.org/schemas/dap/v1.0"&gt;
+    &lt;mets:amdSec ID="dap-layers"&gt;
+      &lt;mets:digiprovMD ID="core-layer"&gt;
+        &lt;mets:mdWrap MDTYPE="OTHER" OTHERMDTYPE="DAP-CORE"&gt;
+          &lt;mets:xmlData&gt;
+            &lt;dap:coreLayer encrypted="true" sovereignty="creator"/&gt;
+          &lt;/mets:xmlData&gt;
+        &lt;/mets:mdWrap&gt;
+      &lt;/mets:digiprovMD&gt;
+    &lt;/mets:amdSec&gt;
+  &lt;/mets:mets&gt;
   ```
 - **Benefits**: Maintains METS compliance while preserving DAP unique features
 - **Considerations**: Requires custom METS profile registration with Library of Congress
@@ -244,7 +244,7 @@ Schema Projector uses semantic versioning with clear compatibility guarantees. M
 
 ### Cross-Category Dependencies
 - **[05-creator-sovereignty](05-creator-sovereignty)**: Ensures translation never compromises creator control over their work
-- **[06-infrastructure-not-platform](06-infrastructure-not-platform)**: Enables institutional choice in formats rather than forcing DAP adoption
+- **[Foundations/06-infrastructure-not-platform](foundations06-infrastructure-not-platform)**: Enables institutional choice in formats rather than forcing DAP adoption
 - **[10-open-source-and-non-proprietary](10-open-source-and-non-proprietary)**: Prevents vendor lock-in through open translation specifications
 
 ### Emergent Properties
@@ -274,16 +274,16 @@ When combined with Progressive Trust and Sovereignty (concept #14), Schema Proje
 ### Canonical Library References
 
 #### Tome I - The Vision
-- [📚 Canonical Library/Tome I - The Vision/1.1 - The EverArchive Manifesto.md](-canonical-librarytome-i---the-vision11---the-everarchive-manifestomd) - Infrastructure vision and interoperability principles
-- [📚 Canonical Library/Tome I - The Vision/1.2 - The Principles of Deep Authorship.md](-canonical-librarytome-i---the-vision12---the-principles-of-deep-authorshipmd) - Deep Authorship principles preserved in translation
+- [01-tome-i-the-vision/02-the-everarchive-manifesto.md](01-tome-i-the-vision02-the-everarchive-manifestomd) - Infrastructure vision and interoperability principles
+- [01-tome-i-the-vision/03-the-principles-of-deep-authorship.md](01-tome-i-the-vision03-the-principles-of-deep-authorshipmd) - Deep Authorship principles preserved in translation
 
 #### Tome II - The Architecture
-- [📚 Canonical Library/Tome II - The Architecture/2.2 - Deep Authorship Package Technical Specification.md](-canonical-librarytome-ii---the-architecture22---deep-authorship-package-technical-specificationmd) - Section 1.2 - Complete DAP format specifications for translation source
+- [02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md](02-tome-ii-the-architecture02-deep-authorship-package-technical-specificationmd) - Section 1.2 - Complete DAP format specifications for translation source
 - [📚 Canonical Library/Tome II - The Architecture/2.3 - Discovery & Access Infrastructure.md](-canonical-librarytome-ii---the-architecture23---discovery--access-infrastructuremd) - Chapter 11 - Discovery system integration with Schema Projector
 - [📚 Canonical Library/Tome II - The Architecture/2.7 - Standards Interoperability Strategy for DAP Ecosystem.md](-canonical-librarytome-ii---the-architecture27---standards-interoperability-strategy-for-dap-ecosystemmd) - Complete technical architecture and implementation specifications
 
 #### Tome III - The Operations
-- [📚 Canonical Library/Tome III - The Operations/3.1 - Governance Constitution.md](-canonical-librarytome-iii---the-operations31---governance-constitutionmd) - Open source requirements for translation framework
+- [03-tome-iii-the-operations/01-governance-constitution.md](03-tome-iii-the-operations01-governance-constitutionmd) - Open source requirements for translation framework
 
 #### Features Documentation
 - [📚 Canonical Library/Features/3 Research Reproducibility/3.2 Institutional Integration/28-archival-standards-mapping.md](-canonical-libraryfeatures3-research-reproducibility32-institutional-integration28-archival-standards-mappingmd) - Specific implementation of Schema Projector for institutional integration

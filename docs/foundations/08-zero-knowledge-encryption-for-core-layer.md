@@ -258,7 +258,7 @@ Institutions typically implement zero-knowledge encryption through graduated ado
 - **Encryption Coverage**: 100% of Core Layer files must be encrypted (measurable through directory audits)
 - **Key Derivation Strength**: Argon2id parameters must meet minimum security requirements (measurable through implementation audits)
 - **Social Recovery Success Rate**: Threshold recovery mechanisms should achieve 92-96% success rates (measurable through testing)
-- **Zero-Knowledge Proof Performance**: Proof generation should complete in <1 second for typical creative works (measurable through benchmarks)
+- **Zero-Knowledge Proof Performance**: Proof generation should complete in &lt;1 second for typical creative works (measurable through benchmarks)
 - **Post-Quantum Readiness**: CRYSTALS-Kyber implementation must meet NIST PQC standards (measurable through compliance audits)
 
 ## Evolution & Maintenance

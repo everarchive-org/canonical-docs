@@ -34,9 +34,9 @@ No significant gaps identified. The concept is well-established in canonical sou
 *Link to the specific canonical documents where this concept is explicitly discussed*
 
 - [🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical Library/Foundations/README](-distributed-creatives-everarchive-canonical-libraryfoundationsreadme) - Foundational concepts overview (System Invariant #10)
-- [📚 Canonical Library/Tome III - The Operations/3.1 - Governance Constitution.md](-canonical-librarytome-iii---the-operations31---governance-constitutionmd) - Article I, Principle #6 (Openness)
-- [📚 Canonical Library/Tome I - The Vision/1.1 - The EverArchive Manifesto.md](-canonical-librarytome-i---the-vision11---the-everarchive-manifestomd) - Open infrastructure principles
-- [📚 Canonical Library/Tome II - The Architecture/2.2 - Deep Authorship Package Technical Specification.md](-canonical-librarytome-ii---the-architecture22---deep-authorship-package-technical-specificationmd) - Open format specifications
+- [03-tome-iii-the-operations/01-governance-constitution.md](03-tome-iii-the-operations01-governance-constitutionmd) - Article I, Principle #6 (Openness)
+- [01-tome-i-the-vision/02-the-everarchive-manifesto.md](01-tome-i-the-vision02-the-everarchive-manifestomd) - Open infrastructure principles
+- [02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md](02-tome-ii-the-architecture02-deep-authorship-package-technical-specificationmd) - Open format specifications
 
 ### Supporting Context
 *Additional documents that provide context, examples, or related information*
@@ -48,7 +48,7 @@ No significant gaps identified. The concept is well-established in canonical sou
 ### Related Documentation
 *Documents that reference or build upon this concept*
 
-- [📚 Canonical Library/Tome II - The Architecture/2.1 - Canonical Architecture.md](-canonical-librarytome-ii---the-architecture21---canonical-architecturemd) - How open protocols enable distributed infrastructure
+- [02-tome-ii-the-architecture/01-canonical-architecture.md](02-tome-ii-the-architecture01-canonical-architecturemd) - How open protocols enable distributed infrastructure
 - [📚 Canonical Library/Tome III - The Operations/3.6 - Technical Evolution Framework.md](-canonical-librarytome-iii---the-operations36---technical-evolution-frameworkmd) - Community-driven evolution processes
 
 ## Overview
@@ -317,15 +317,15 @@ When combined with other foundational concepts, openness creates trust cascades:
 *All EverArchive canonical documents referenced in this concept document*
 
 #### Tome I - The Vision
-- [📚 Canonical Library/Tome I - The Vision/1.1 - The EverArchive Manifesto.md](-canonical-librarytome-i---the-vision11---the-everarchive-manifestomd) - Lines 69-70 - "Every tool is open source, every protocol documented, every standard freely available"
+- [01-tome-i-the-vision/02-the-everarchive-manifesto.md](01-tome-i-the-vision02-the-everarchive-manifestomd) - Lines 69-70 - "Every tool is open source, every protocol documented, every standard freely available"
 - [📚 Canonical Library/Tome I - The Vision/1.0 - Essence and Vision.md](-canonical-librarytome-i---the-vision10---essence-and-visionmd) - Infrastructure principles section
 
 #### Tome II - The Architecture
-- [📚 Canonical Library/Tome II - The Architecture/2.2 - Deep Authorship Package Technical Specification.md](-canonical-librarytome-ii---the-architecture22---deep-authorship-package-technical-specificationmd) - Section 1.2 - Interoperability principle based on open standards
+- [02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md](02-tome-ii-the-architecture02-deep-authorship-package-technical-specificationmd) - Section 1.2 - Interoperability principle based on open standards
 - [📚 Canonical Library/Tome II - The Architecture/2.7 - Standards Interoperability Strategy for DAP Ecosystem.md](-canonical-librarytome-ii---the-architecture27---standards-interoperability-strategy-for-dap-ecosystemmd) - Open interoperability framework
 
 #### Tome III - The Operations
-- [📚 Canonical Library/Tome III - The Operations/3.1 - Governance Constitution.md](-canonical-librarytome-iii---the-operations31---governance-constitutionmd) - Article I, Principle #6 - "All core protocols, formats, and reference software implementations shall be open-source"
+- [03-tome-iii-the-operations/01-governance-constitution.md](03-tome-iii-the-operations01-governance-constitutionmd) - Article I, Principle #6 - "All core protocols, formats, and reference software implementations shall be open-source"
 - [📚 Canonical Library/Tome III - The Operations/3.6 - Technical Evolution Framework.md](-canonical-librarytome-iii---the-operations36---technical-evolution-frameworkmd) - Community-driven technical evolution
 
 #### Features Documentation
@@ -347,7 +347,7 @@ When combined with other foundational concepts, openness creates trust cascades:
 
 - [05-creator-sovereignty](05-creator-sovereignty) - How openness enables sovereignty
 - [09-permanent-preservation-guarantee](09-permanent-preservation-guarantee) - How open formats enable preservation
-- [06-infrastructure-not-platform](06-infrastructure-not-platform) - How openness enables infrastructure approach
+- [Foundations/06-infrastructure-not-platform](foundations06-infrastructure-not-platform) - How openness enables infrastructure approach
 
 ---
 

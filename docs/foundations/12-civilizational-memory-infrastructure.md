@@ -31,9 +31,9 @@ No significant gaps identified. The concept is well-documented across multiple c
 
 ### Primary Sources
 - [🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical Library/Foundations/README](-distributed-creatives-everarchive-canonical-libraryfoundationsreadme) - Foundational concepts overview (Conceptual Framework #12)
-- [📚 Canonical Library/Tome I - The Vision/1.1 - The EverArchive Manifesto](-canonical-librarytome-i---the-vision11---the-everarchive-manifesto) - Civilizational threat analysis and infrastructure vision
-- [📚 Canonical Library/Tome II - The Architecture/2.1 - Canonical Architecture](-canonical-librarytome-ii---the-architecture21---canonical-architecture) - Deep-time design and post-quantum considerations
-- [📚 Canonical Library/Tome III - The Operations/3.1 - Governance Constitution](-canonical-librarytome-iii---the-operations31---governance-constitution) - Multi-generational governance frameworks
+- [02-the-everarchive-manifesto](02-the-everarchive-manifesto) - Civilizational threat analysis and infrastructure vision
+- [01-canonical-architecture](01-canonical-architecture) - Deep-time design and post-quantum considerations
+- [01-governance-constitution](01-governance-constitution) - Multi-generational governance frameworks
 
 ### Supporting Context
 - [📚 Canonical Library/Features/Access-Control/Universal-Access-Framework](-canonical-libraryfeaturesaccess-controluniversal-access-framework) - How universal access supports civilizational scope
@@ -41,7 +41,7 @@ No significant gaps identified. The concept is well-documented across multiple c
 - [2025-07-06-Foundations-Index](2025-07-06-foundations-index) - Complete foundations context and dependencies
 
 ### Related Documentation
-- [06-infrastructure-not-platform](06-infrastructure-not-platform) - Supporting infrastructure philosophy
+- [Foundations/06-infrastructure-not-platform](foundations06-infrastructure-not-platform) - Supporting infrastructure philosophy
 - [13-antifragility-design-philosophy](13-antifragility-design-philosophy) - Resilience approach for civilizational scale
 - [09-permanent-preservation-guarantee](09-permanent-preservation-guarantee) - Technical backing for civilizational promises
 
@@ -188,7 +188,7 @@ The economic burden of memory loss affects entire civilizations:
 ## Dependencies & Relationships
 
 ### Depends On
-- **[06-infrastructure-not-platform](06-infrastructure-not-platform)**: Civilizational infrastructure requires non-extractive economic models and foundational layer positioning
+- **[Foundations/06-infrastructure-not-platform](foundations06-infrastructure-not-platform)**: Civilizational infrastructure requires non-extractive economic models and foundational layer positioning
 - **[13-antifragility-design-philosophy](13-antifragility-design-philosophy)**: Century-scale systems must become stronger through challenges rather than just surviving them
 - **[09-permanent-preservation-guarantee](09-permanent-preservation-guarantee)**: Civilizational promises require technical backing through permanent preservation architecture
 
@@ -292,7 +292,7 @@ Different cultural contexts may require different expressions of this concept, b
 - **[14-progressive-trust-sovereignty](14-progressive-trust-sovereignty)**: Universal access requires accommodation of diverse trust and identity frameworks
 
 ### Cross-Category Dependencies
-- **[06-infrastructure-not-platform](06-infrastructure-not-platform)**: Civilizational infrastructure requires non-extractive economic models
+- **[Foundations/06-infrastructure-not-platform](foundations06-infrastructure-not-platform)**: Civilizational infrastructure requires non-extractive economic models
 - **[09-permanent-preservation-guarantee](09-permanent-preservation-guarantee)**: Civilizational promises require technical backing through permanent preservation
 - **[10-open-source-non-proprietary](10-open-source-non-proprietary)**: Long-term viability demands open protocols that transcend organizational boundaries
 
@@ -332,7 +332,7 @@ When combined with other foundational concepts, civilizational infrastructure cr
 - [📚 Canonical Library/Tome II - The Architecture/2.2 - Deep Authorship Package Technical Specification](-canonical-librarytome-ii---the-architecture22---deep-authorship-package-technical-specification) - Post-quantum cryptography requirements - Future-proofing against technological paradigm shifts
 
 #### Tome III - The Operations
-- [📚 Canonical Library/Tome III - The Operations/3.1 - Governance Constitution](-canonical-librarytome-iii---the-operations31---governance-constitution) - Multi-generational governance frameworks - Mechanisms for representing future stakeholder interests
+- [01-governance-constitution](01-governance-constitution) - Multi-generational governance frameworks - Mechanisms for representing future stakeholder interests
 - [📚 Canonical Library/Tome III - The Operations/3.2 - Economic Framework](-canonical-librarytome-iii---the-operations32---economic-framework) - Infrastructure economic models - Non-extractive funding approaches
 
 #### Features Documentation
@@ -346,7 +346,7 @@ When combined with other foundational concepts, civilizational infrastructure cr
 ### Cross-References Within This Document
 *Other foundational concepts referenced*
 
-- [06-infrastructure-not-platform](06-infrastructure-not-platform) - Supporting economic philosophy
+- [Foundations/06-infrastructure-not-platform](foundations06-infrastructure-not-platform) - Supporting economic philosophy
 - [09-permanent-preservation-guarantee](09-permanent-preservation-guarantee) - Technical backing for civilizational promises
 - [13-antifragility-design-philosophy](13-antifragility-design-philosophy) - Resilience approach for civilizational scale
 

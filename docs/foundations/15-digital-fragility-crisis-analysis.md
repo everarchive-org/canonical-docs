@@ -302,7 +302,7 @@ Major corporate failures demonstrate the economic impact of digital memory loss:
 | Platform | Service Shutdown | 15-25% | 5-13% | 87-95% | $31.5B annually (F500) |
 | Platform | Policy Change | Variable | 10-30% | 70-90% | Variable |
 | Institutional | Repository Closure | 6.2% | 52.9% | 47.1% | $621M-$2.8B per case |
-| Institutional | Legal Erasure | Variable | <5% | >95% | Variable |
+| Institutional | Legal Erasure | Variable | &lt;5% | &gt;95% | Variable |
 
 ### Content Type Vulnerability Matrix
 

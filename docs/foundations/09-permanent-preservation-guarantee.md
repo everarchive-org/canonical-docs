@@ -127,7 +127,7 @@ The Permanent Preservation Guarantee requires:
   Combined Probability = 1 - (P(Arweave_failure) × P(IPFS_failure) × P(Physical_failure))
   
   Where:
-  - P(Arweave_failure) < 0.10 (10% over 200 years)
+  - P(Arweave_failure) &lt; 0.10 (10% over 200 years)
   - P(IPFS_failure) < 0.20 (20% over 200 years)  
   - P(Physical_failure) < 0.05 (5% over 200 years)
   
@@ -196,7 +196,7 @@ Against this, preservation investment shows demonstrated returns of £5.40 to £
 ### Enables
 - **[05-creator-sovereignty](05-creator-sovereignty)**: Creators can trust system with valuable content
 - **[12-civilizational-memory-infrastructure](12-civilizational-memory-infrastructure)**: Enables century-scale preservation mission
-- **[06-infrastructure-not-platform](06-infrastructure-not-platform)**: Supports infrastructure model over platform revenue
+- **[Foundations/06-infrastructure-not-platform](foundations06-infrastructure-not-platform)**: Supports infrastructure model over platform revenue
 
 ### Feature Integration
 - **Storage Management**: All storage features must support guarantee requirements
@@ -256,7 +256,7 @@ Institutions typically adopt EverArchive specifically because of the preservatio
 
 ### Assessment Questions
 
-- **Probability Verification**: Are the >95% probability claims backed by documented mathematical models?
+- **Probability Verification**: Are the &gt;95% probability claims backed by documented mathematical models?
 - **Time Horizon Reality**: Are systems actually designed for 200+ year operation, not just current technology cycles?
 - **Economic Sustainability**: Is preservation funding independent of market forces and user growth?
 - **Format Evolution**: Are format migration systems actively monitoring and updating content?

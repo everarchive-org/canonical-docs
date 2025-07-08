@@ -163,7 +163,7 @@ Creator Sovereignty means that creators possess absolute, technically-enforced c
 
 ### Enables
 
-- **[06-infrastructure-not-platform](06-infrastructure-not-platform)**: Creator sovereignty prevents EverArchive from becoming an extractive platform by ensuring creators retain control over their content.
+- **[Foundations/06-infrastructure-not-platform](foundations06-infrastructure-not-platform)**: Creator sovereignty prevents EverArchive from becoming an extractive platform by ensuring creators retain control over their content.
 - **[14-progressive-trust-and-sovereignty](14-progressive-trust-and-sovereignty)**: Sovereignty principles enable creators to build trust incrementally while maintaining full control throughout the spectrum.
 
 ### Feature Integration
@@ -262,7 +262,7 @@ Different sovereignty implementations must be compatible while maintaining consi
 
 ### Within Same Category
 
-- **[06-infrastructure-not-platform](06-infrastructure-not-platform)**: Sovereignty prevents platform extractivism by ensuring creators retain control over their content and relationships.
+- **[Foundations/06-infrastructure-not-platform](foundations06-infrastructure-not-platform)**: Sovereignty prevents platform extractivism by ensuring creators retain control over their content and relationships.
 - **[07-process-over-product](07-process-over-product)**: Sovereignty enables authentic process preservation by guaranteeing privacy for vulnerable creative thoughts.
 
 ### Cross-Category Dependencies

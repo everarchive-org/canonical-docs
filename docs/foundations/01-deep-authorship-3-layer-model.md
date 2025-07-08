@@ -30,17 +30,17 @@ No significant gaps identified. The concept is comprehensively documented across
 
 ### Primary Sources
 - [🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical Library/Foundations/README](-distributed-creatives-everarchive-canonical-libraryfoundationsreadme) - Foundational concepts overview (Lines 22-42)
-- [📚 Canonical Library/Tome I - The Vision/1.2 - The Principles of Deep Authorship.md](-canonical-librarytome-i---the-vision12---the-principles-of-deep-authorshipmd) - Principle IV: The Nature of Memory as Layered (Lines 45-54)
-- [📚 Canonical Library/Tome II - The Architecture/2.2 - Deep Authorship Package Technical Specification.md](-canonical-librarytome-ii---the-architecture22---deep-authorship-package-technical-specificationmd) - Complete technical implementation (Lines 26-30, 36-60)
+- [01-tome-i-the-vision/03-the-principles-of-deep-authorship.md](01-tome-i-the-vision03-the-principles-of-deep-authorshipmd) - Principle IV: The Nature of Memory as Layered (Lines 45-54)
+- [02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md](02-tome-ii-the-architecture02-deep-authorship-package-technical-specificationmd) - Complete technical implementation (Lines 26-30, 36-60)
 
 ### Supporting Context
-- [📚 Canonical Library/Tome I - The Vision/1.0 - Essence and Vision.md](-canonical-librarytome-i---the-vision10---essence-and-visionmd) - Lightning Moment #2 philosophical foundation
-- [📚 Canonical Library/Tome I - The Vision/1.1 - The EverArchive Manifesto.md](-canonical-librarytome-i---the-vision11---the-everarchive-manifestomd) - "Three-Layer Memory Architecture" implementation vision
+- [01-tome-i-the-vision/01-essence-and-vision.md](01-tome-i-the-vision01-essence-and-visionmd) - Lightning Moment #2 philosophical foundation
+- [01-tome-i-the-vision/02-the-everarchive-manifesto.md](01-tome-i-the-vision02-the-everarchive-manifestomd) - "Three-Layer Memory Architecture" implementation vision
 - [2025-07-06-Foundations-Index](2025-07-06-foundations-index) - Complete foundations context and dependencies
 
 ### Related Documentation
-- [📚 Canonical Library/Features/1 Creative Control/1.2 Privacy Control/02-zero-knowledge-creative-privacy.md](-canonical-libraryfeatures1-creative-control12-privacy-control02-zero-knowledge-creative-privacymd) - Core Layer encryption implementation
-- [📚 Canonical Library/Features/2 Discovery Access/2.1 Semantic Search/13-emotional-context-discovery.md](-canonical-libraryfeatures2-discovery-access21-semantic-search13-emotional-context-discoverymd) - Process Layer discovery mechanisms
+- [02-zero-knowledge-creative-privacy](02-zero-knowledge-creative-privacy) - Core Layer encryption implementation
+- [13-emotional-context-discovery](13-emotional-context-discovery) - Process Layer discovery mechanisms
 
 ## Overview
 
@@ -297,26 +297,26 @@ When the 3-Layer Model combines with other foundational concepts, it creates eme
 ### Canonical Library References
 
 #### Tome I - The Vision
-- [📚 Canonical Library/Tome I - The Vision/1.2 - The Principles of Deep Authorship.md](-canonical-librarytome-i---the-vision12---the-principles-of-deep-authorshipmd) - Principle IV (Lines 45-54) - Core definition of layered memory model
-- [📚 Canonical Library/Tome I - The Vision/1.0 - Essence and Vision.md](-canonical-librarytome-i---the-vision10---essence-and-visionmd) - Lightning Moment #2 - Philosophical foundation for preserving creative process
-- [📚 Canonical Library/Tome I - The Vision/1.1 - The EverArchive Manifesto.md](-canonical-librarytome-i---the-vision11---the-everarchive-manifestomd) - Three-Layer Memory Architecture vision
+- [01-tome-i-the-vision/03-the-principles-of-deep-authorship.md](01-tome-i-the-vision03-the-principles-of-deep-authorshipmd) - Principle IV (Lines 45-54) - Core definition of layered memory model
+- [01-tome-i-the-vision/01-essence-and-vision.md](01-tome-i-the-vision01-essence-and-visionmd) - Lightning Moment #2 - Philosophical foundation for preserving creative process
+- [01-tome-i-the-vision/02-the-everarchive-manifesto.md](01-tome-i-the-vision02-the-everarchive-manifestomd) - Three-Layer Memory Architecture vision
 
 #### Tome II - The Architecture
-- [📚 Canonical Library/Tome II - The Architecture/2.2 - Deep Authorship Package Technical Specification.md](-canonical-librarytome-ii---the-architecture22---deep-authorship-package-technical-specificationmd) - Complete technical implementation (Lines 26-30, 36-60)
-- [📚 Canonical Library/Tome II - The Architecture/2.1 - Canonical Architecture.md](-canonical-librarytome-ii---the-architecture21---canonical-architecturemd) - Architectural context and storage requirements
+- [02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md](02-tome-ii-the-architecture02-deep-authorship-package-technical-specificationmd) - Complete technical implementation (Lines 26-30, 36-60)
+- [02-tome-ii-the-architecture/01-canonical-architecture.md](02-tome-ii-the-architecture01-canonical-architecturemd) - Architectural context and storage requirements
 
 #### Features Documentation
-- [📚 Canonical Library/Features/1 Creative Control/1.2 Privacy Control/02-zero-knowledge-creative-privacy.md](-canonical-libraryfeatures1-creative-control12-privacy-control02-zero-knowledge-creative-privacymd) - Core Layer encryption implementation
-- [📚 Canonical Library/Features/2 Discovery Access/2.1 Semantic Search/13-emotional-context-discovery.md](-canonical-libraryfeatures2-discovery-access21-semantic-search13-emotional-context-discoverymd) - Process Layer discovery mechanisms
+- [02-zero-knowledge-creative-privacy](02-zero-knowledge-creative-privacy) - Core Layer encryption implementation
+- [13-emotional-context-discovery](13-emotional-context-discovery) - Process Layer discovery mechanisms
 
 #### Other Canonical Sources
 - [🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical Library/Foundations/README](-distributed-creatives-everarchive-canonical-libraryfoundationsreadme) - Foundational concept #1 definition (Lines 22-42)
 - [2025-07-06-Foundations-Index](2025-07-06-foundations-index) - Complete foundations context and dependencies
 
 ### Cross-References Within This Document
-- [📚 Canonical Library/Foundational Concepts/02-deep-authorship-package-format.md](-canonical-libraryfoundational-concepts02-deep-authorship-package-formatmd) - Technical implementation of this model
+- [02-deep-authorship-package-dap-format](02-deep-authorship-package-dap-format) - Technical implementation of this model
 - [05-creator-sovereignty](05-creator-sovereignty) - Philosophical foundation for layer control
-- [📚 Canonical Library/Foundational Concepts/08-zero-knowledge-encryption-core-layer.md](-canonical-libraryfoundational-concepts08-zero-knowledge-encryption-core-layermd) - Technical enforcement of Core Layer privacy
+- [08-zero-knowledge-encryption-for-core-layer](08-zero-knowledge-encryption-for-core-layer) - Technical enforcement of Core Layer privacy
 
 ---
 

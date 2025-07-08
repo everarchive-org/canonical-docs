@@ -30,18 +30,18 @@ No significant gaps identified. The DAP format specification is comprehensively 
 
 ### Primary Sources
 - [🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical Library/Foundations/README](-distributed-creatives-everarchive-canonical-libraryfoundationsreadme) - Foundational concepts overview (Concept #2)
-- [📚 Canonical Library/Tome II - The Architecture/2.2 - Deep Authorship Package Technical Specification.md](-canonical-librarytome-ii---the-architecture22---deep-authorship-package-technical-specificationmd) - Complete technical specification v2.4
-- [📚 Canonical Library/Tome II - The Architecture/2.1 - Canonical Architecture.md](-canonical-librarytome-ii---the-architecture21---canonical-architecturemd) - Storage Trinity integration
-- [📚 Canonical Library/Tome I - The Vision/1.2 - The Principles of Deep Authorship.md](-canonical-librarytome-i---the-vision12---the-principles-of-deep-authorshipmd) - Three-layer model principles
+- [02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md](02-tome-ii-the-architecture02-deep-authorship-package-technical-specificationmd) - Complete technical specification v2.4
+- [02-tome-ii-the-architecture/01-canonical-architecture.md](02-tome-ii-the-architecture01-canonical-architecturemd) - Storage Trinity integration
+- [01-tome-i-the-vision/03-the-principles-of-deep-authorship.md](01-tome-i-the-vision03-the-principles-of-deep-authorshipmd) - Three-layer model principles
 
 ### Supporting Context
-- [📚 Canonical Library/Features/Creative Control/Layer Control & Encryption](-canonical-libraryfeaturescreative-controllayer-control--encryption) - Zero-knowledge encryption implementation
-- [📚 Canonical Library/Features/Archival & Preservation/Immutable Storage](-canonical-libraryfeaturesarchival--preservationimmutable-storage) - Storage Trinity integration
+- [02-zero-knowledge-creative-privacy](02-zero-knowledge-creative-privacy) - Zero-knowledge encryption implementation
+- [03-storage-trinity-architecture](03-storage-trinity-architecture) - Storage Trinity integration
 - [2025-07-06-Foundations-Index](2025-07-06-foundations-index) - Complete foundations context and dependencies
 
 ### Related Documentation
-- [📚 Canonical Library/Tome II - The Architecture/2.3 - Discovery & Access Infrastructure.md](-canonical-librarytome-ii---the-architecture23---discovery--access-infrastructuremd) - Schema Projector interoperability
-- [📚 Canonical Library/Tome III - The Operations/3.1 - Governance Constitution.md](-canonical-librarytome-iii---the-operations31---governance-constitutionmd) - Creator sovereignty enforcement
+- [04-discovery-and-access-infrastructure](04-discovery-and-access-infrastructure) - Schema Projector interoperability
+- [03-tome-iii-the-operations/01-governance-constitution.md](03-tome-iii-the-operations01-governance-constitutionmd) - Creator sovereignty enforcement
 
 ## Overview
 
@@ -289,20 +289,20 @@ When combined with other foundational concepts, DAP format enables sophisticated
 ### Canonical Library References
 
 #### Tome I - The Vision
-- [📚 Canonical Library/Tome I - The Vision/1.0 - Essence and Vision.md](-canonical-librarytome-i---the-vision10---essence-and-visionmd) - North Star principles and core beliefs driving DAP design
-- [📚 Canonical Library/Tome I - The Vision/1.1 - The EverArchive Manifesto.md](-canonical-librarytome-i---the-vision11---the-everarchive-manifestomd) - "We are not building a better backup" philosophy reflected in DAP architecture
-- [📚 Canonical Library/Tome I - The Vision/1.2 - The Principles of Deep Authorship.md](-canonical-librarytome-i---the-vision12---the-principles-of-deep-authorshipmd) - Four foundational principles implemented in DAP format
+- [01-essence-and-vision](01-essence-and-vision) - North Star principles and core beliefs driving DAP design
+- [01-tome-i-the-vision/02-the-everarchive-manifesto.md](01-tome-i-the-vision02-the-everarchive-manifestomd) - "We are not building a better backup" philosophy reflected in DAP architecture
+- [01-tome-i-the-vision/03-the-principles-of-deep-authorship.md](01-tome-i-the-vision03-the-principles-of-deep-authorshipmd) - Four foundational principles implemented in DAP format
 
 #### Tome II - The Architecture
-- [📚 Canonical Library/Tome II - The Architecture/2.2 - Deep Authorship Package Technical Specification.md](-canonical-librarytome-ii---the-architecture22---deep-authorship-package-technical-specificationmd) - Complete v2.4 technical specification with all implementation details
-- [📚 Canonical Library/Tome II - The Architecture/2.1 - Canonical Architecture.md](-canonical-librarytome-ii---the-architecture21---canonical-architecturemd) - Storage Trinity integration and technical primitives
-- [📚 Canonical Library/Tome II - The Architecture/2.3 - Discovery & Access Infrastructure.md](-canonical-librarytome-ii---the-architecture23---discovery--access-infrastructuremd) - Schema Projector interoperability framework
+- [02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md](02-tome-ii-the-architecture02-deep-authorship-package-technical-specificationmd) - Complete v2.4 technical specification with all implementation details
+- [02-tome-ii-the-architecture/01-canonical-architecture.md](02-tome-ii-the-architecture01-canonical-architecturemd) - Storage Trinity integration and technical primitives
+- [04-discovery-and-access-infrastructure](04-discovery-and-access-infrastructure) - Schema Projector interoperability framework
 
 #### Tome III - The Operations
-- [📚 Canonical Library/Tome III - The Operations/3.1 - Governance Constitution.md](-canonical-librarytome-iii---the-operations31---governance-constitutionmd) - Creator sovereignty and open source requirements for DAP format
+- [03-tome-iii-the-operations/01-governance-constitution.md](03-tome-iii-the-operations01-governance-constitutionmd) - Creator sovereignty and open source requirements for DAP format
 
 #### Features Documentation
-- [📚 Canonical Library/Features/Creative Control/Layer Control & Encryption](-canonical-libraryfeaturescreative-controllayer-control--encryption) - Zero-knowledge encryption implementation in Core layer
+- [02-zero-knowledge-creative-privacy](02-zero-knowledge-creative-privacy) - Zero-knowledge encryption implementation in Core layer
 - [📚 Canonical Library/Features/Archival & Preservation/Immutable Storage](-canonical-libraryfeaturesarchival--preservationimmutable-storage) - DAP integration with Storage Trinity architecture
 
 #### Other Canonical Sources

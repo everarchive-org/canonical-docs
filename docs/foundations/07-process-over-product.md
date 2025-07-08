@@ -246,7 +246,7 @@ Different versions of process capture systems must maintain interoperability to 
 
 ### Within Same Category
 - **[05-creator-sovereignty](05-creator-sovereignty)**: Ensures creators control how their process is shared
-- **[06-infrastructure-not-platform](06-infrastructure-not-platform)**: Enables rather than extracts value from creative process
+- **[Foundations/06-infrastructure-not-platform](foundations06-infrastructure-not-platform)**: Enables rather than extracts value from creative process
 
 ### Cross-Category Dependencies
 - **[01-deep-authorship-3-layer-model](01-deep-authorship-3-layer-model)**: Provides technical architecture for process separation

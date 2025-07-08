@@ -49,6 +49,20 @@ function transformContent(content, filename) {
     return `[${display || file}](${linkPath})`;
   });
   
+  // Escape MDX problematic patterns
+  // Escape standalone < and > that might be interpreted as JSX
+  transformed = transformed.replace(/(\s)<(\d+)(\s)/g, '$1&lt;$2$3');
+  transformed = transformed.replace(/(\s)>(\d+)(\s)/g, '$1&gt;$2$3');
+  
+  // Escape other problematic patterns for MDX
+  transformed = transformed.replace(/<([^>]+)>/g, (match, content) => {
+    // Only escape if it doesn't look like valid HTML/JSX
+    if (!/^\/?\w+(\s|$)/.test(content) && !/^\w+\s+[^>]*$/.test(content)) {
+      return `&lt;${content}&gt;`;
+    }
+    return match;
+  });
+  
   // Add frontmatter if not present
   if (!transformed.startsWith('---')) {
     const title = extractTitle(filename);

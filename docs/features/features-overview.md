@@ -1,5 +1,5 @@
 ---
-title: Features Overview
+title: features-overview
 sidebar_position: 999
 ---
 
