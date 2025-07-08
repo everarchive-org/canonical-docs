@@ -1,5 +1,5 @@
 ---
-title: the-mathematicians-journey-the-riemann-hypothesis
+title: The Mathematicians Journey the Riemann Hypothesis
 sidebar_position: 2
 ---
 

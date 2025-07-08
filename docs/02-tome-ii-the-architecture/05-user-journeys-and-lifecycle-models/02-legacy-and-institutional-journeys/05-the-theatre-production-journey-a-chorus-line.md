@@ -1,5 +1,5 @@
 ---
-title: the-theatre-production-journey-a-chorus-line
+title: The Theatre Production Journey a Chorus Line
 sidebar_position: 2
 ---
 

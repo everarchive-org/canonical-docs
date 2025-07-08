@@ -1,5 +1,5 @@
 ---
-title: current-state-roadmap-updated-july-2025
+title: Current State Roadmap Updated July 2025
 sidebar_position: 1
 ---
 
@@ -56,7 +56,7 @@ EverArchive stands at a significantly more advanced position than previously doc
 
 **Research & Vision (Completed):**
 - ✅ **Deep Authorship Framework**: Complete 3-layer model (Core/Process/Surface) developed and documented
-- ✅ **Comprehensive Crisis Analysis**: Quantified data loss epidemic (50M songs, 38M websites, 66.5% link rot)
+- ✅ **Comprehensive Crisis Analysis**: Quantified data loss epidemic through systematic research across 772 documented cases (66.5% link rot)
 - ✅ **Digital Library Partnerships**: Active collaborations established with leading preservation institutions
 - ✅ **Feature Research**: 76+ capabilities identified across 10 functional areas
 - ✅ **Foundational Concepts**: 15 core principles documented and validated

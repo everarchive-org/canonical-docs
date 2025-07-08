@@ -1,5 +1,5 @@
 ---
-title: discovery-and-access-infrastructure
+title: Discovery and Access Infrastructure
 sidebar_position: 2
 ---
 
@@ -13,7 +13,7 @@ A perfect archive that cannot be searched is a tomb. This document defines how E
 
 ### Why Discovery Matters More Than Storage
 
-Storage preserves the body; discovery preserves the soul. A creative work undiscovered might as well not exist. But discovery means different things across time:
+Storage preserves the content; discovery preserves accessibility. A creative work undiscovered might as well not exist. But discovery means different things across time:
 
 - **Today**: Finding specific works, browsing by similarity, exploring connections
 - **In 100 years**: Understanding extinct contexts, translating dead languages, bridging cultural gaps

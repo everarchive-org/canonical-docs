@@ -1,5 +1,5 @@
 ---
-title: overview-of-user-journeys
+title: Overview of User Journeys
 sidebar_position: 2
 ---
 

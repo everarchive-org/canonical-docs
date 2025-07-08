@@ -1,5 +1,5 @@
 ---
-title: the-unproven-conjecture-journey-the-riemann-hypothesis
+title: The Unproven Conjecture Journey the Riemann Hypothesis
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: deep-authorship-object-format-summary-for-research
+title: Deep Authorship Object Format Summary for Research
 sidebar_position: 2
 ---
 
@@ -51,7 +51,7 @@ Every DAP object is structured around a mandatory three-layer model that separat
 
 3.  **Time-Interpretability & Future-Proofing:** The format is designed to outlive its own software. It includes protocols for **proactive format migration** (e.g., flagging at-risk formats like JPEG and recommending migration to JPEG XL, while preserving the original) and **cultural translation guides** (e.g., encoding dates relative to astronomical events).
 
-4.  **Built-in Consent & Rights Management:** The `metadata/permissions.json` file is a canonical part of the object. It provides granular, machine-readable consent toggles for activities like **AI training**, remixing, and posthumous release, turning the object itself into a rights management tool.
+4.  **Built-in Consent & Rights Management:** The `metadata/permissions.json` file is a canonical part of the object. It provides granular, machine-readable consent toggles for activities like **AI training**, remixing, and post-completion release, turning the object itself into a rights management tool.
 
 5.  **Immutable Version Chaining:** New versions of a work are created as *new* DAP objects that point back to the `parentDap`. This creates a blockchain-like, immutable chain of provenance that is ideal for content-addressed storage networks.
 

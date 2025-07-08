@@ -1,5 +1,5 @@
 ---
-title: the-mlk-journey-the-i-have-a-dream-speech
+title: The MLK Journey the I Have a Dream Speech
 sidebar_position: 2
 ---
 

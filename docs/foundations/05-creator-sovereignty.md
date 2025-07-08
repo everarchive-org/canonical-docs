@@ -63,7 +63,7 @@ Creator Sovereignty means that creators possess absolute, technically-enforced c
 
 2. **Granular Access Control**: Creators must have precise control over who can access what content at what layer, with the ability to revoke access at any time.
 
-3. **Legacy Control**: Creators must be able to specify exactly what happens to their creative memory after death, with their wishes technically enforced rather than merely honored.
+3. **Legacy Control**: Creators must be able to specify exactly what happens to their creative memory after project completion, with their wishes technically enforced rather than merely honored.
 
 4. **Zero-Knowledge Architecture**: The system must operate without EverArchive or any third party being able to decrypt or access creator content without explicit permission.
 
@@ -117,7 +117,7 @@ Creator Sovereignty means that creators possess absolute, technically-enforced c
    - **Example**: A scientist shares Process Layer research methods with colleagues but keeps Core Layer personal struggles private, with different access levels for different collaborators.
    - **Impact**: Enables selective sharing while maintaining sovereignty over private thoughts.
 
-3. **Immutable Legacy Management**: Creators can specify exactly what happens to their creative memory after death, with decisions enforced through smart contracts.
+3. **Immutable Legacy Management**: Creators can specify exactly what happens to their creative memory after project completion, with decisions enforced through smart contracts.
    - **Example**: A poet specifies that their Core Layer remains private for 50 years, then becomes accessible to designated literary scholars, with these instructions cryptographically enforced.
    - **Impact**: Ensures creator intentions are honored across generations.
 
@@ -180,7 +180,7 @@ Creator Sovereignty works with Zero-Knowledge Encryption to provide technical en
 
 ### Use Case 1: Vulnerable Creator Protection
 **Context**: A political dissident documenting government corruption needs to preserve their work while protecting their identity and sources.
-**Implementation**: Core Layer encrypted with creator-controlled keys, anonymous account creation, geographic access controls, legacy instructions for posthumous publication.
+**Implementation**: Core Layer encrypted with creator-controlled keys, anonymous account creation, geographic access controls, legacy instructions for post-completion publication.
 **Outcome**: Creator can document dangerous truths knowing their process and sources are mathematically protected, with control over when and how information is revealed.
 **Example**: Journalist encrypts source conversations in Core Layer, shares redacted investigative process in Process Layer with trusted editors, publishes final articles in Surface Layer with full attribution control.
 
@@ -192,7 +192,7 @@ Creator Sovereignty works with Zero-Knowledge Encryption to provide technical en
 
 ### Use Case 3: Intergenerational Legacy Management
 **Context**: A scientist wants to preserve their research process for future generations while protecting personally sensitive information during their lifetime.
-**Implementation**: Time-locked access controls, cryptographic legacy instructions, designated successors with progressive access rights, automatic execution of sovereignty decisions after death.
+**Implementation**: Time-locked access controls, cryptographic legacy instructions, designated successors with progressive access rights, automatic execution of sovereignty decisions after project completion.
 **Outcome**: Creator's wishes are honored across generations without requiring trust in future institutions or individuals.
 **Example**: Researcher encrypts personal health struggles affecting their work in Core Layer (50-year privacy lock), documents research methodology in Process Layer (immediate access for designated successors), publishes findings in Surface Layer (public domain after 25 years).
 

@@ -1,5 +1,5 @@
 ---
-title: the-library-consortium-journey-strength-in-numbers
+title: The Library Consortium Journey Strength in Numbers
 sidebar_position: 2
 ---
 

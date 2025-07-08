@@ -1,5 +1,5 @@
 ---
-title: the-mythologists-journey-joseph-campbell
+title: The Mythologists Journey Joseph Campbell
 sidebar_position: 2
 ---
 
@@ -82,7 +82,7 @@ The consortium archives the `v1.0` object, creating the definitive, interactive 
 #### **Consumption Scenario A: The Human Connection (The Screenwriter)**
 *   **Consumer Persona:** A screenwriter struggling with the structure of their film script.
 *   **The Discovery & Access:** They access the "Interactive Monomyth Explorer."
-*   **The "Aha!" Moment:** Their script feels flat. They know the hero needs to face a major ordeal, but it feels cliché. They click on "The Ordeal" stage in the explorer. They don't just get a definition; they get a gallery of 30 different myths that exemplify that stage—from the story of Jonah in the whale to Inanna's descent into the underworld. They read Campbell's private notes on one of the index cards, where he writes, "The ordeal is not about a fight. It is about the voluntary death of the ego."
+*   **The "Aha!" Moment:** Their script feels flat. They know the hero needs to face a major ordeal, but it feels cliché. They click on "The Ordeal" stage in the explorer. They don't just get a definition; they get a gallery of 30 different myths that exemplify that stage—from the story of Jonah in the whale to Inanna's descent into the underworld. They read Campbell's private notes on one of the index cards, where he writes, "The ordeal is not about a fight. It is about the voluntary transformation of the ego."
 *   **The Value Proposition:** The screenwriter has a breakthrough. They rewrite their scene, changing it from a physical battle into a moment of profound psychological surrender for their hero. The script is saved. They have used Campbell's preserved *process* and deep context to directly improve their own creative work.
 
 #### **Consumption Scenario B: The AI / Agentic Web Connection (The Narrative Analyst)**

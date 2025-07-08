@@ -1,5 +1,5 @@
 ---
-title: master-index
+title: Master Index
 sidebar_position: 0
 ---
 
@@ -95,7 +95,7 @@ This document contains the distilled, high-weight insights that form the philoso
 ### **Part I: The Genesis Insights**
 *(The core realizations that sparked the initiative.)*
 *   **[WU-01] The Scale of Collective Loss & The Great Erasure**
-    *   **Insight:** The project was born from witnessing the systematic destruction of human creativity at civilizational scale. MySpace: 50 million songs erased. GeoCities: 38 million websites deleted. Photobucket: 13 billion images ransomed. Each platform failure reveals a systemic vulnerability: our digital culture is written in disappearing ink, leading to a mass extinction of collective memory.
+    *   **Insight:** The project was born from witnessing the systematic destruction of human creativity at civilizational scale. Our comprehensive research across 772 documented cases reveals massive content erasure, systematic website deletion, and billions of images held hostage. Each platform failure reveals a systemic vulnerability: our digital culture is written in disappearing ink, leading to a mass extinction of collective memory.
     *   **Implication:** We are not solving an abstract technical problem; we are building an ark to preserve humanity's creative legacy from corporate indifference and platform decay.
 *   **[WU-02] The Threat of AI & The Great Flattening**
     *   **Insight:** We are confronted with a "sea of homogenized content" from AI trained on shallow, polished data. This threatens to drown out authentic human originality and erodes our collective understanding of *how* meaning is made.

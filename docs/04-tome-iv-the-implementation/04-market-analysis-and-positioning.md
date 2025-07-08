@@ -1,5 +1,5 @@
 ---
-title: market-analysis-and-positioning
+title: Market Analysis and Positioning
 sidebar_position: 4
 ---
 

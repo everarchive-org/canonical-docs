@@ -1,5 +1,5 @@
 ---
-title: creator-workshop-infrastructure
+title: Creator Workshop Infrastructure
 sidebar_position: 999
 ---
 

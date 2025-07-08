@@ -1,5 +1,5 @@
 ---
-title: the-inheritors-journey-a-lifes-work
+title: The Inheritors Journey a Lifes Work
 sidebar_position: 2
 ---
 
@@ -13,7 +13,7 @@ sidebar_position: 2
 ### **Part 1: The Ingestion Experience - From World to Archive**
 
 #### **The Curation Narrative: The Burden and Blessing of Memory**
-Elias's home is a museum dedicated to his late wife, Anna. Her paintings adorn every wall. The attic is filled with her physical sketchbooks. But the true weight of her legacy lives on a collection of aging hard drives, a laptop he barely knows how to turn on, and a cloud storage account with a recurring monthly bill that feels like a constant, painful reminder of his loss. He watches as Anna's local fame slowly grows posthumously, but he is overwhelmed by the technical and financial burden of keeping her digital world alive. He fears that when he is gone, her entire digital legacy—the context, the process, the story behind the canvases—will vanish forever.
+Elias's home is a museum dedicated to his late wife, Anna. Her paintings adorn every wall. The attic is filled with her physical sketchbooks. But the true weight of her legacy lives on a collection of aging hard drives, a laptop he barely knows how to turn on, and a cloud storage account with a recurring monthly bill that feels like a constant, painful reminder of his loss. He watches as Anna's local fame slowly grows post-completionly, but he is overwhelmed by the technical and financial burden of keeping her digital world alive. He fears that when he is gone, her entire digital legacy—the context, the process, the story behind the canvases—will vanish forever.
 
 **The Surface Layer (The Final Product):**
 *   **What it is:** High-resolution digital photographs of Anna's 50 finished oil paintings. Scans of the press clippings and exhibition catalogs from her local shows.
@@ -66,7 +66,7 @@ Elias pays a **one-time, permanent storage fee**, ending the cycle of stressful 
 *   **Consumer Persona:** A young artist who discovers Anna's work through the public gallery.
 *   **The Discovery & Licensing:** They find the five public domain charcoal sketches Elias released.
 *   **The Act of Creation:** They use one of the sketches as the foundation for a new digital animation, creating a dialogue between Anna's traditional work and their modern medium. They archive their animation and, though not required by the license, they voluntarily add an `inspired_by` link in their manifest pointing to Anna's object.
-*   **The Value Proposition:** Anna's creative legacy continues to live and breathe, actively inspiring new art decades after her death. Her "scraps" have become the seeds of new creativity.
+*   **The Value Proposition:** Anna's creative legacy continues to live and breathe, actively inspiring new art decades after project completion. Her "scraps" have become the seeds of new creativity.
 
 #### **Consumption Scenario C: The AI / Agentic Web Connection (The Art Historian's Assistant)**
 *   **Consumer Persona:** An AI assistant helping an art historian research regional art movements.

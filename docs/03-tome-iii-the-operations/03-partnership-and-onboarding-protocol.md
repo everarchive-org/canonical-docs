@@ -1,5 +1,5 @@
 ---
-title: partnership-and-onboarding-protocol
+title: Partnership and Onboarding Protocol
 sidebar_position: 3
 ---
 
@@ -524,7 +524,7 @@ class LegalFramework:
                     'personal_information': self.protect_personal_data,
                     'publicity_rights': self.manage_publicity_concerns,
                     'third_party_privacy': self.address_third_party_rights,
-                    'posthumous_privacy': self.handle_posthumous_privacy
+                    'post-completion_privacy': self.handle_post-completion_privacy
                 }
             },
             'rights_documentation': {

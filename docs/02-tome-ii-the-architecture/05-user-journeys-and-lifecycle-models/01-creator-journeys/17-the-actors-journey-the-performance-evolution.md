@@ -1,5 +1,5 @@
 ---
-title: the-actors-journey-the-performance-evolution
+title: The Actors Journey the Performance Evolution
 sidebar_position: 2
 ---
 

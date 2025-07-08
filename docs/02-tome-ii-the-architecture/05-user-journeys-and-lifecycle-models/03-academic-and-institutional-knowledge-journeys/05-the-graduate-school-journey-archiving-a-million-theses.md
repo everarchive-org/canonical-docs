@@ -1,5 +1,5 @@
 ---
-title: the-graduate-school-journey-archiving-a-million-theses
+title: The Graduate School Journey Archiving a Million Theses
 sidebar_position: 2
 ---
 

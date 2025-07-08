@@ -1,5 +1,5 @@
 ---
-title: strategic-implementation-guide
+title: Strategic Implementation Guide
 sidebar_position: 4
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: the-digital-twin-journey-deepak-chopra
+title: The Digital Twin Journey Deepak Chopra
 sidebar_position: 2
 ---
 
@@ -83,7 +83,7 @@ Dr. Chopra works with his foundation to define the long-term governance of his d
 *   **Posthumous Governance:** He creates a "Digital Estate Plan" encoded in the object's `permissions.json`.
     *   A multi-sig "Board of Stewards" (his family, key colleagues) will be granted curatorial access after his passing.
     *   They are permitted to add new context (e.g., a biography) but are cryptographically forbidden from altering his original works in the Core, Process, and Surface layers.
-    *   He sets a rule that the AI twin cannot be trained on new data after his death, "freezing" its personality, but it can continue to learn how to better explain his existing philosophy.
+    *   He sets a rule that the AI twin cannot be trained on new data after project completion, "freezing" its personality, but it can continue to learn how to better explain his existing philosophy.
 *   **Composable Media & Licensing:** He sets up on-chain licenses (Chia Offer Files) allowing developers to build new applications using his AI persona, with a percentage of any revenue automatically routed to his foundation.
 
 ---
@@ -105,4 +105,4 @@ Dr. Chopra works with his foundation to define the long-term governance of his d
 ---
 
 ### **Conclusion: The Value of the Complete Journey**
-For a living philosopher like Deepak Chopra, EverArchive is the ultimate tool for legacy. It provides a permanent, sovereign foundation for his digital twin, ensuring its authenticity for all time. It transforms a "black box" AI into a transparent, verifiable guide. For future generations, it offers an unprecedented opportunity to engage with a great mind, to question it, to learn from it, and to understand the full context of a lifetime of wisdom long after the person is gone. It is the bridge between human consciousness and its digital immortality.
+For a living philosopher like Deepak Chopra, EverArchive is the ultimate tool for legacy. It provides a permanent, sovereign foundation for his digital twin, ensuring its authenticity for all time. It transforms a "black box" AI into a transparent, verifiable guide. For future generations, it offers an unprecedented opportunity to engage with a great mind, to question it, to learn from it, and to understand the full context of a lifetime of wisdom long after the person is gone. It is the bridge between human consciousness and its digital permanence.

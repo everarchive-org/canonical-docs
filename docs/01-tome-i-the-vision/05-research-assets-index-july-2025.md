@@ -1,5 +1,5 @@
 ---
-title: research-assets-index-july-2025
+title: Research Assets Index July 2025
 sidebar_position: 1
 ---
 
@@ -60,11 +60,11 @@ This document catalogs the substantial intellectual assets and research value cr
 
 1. **Platform Shutdowns & Content Loss**
    - 45+ major platform shutdowns (2020-2025) affecting 47+ million users
-   - MySpace: 50 million songs lost from 14 million artists
-   - GeoCities: 38 million websites deleted
+   - Comprehensive documentation of systematic content loss across all creative domains
+   - Major server migration incidents affecting millions of creators
    - 500+ terabytes of user-generated content permanently erased
 
-2. **Link Rot & Reference Decay**
+2. **Reference Infrastructure Collapse**
    - 66.5% of web links from past 9 years are dead
    - 49% of U.S. Supreme Court opinion links are broken
    - 54% of Wikipedia articles contain dead reference links

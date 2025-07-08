@@ -1,5 +1,5 @@
 ---
-title: standards-interoperability-strategy-for-dap-ecosystem
+title: Standards Interoperability Strategy for DAP Ecosystem
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: the-3d-designers-journey-the-digital-architect
+title: The 3d Designers Journey the Digital Architect
 sidebar_position: 2
 ---
 

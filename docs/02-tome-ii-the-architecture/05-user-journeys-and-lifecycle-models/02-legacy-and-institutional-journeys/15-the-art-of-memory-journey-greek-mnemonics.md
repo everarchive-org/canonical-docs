@@ -1,5 +1,5 @@
 ---
-title: the-art-of-memory-journey-greek-mnemonics
+title: The Art of Memory Journey Greek Mnemonics
 sidebar_position: 2
 ---
 

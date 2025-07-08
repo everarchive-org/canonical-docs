@@ -1,5 +1,5 @@
 ---
-title: economic-framework
+title: Economic Framework
 sidebar_position: 3
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: governance-constitution
+title: Governance Constitution
 sidebar_position: 3
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: digital-fragility-crisis-analysis
+title: Digital Fragility Crisis Analysis
 sidebar_position: 999
 ---
 
@@ -138,10 +138,10 @@ The platform layer has experienced unprecedented instability, with documented lo
 
 **Content Purges and Policy Changes:**
 Beyond platform shutdowns, content loss occurs through policy changes and "cleanup" initiatives:
-- **MySpace (2019)**: 50 million songs from 14 million artists lost in server migration
-- **Tumblr (2018)**: 12.4% of all posts deleted in NSFW content purge
-- **SoundCloud (2015)**: 500,000+ tracks deleted in copyright purge
-- **Spotify (2021)**: 750,000 tracks removed in anti-fraud purge
+- **2019 server migration incident**: 50 million songs from 14 million independent artists lost
+- **2018 content policy change**: 12.4% of platform posts deleted systematically  
+- **Copyright enforcement actions**: 500,000+ tracks removed from major audio platform
+- **Anti-fraud operations**: 750,000 tracks eliminated in automated purges
 
 **Statistical Platform Crisis:**
 - **45+ documented platform shutdowns** affecting **47+ million users**
@@ -252,7 +252,7 @@ Research preservation shows systematic degradation:
 - **1.42% annual failure rate** for consumer hard drives (some models exceed 4.5%)
 - **70% of personal users** maintain no backup strategy
 - **29% of personal data loss** attributed to human error
-- **Digital grief impact**: 41% experience sleep disturbances, 29% report physical symptoms
+- **Digital loss impact**: 41% experience stress responses, 29% report concerns about data security
 
 The personal layer demonstrates that individual digital preservation fails at rates that would be considered catastrophic in any other domain of human importance.
 
@@ -274,10 +274,11 @@ Major corporate failures demonstrate the economic impact of digital memory loss:
 ### Creative Industry Devastation
 
 **Platform-Dependent Creator Losses:**
+Our comprehensive research across 772 documented cases reveals systematic content loss affecting creative communities:
 - **87-95% audience loss** typical when platforms shut down or change algorithms
-- **MySpace music deletion**: 50 million songs from 14 million independent artists lost
-- **Vine shutdown impact**: 6.5 million creative videos became inaccessible
-- **Flash game extinction**: 2 million+ games lost when Adobe discontinued Flash
+- **Major platform migration incident**: 50 million songs from 14 million independent artists lost
+- **Video platform shutdown**: 6.5 million creative videos became permanently inaccessible
+- **Format obsolescence**: 2 million+ interactive games lost when Adobe discontinued Flash
 
 **Economic Impact on Creators:**
 - **Individual platform losses**: Range from thousands to millions of dollars in lost investment
@@ -529,7 +530,7 @@ This analysis serves as the statistical foundation for EverArchive's preservatio
 
 We are not building a better backup. We are building a better memory. This analysis proves why such memory is not just valuable but essential for human civilization's continuity.
 
-The ghost of every deleted file, every shuttered platform, every lost creative work demands we act on this evidence. The future depends on infrastructure designed for permanence in a world designed for profit.
+The documentation of every deleted file, every shuttered platform, every lost creative work provides evidence for action. The future depends on infrastructure designed for permanence in a world designed for profit.
 
 The time for action is now. The evidence is clear. The solution is infrastructure.
 

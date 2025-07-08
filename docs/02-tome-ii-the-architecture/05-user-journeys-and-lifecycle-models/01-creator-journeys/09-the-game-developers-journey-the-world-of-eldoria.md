@@ -1,5 +1,5 @@
 ---
-title: the-game-developers-journey-the-world-of-eldoria
+title: The Game Developers Journey the World of Eldoria
 sidebar_position: 2
 ---
 

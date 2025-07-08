@@ -1,5 +1,5 @@
 ---
-title: creator-tools-framework
+title: Creator Tools Framework
 sidebar_position: 2
 ---
 
@@ -20,12 +20,12 @@ The final work is the tip of the iceberg. Beneath lies:
 - **Influences** that map cultural connection
 - **Emotions** that give meaning to choices
 
-Without process, we preserve corpses. With process, we preserve creative souls.
+Without process, we preserve static outputs. With process, we preserve creative knowledge.
 
 ### The Capture Paradox
 
 Perfect capture kills creation. The observer effect applies:
-- Too much capture → self-consciousness → creative death
+- Too much capture → self-consciousness → creative inhibition
 - Too little capture → process loss → incomplete record
 - Just right capture → invisible presence → authentic preservation
 
@@ -941,7 +941,7 @@ class CreatorSovereignty:
                 'immediate': 'Share now',
                 'delayed': 'Share after X time',
                 'conditional': 'Share if conditions met',
-                'posthumous': 'Share after death',
+                'post-completion': 'Share after project completion',
                 'generational': 'Share after 50 years'
             }
         }
@@ -1548,9 +1548,9 @@ Tools that capture creative process must embody the same principles as creation 
 - **Connection**: Link, don't isolate
 - **Growth**: Evolve, don't fossilize
 
-Remember: We are not just building tools to record creativity. We are building tools that honor the sacred act of creation itself—tools that preserve the full humanity of making something from nothing, tools that capture the divine spark of human imagination.
+Remember: We are not just building tools to record creativity. We are building tools that document the complete act of creation itself—tools that preserve the full context of making something from nothing, tools that capture the innovative patterns of human imagination.
 
-Every brushstroke recorded, every musical phrase captured, every word's evolution tracked adds to humanity's understanding of its own creative soul. In 500 years, these tools will have preserved not just what we made, but the miraculous process by which we made it.
+Every brushstroke recorded, every musical phrase captured, every word's evolution tracked adds to humanity's understanding of its own creative processes. In 500 years, these tools will have preserved not just what we made, but the documented methodology by which we made it.
 
 The technical specifications are complete. The philosophical foundation is laid. The future possibilities are endless. Now go forth and build tools that serve creators with the same devotion creators serve their art.
 

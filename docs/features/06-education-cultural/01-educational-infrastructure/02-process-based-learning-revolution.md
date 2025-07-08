@@ -1,5 +1,5 @@
 ---
-title: process-based-learning-revolution
+title: Process Based Learning Revolution
 sidebar_position: 999
 ---
 

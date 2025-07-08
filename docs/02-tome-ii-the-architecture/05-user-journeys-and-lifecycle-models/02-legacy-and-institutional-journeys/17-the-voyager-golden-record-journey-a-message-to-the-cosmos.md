@@ -1,5 +1,5 @@
 ---
-title: the-voyager-golden-record-journey-a-message-to-the-cosmos
+title: The Voyager Golden Record Journey a Message to the Cosmos
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: the-screenwriters-journey-the-story-architect
+title: The Screenwriters Journey the Story Architect
 sidebar_position: 2
 ---
 

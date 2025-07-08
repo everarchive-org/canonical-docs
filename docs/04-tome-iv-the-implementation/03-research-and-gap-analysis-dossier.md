@@ -1,5 +1,5 @@
 ---
-title: research-and-gap-analysis-dossier
+title: Research and Gap Analysis Dossier
 sidebar_position: 4
 ---
 
@@ -49,7 +49,7 @@ This section details the most critical gaps between our current, well-defined vi
 #### **Section 1.2: High Priority Gaps (Blockers for Scale)**
 
 *   **GAP-04: Technical Implementation of the Posthumous Release Oracle**
-    *   **Description:** The posthumous release feature is a key part of the vision but depends on a reliable, decentralized "death oracle." The technology for such oracles is immature and unproven at scale.
+    *   **Description:** The post-completion release feature is a key part of the vision but depends on a reliable, decentralized "completion oracle." The technology for such oracles is immature and unproven at scale.
     *   **Impact:** Over-promising a feature that cannot be delivered securely will damage credibility. A faulty oracle could trigger a premature release of sensitive data.
     *   **Required Research:** A technology landscape analysis of the state-of-the-art in real-world event oracles. The current mitigation is to prioritize the non-oracle "Guardian-Consensus" mechanism in the MVP.
 

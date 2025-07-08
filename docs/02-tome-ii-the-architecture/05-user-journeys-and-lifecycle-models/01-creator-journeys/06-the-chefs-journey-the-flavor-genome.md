@@ -1,5 +1,5 @@
 ---
-title: the-chefs-journey-the-flavor-genome
+title: The Chefs Journey the Flavor Genome
 sidebar_position: 2
 ---
 

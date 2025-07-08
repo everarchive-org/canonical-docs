@@ -1,5 +1,5 @@
 ---
-title: canonical-architecture
+title: Canonical Architecture
 sidebar_position: 2
 ---
 

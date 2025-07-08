@@ -1,5 +1,5 @@
 ---
-title: data-layer-technical-specification
+title: Data Layer Technical Specification
 sidebar_position: 2
 ---
 

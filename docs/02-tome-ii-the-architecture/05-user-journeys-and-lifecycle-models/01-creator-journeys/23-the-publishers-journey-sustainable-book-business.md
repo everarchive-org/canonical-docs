@@ -1,5 +1,5 @@
 ---
-title: the-publishers-journey-sustainable-book-business
+title: The Publishers Journey Sustainable Book Business
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: the-activists-journey-the-peoples-charter
+title: The Activists Journey the Peoples Charter
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: the-liberal-arts-college-journey-the-lone-archivists-lifeline
+title: The Liberal Arts College Journey the Lone Archivists Lifeline
 sidebar_position: 2
 ---
 

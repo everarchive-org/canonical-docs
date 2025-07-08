@@ -1,5 +1,5 @@
 ---
-title: the-supreme-court-journey-brown-v-board-of-education
+title: The Supreme Court Journey Brown V Board of Education
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: the-librarians-journey-digital-lending-revolution
+title: The Librarians Journey Digital Lending Revolution
 sidebar_position: 2
 ---
 

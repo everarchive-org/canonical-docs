@@ -1,5 +1,5 @@
 ---
-title: the-fashion-designers-journey-the-haute-couture-collection
+title: The Fashion Designers Journey the Haute Couture Collection
 sidebar_position: 2
 ---
 

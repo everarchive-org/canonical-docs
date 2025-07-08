@@ -1,5 +1,5 @@
 ---
-title: the-authors-journey-direct-publishing-revolution
+title: The Authors Journey Direct Publishing Revolution
 sidebar_position: 2
 ---
 
@@ -193,12 +193,12 @@ Marcus configures his literary estate:
 - Literary executor: Decision rights
 
 **Time-Released Works**:
-- Unpublished novel: Release 5 years posthumously
+- Unpublished novel: Release 5 years post-completionly
 - Personal journals: Release after 50 years
 - Unfinished works: Released to public domain after 100 years
 
 **Charitable Component**:
-- 10% of posthumous earnings to literacy programs
+- 10% of post-completion earnings to literacy programs
 - Automated via smart contract
 - No foundation needed, direct distribution
 

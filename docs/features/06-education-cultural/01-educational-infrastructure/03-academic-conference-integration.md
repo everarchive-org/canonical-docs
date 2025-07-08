@@ -1,5 +1,5 @@
 ---
-title: academic-conference-integration
+title: Academic Conference Integration
 sidebar_position: 999
 ---
 

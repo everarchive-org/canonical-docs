@@ -1,5 +1,5 @@
 ---
-title: cultural-translation-guide
+title: Cultural Translation Guide
 sidebar_position: 3
 ---
 

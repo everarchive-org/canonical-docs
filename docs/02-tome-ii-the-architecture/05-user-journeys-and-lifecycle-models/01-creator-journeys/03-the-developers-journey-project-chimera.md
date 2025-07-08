@@ -1,5 +1,5 @@
 ---
-title: the-developers-journey-project-chimera
+title: The Developers Journey Project Chimera
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: the-poets-journey-the-bilingual-echo
+title: The Poets Journey the Bilingual Echo
 sidebar_position: 2
 ---
 
@@ -47,7 +47,7 @@ Dr. Sharma's task is immense. The "Sonnets of the Shadow" are known for their co
 The translation is complete and lauded for its brilliance. Dr. Sharma archives the definitive `v1.0` of the project.
 
 **The Permissions & Consent Configuration:**
-*   **Sovereign Permissions:** The Surface Layer (the book) is public. The Process Layer (the variorum and notes) is licensed to universities. The Core Layer remains private, but she flags her biometrically-verified "insight" moments as accessible to credentialed researchers after her death.
+*   **Sovereign Permissions:** The Surface Layer (the book) is public. The Process Layer (the variorum and notes) is licensed to universities. The Core Layer remains private, but she flags her biometrically-verified "insight" moments as accessible to credentialed researchers after project completion.
 *   **AI Training Consent:** She sets `Allow AI analysis for linguistic modeling?` to **YES**, but requires that any AI model trained on her work must also be trained on the original text to understand the translation relationship.
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: the-r1-university-journey-the-compliance-machine
+title: The R1 University Journey the Compliance Machine
 sidebar_position: 2
 ---
 

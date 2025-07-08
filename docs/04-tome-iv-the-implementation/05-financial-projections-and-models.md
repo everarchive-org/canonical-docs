@@ -1,5 +1,5 @@
 ---
-title: financial-projections-and-models
+title: Financial Projections and Models
 sidebar_position: 4
 ---
 

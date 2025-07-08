@@ -1,5 +1,5 @@
 ---
-title: the-community-college-journey-from-backup-to-preservation
+title: The Community College Journey From Backup to Preservation
 sidebar_position: 2
 ---
 

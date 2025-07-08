@@ -1,5 +1,5 @@
 ---
-title: the-digital-humanities-journey-preserving-the-unpreservable
+title: The Digital Humanities Journey Preserving the Unpreservable
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: the-ai-history-journey-the-genesis-of-intelligence
+title: The AI History Journey the Genesis of Intelligence
 sidebar_position: 2
 ---
 

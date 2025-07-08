@@ -1,5 +1,5 @@
 ---
-title: the-magellan-expedition-journey-the-first-circumnavigation
+title: The Magellan Expedition Journey the First Circumnavigation
 sidebar_position: 2
 ---
 
@@ -32,7 +32,7 @@ sidebar_position: 2
 
 ### **Part 1: The Ingestion Experience - From World to Archive**
 
-#### **The Curation Narrative: Reconstructing a Voyage of Ghosts**
+#### **The Curation Narrative: Reconstructing a Voyage of Records**
 Ferdinand Magellan's expedition was one of history's most harrowing and transformative voyages. Five ships and 270 men left Spain; three years later, one ship and 18 men returned, having proven the Earth was round. The official records from four of the five ships—including the captain's logs—were lost to storms, mutinies, and battles. The official story survives almost entirely through the single, remarkable journal of one Italian scholar, Antonio Pigafetta. The goal of this journey is to perform a massive act of historical reconstruction: to use Pigafetta's journal as the spine and flesh it out with every other known scrap of data to create the most complete, multi-perspective account of the voyage ever assembled.
 
 **The Ingestion Process: The Great Reassembly**
@@ -46,7 +46,7 @@ Historians and archivists from Spain, Portugal, and Yale collaborate.
         *   **Alternate Accounts:** The sparse records from the other ships that survived for a time, such as the log of the *San Antonio* which deserted the expedition in South America and returned to Spain.
     *   **Core Layer (The Deep Context):** This layer incorporates modern scholarship and non-European perspectives.
         *   **Indigenous Perspectives:** Oral histories and archaeological records from the indigenous peoples the expedition encountered in places like Patagonia, Guam, and the Philippines, providing a crucial counter-narrative to Pigafetta's European viewpoint.
-        *   **Modern Scholarship:** Key academic papers analyzing the voyage, including modern astronomical analysis that verifies Pigafetta's navigational data and forensic analysis of the crew's probable diet and causes of death.
+        *   **Modern Scholarship:** Key academic papers analyzing the voyage, including modern astronomical analysis that verifies Pigafetta's navigational data and forensic analysis of the crew's probable diet and historical outcomes.
         *   **Biographical Data:** The full records of the subsequent trial in Spain against the survivors of the mutiny.
 
 **The Interlinking (The Semantic Weave):**

@@ -1,5 +1,5 @@
 ---
-title: the-scientists-journey-the-unfinished-legacy
+title: The Scientists Journey the Unfinished Legacy
 sidebar_position: 2
 ---
 
@@ -59,7 +59,7 @@ On his last day at the university, Dr. Finch initiates the "Preserve Legacy" wor
 
 #### **Consumption Scenario A: The Human Connection (The Eager Protégé)**
 *   **Consumer Persona:** A brilliant young PhD student, "Kenji," who has long admired Dr. Finch's work but never met him.
-*   **The Discovery & Access:** Years after Dr. Finch's death, the 5-year time-lock on the "Thought Experiment" audio files expires. Kenji gets a notification, as he had "subscribed" to the object.
+*   **The Discovery & Access:** Years after project completion, the 5-year time-lock on the "Thought Experiment" audio files expires. Kenji gets a notification, as he had "subscribed" to the object.
 *   **The "Aha!" Moment:** Kenji listens to the audio files. He hears Dr. Finch's voice, full of passion and intellectual energy, walking through a theory that was only hinted at in his published work. He hears the pauses, the excitement, the moments of uncertainty.
 *   **The Value Proposition:** This is not just a transfer of information; it is a transfer of passion and purpose. Kenji feels as though he is being personally mentored by the master himself. He decides to dedicate his own PhD thesis to completing one of Dr. Finch's unfinished papers, becoming the intellectual heir Dr. Finch never had in life.
 
@@ -73,7 +73,7 @@ On his last day at the university, Dr. Finch initiates the "Preserve Legacy" wor
 *   **Consumer Persona:** A specialized scientific AI in 2100, "`Finch.AI`," created with the sole purpose of advancing Dr. Finch's work.
 *   **The Task & Access:** The AI ingests the entire Deep Authorship Package, including all the now-unlocked Core Layer materials.
 *   **The Synthesis & Insight:** The AI's primary task is to tackle one of the half-written papers in the Core Layer on "Quantum Cosmology." It listens to Dr. Finch's audio notes explaining where he got stuck. It analyzes the "Rosetta Stone" notebook pages filled with his unifying equations. The AI detects a subtle mathematical error in a key derivation that was the source of Dr. Finch's 50-year-old roadblock. Correcting that single error causes the entire theory to "crystallize."
-*   **The Value Proposition:** The AI completes Dr. Finch's life's work. It finishes the paper, running the simulations to prove the theory correct. Honoring the object's provenance, it publishes the new paper under the joint authorship of "Dr. Alistair Finch & Finch.AI," with a Verifiable Credential linking it back to the original object. The preserved context and "stuck points" were the essential data the AI needed to solve the problem. Dr. Finch's mind, preserved in the archive, has achieved a form of intellectual immortality.
+*   **The Value Proposition:** The AI completes Dr. Finch's life's work. It finishes the paper, running the simulations to prove the theory correct. Honoring the object's provenance, it publishes the new paper under the joint authorship of "Dr. Alistair Finch & Finch.AI," with a Verifiable Credential linking it back to the original object. The preserved context and "stuck points" were the essential data the AI needed to solve the problem. Dr. Finch's mind, preserved in the archive, has achieved a form of intellectual permanence.
 
 ---
 

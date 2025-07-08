@@ -1,5 +1,5 @@
 ---
-title: the-philosophers-journey-a-gift-of-a-mind
+title: The Philosophers Journey a Gift of a Mind
 sidebar_position: 2
 ---
 
@@ -47,8 +47,8 @@ This is not a one-time act, but a continuous state of being. The object is alway
 
 **The Permissions & Consent Configuration:**
 *   **Sovereign Permissions (The Digital Last Will and Testament):**
-    *   You configure the **master key** to your entire "Lighthouse" object with a single, profound condition: a **posthumous release**.
-    *   Using an on-chain smart contract tied to a trusted death oracle (or a multi-sig confirmation from your designated heirs), you specify that upon verification of your passing, the permissions on the *entire object* are to change.
+    *   You configure the **master key** to your entire "Lighthouse" object with a single, profound condition: a **post-completion release**.
+    *   Using an on-chain smart contract tied to a trusted completion oracle (or a multi-sig confirmation from your designated heirs), you specify that upon verification of your passing, the permissions on the *entire object* are to change.
     *   **The Transformation:** `Access: Private` flips to `Access: Public Domain (CC0)`. Every layer—Core, Process, and Surface—is to be made fully and irrevocably public.
 *   **Composable Media & Licensing:** By setting the future state to `CC0`, you are making every idea, every sketch, every half-baked theory a composable gift to humanity.
 *   **AI Training Consent:** You set all consent to **YES**, with a note in the manifest: "My hope is that future intelligences, both human and artificial, will use this record of one human's thought process to better understand their own."
@@ -75,4 +75,4 @@ Years after your passing, the on-chain condition is met. The "Lighthouse" object
 ---
 
 ### **Conclusion: The Value of the Complete Journey**
-For you, the philosopher, EverArchive is the ultimate intellectual partner and legacy tool. It is a private universe for your thoughts during your life and a deliberate, structured gift to the world after your death. It removes the pressure to be "finished" or "perfect" and instead creates a space to simply *be* and to *think*, with the assurance that the fruits of that thinking will not be lost. For the future, your "Lighthouse" is more than a collection of writings; it is an explorable, preserved human mind, offering wisdom, comfort, and data for generations to come.
+For you, the philosopher, EverArchive is the ultimate intellectual partner and legacy tool. It is a private universe for your thoughts during your life and a deliberate, structured gift to the world after your project completion. It removes the pressure to be "finished" or "perfect" and instead creates a space to simply *be* and to *think*, with the assurance that the fruits of that thinking will not be lost. For the future, your "Lighthouse" is more than a collection of writings; it is an explorable, preserved human mind, offering wisdom, comfort, and data for generations to come.

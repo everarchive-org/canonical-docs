@@ -17,7 +17,7 @@ last_updated: "July 5, 2025"
 
 Granular Process Revelation Control gives creators unprecedented power over how, when, and to whom they reveal their creative process. This feature recognizes that the journey of creation is often as valuable as the destination - containing trade secrets, teaching opportunities, and personal vulnerabilities that require careful management. Unlike traditional "all or nothing" sharing, this system provides surgical precision in controlling access to your creative journey.
 
-Imagine being able to share your final masterpiece publicly while keeping your techniques private for paying students. Or revealing your early sketches to trusted collaborators while hiding embarrassing first drafts. Or scheduling your process notes to become public after patent filing, or only after your death. This feature makes all of these scenarios not just possible, but simple to manage.
+Imagine being able to share your final masterpiece publicly while keeping your techniques private for paying students. Or revealing your early sketches to trusted collaborators while hiding embarrassing first drafts. Or scheduling your process notes to become public after patent filing, or only after your project completion. This feature makes all of these scenarios not just possible, but simple to manage.
 
 For creators, this transforms the creative process from a liability to be hidden into an asset to be strategically revealed. Whether you're protecting competitive advantages, creating educational content, or building mystique around your methods, you maintain complete control over your creative narrative.
 
@@ -69,7 +69,7 @@ The system provides multi-dimensional access control:
 ### For Individual Creators
 - **Musicians**: Release final tracks publicly while selling access to stem files, MIDI data, and production techniques to other producers
 - **Visual Artists**: Share completed works widely while revealing time-lapse creation videos only to workshop participants
-- **Writers**: Publish final drafts while keeping revision history, editor comments, and research notes for posthumous academic release
+- **Writers**: Publish final drafts while keeping revision history, editor comments, and research notes for post-completion academic release
 - **Filmmakers**: Distribute films publicly while limiting behind-the-scenes footage, scripts, and production notes to film school students
 - **Researchers**: Share conclusions immediately while embargoing raw data until after publication or patent filing
 

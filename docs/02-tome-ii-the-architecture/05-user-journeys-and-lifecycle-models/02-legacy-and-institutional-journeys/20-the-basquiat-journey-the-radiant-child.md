@@ -1,5 +1,5 @@
 ---
-title: the-basquiat-journey-the-radiant-child
+title: The Basquiat Journey the Radiant Child
 sidebar_position: 2
 ---
 

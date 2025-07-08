@@ -1,5 +1,5 @@
 ---
-title: communications-and-fundraising-kit
+title: Communications and Fundraising Kit
 sidebar_position: 4
 ---
 

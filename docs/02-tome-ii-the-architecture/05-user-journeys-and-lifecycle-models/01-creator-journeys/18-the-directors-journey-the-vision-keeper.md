@@ -1,5 +1,5 @@
 ---
-title: the-directors-journey-the-vision-keeper
+title: The Directors Journey the Vision Keeper
 sidebar_position: 2
 ---
 

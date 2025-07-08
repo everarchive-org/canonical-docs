@@ -98,8 +98,70 @@ function transformPath(obsidianPath) {
 
 function extractTitle(filename) {
   const basename = path.basename(filename, '.md');
+  
+  // Handle special cases
+  if (basename.toLowerCase() === 'readme') {
+    return 'Overview';
+  }
+  
   // Remove number prefixes like "1.1 - " or "01-"
-  return basename.replace(/^\d+\.?\d*\s*-\s*/, '').replace(/^README$/i, 'Overview');
+  let title = basename.replace(/^\d+\.?\d*\s*-\s*/, '');
+  
+  // Convert kebab-case and snake_case to Title Case
+  title = title
+    .replace(/[-_]/g, ' ')
+    .replace(/\b\w/g, l => l.toUpperCase())
+    .replace(/\bAnd\b/g, 'and')
+    .replace(/\bThe\b/g, 'the')
+    .replace(/\bOf\b/g, 'of')
+    .replace(/\bFor\b/g, 'for')
+    .replace(/\bIn\b/g, 'in')
+    .replace(/\bTo\b/g, 'to')
+    .replace(/\bA\b/g, 'a')
+    .replace(/\bAn\b/g, 'an');
+  
+  // Handle specific acronyms and technical terms
+  title = title
+    .replace(/\bDap\b/g, 'DAP')
+    .replace(/\bApi\b/g, 'API')
+    .replace(/\bUi\b/g, 'UI')
+    .replace(/\bUx\b/g, 'UX')
+    .replace(/\bAi\b/g, 'AI')
+    .replace(/\bQr\b/g, 'QR')
+    .replace(/\bCli\b/g, 'CLI')
+    .replace(/\bSdk\b/g, 'SDK')
+    .replace(/\bHttp\b/g, 'HTTP')
+    .replace(/\bJson\b/g, 'JSON')
+    .replace(/\bXml\b/g, 'XML')
+    .replace(/\bCss\b/g, 'CSS')
+    .replace(/\bHtml\b/g, 'HTML')
+    .replace(/\bJs\b/g, 'JavaScript')
+    .replace(/\bTs\b/g, 'TypeScript')
+    .replace(/\bQc\b/g, 'QC')
+    .replace(/\bDao\b/g, 'DAO')
+    .replace(/\bNft\b/g, 'NFT')
+    .replace(/\bIpfs\b/g, 'IPFS')
+    .replace(/\bP2p\b/g, 'P2P')
+    .replace(/\bZk\b/g, 'Zero-Knowledge')
+    .replace(/\bDrm\b/g, 'DRM')
+    .replace(/\bGdpr\b/g, 'GDPR')
+    .replace(/\bCcpa\b/g, 'CCPA')
+    .replace(/\bIls\b/g, 'ILS')
+    .replace(/\bPov\b/g, 'POV')
+    .replace(/\bRoi\b/g, 'ROI')
+    .replace(/\bMlk\b/g, 'MLK')
+    .replace(/\bR1\b/g, 'R1')
+    .replace(/\bEverarchive\b/g, 'EverArchive')
+    .replace(/\bNeo Kyoto\b/g, 'Neo-Kyoto')
+    .replace(/\bVcs\b/g, 'VCs')
+    .replace(/\bIii\b/g, 'III')
+    .replace(/\bIi\b/g, 'II')
+    .replace(/\bIv\b/g, 'IV');
+  
+  // Capitalize first letter
+  title = title.charAt(0).toUpperCase() + title.slice(1);
+  
+  return title;
 }
 
 function getSidebarPosition(filename) {

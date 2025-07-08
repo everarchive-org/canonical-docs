@@ -1,5 +1,5 @@
 ---
-title: the-podcasters-journey-the-voices-of-a-generation
+title: The Podcasters Journey the Voices of a Generation
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: the-da-vinci-journey-the-renaissance-master
+title: The Da Vinci Journey the Renaissance Master
 sidebar_position: 2
 ---
 

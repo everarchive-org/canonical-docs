@@ -1,5 +1,5 @@
 ---
-title: the-architects-journey-frank-lloyd-wright
+title: The Architects Journey Frank Lloyd Wright
 sidebar_position: 2
 ---
 
@@ -35,7 +35,7 @@ sidebar_position: 2
 
 ### **Part 1: The Ingestion Experience - From World to Archive**
 
-#### **The Curation Narrative: Preserving a Building's Soul**
+#### **The Curation Narrative: Preserving a Building.s Design Philosophy**
 Fallingwater is more than a house; it is a statement of organic architecture, a fusion of daring engineering and natural landscape. But its essence is at risk. The original blueprints don't capture the on-the-fly decisions made during construction. The engineering challenges—the famous cantilevered terraces—are legendary but poorly documented. The philosophical principles that guided Wright are scattered across his essays. The goal of this journey is to create a single, permanent digital object that preserves not just the building's form, but its entire intellectual, engineering, and environmental DNA for future architects, engineers, and historians.
 
 **The Ingestion Process: The Great Reassembly**

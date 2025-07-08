@@ -1,5 +1,5 @@
 ---
-title: technical-evolution-framework
+title: Technical Evolution Framework
 sidebar_position: 3
 ---
 

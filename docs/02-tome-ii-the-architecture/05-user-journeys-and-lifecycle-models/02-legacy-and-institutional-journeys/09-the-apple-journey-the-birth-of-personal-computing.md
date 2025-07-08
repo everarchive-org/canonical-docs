@@ -1,5 +1,5 @@
 ---
-title: the-apple-journey-the-birth-of-personal-computing
+title: The Apple Journey the Birth of Personal Computing
 sidebar_position: 2
 ---
 

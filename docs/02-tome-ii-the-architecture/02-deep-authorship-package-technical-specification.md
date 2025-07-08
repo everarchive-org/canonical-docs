@@ -1,5 +1,5 @@
 ---
-title: deep-authorship-package-technical-specification
+title: Deep Authorship Package Technical Specification
 sidebar_position: 2
 ---
 
@@ -137,7 +137,7 @@ Defines the creator's rules for access, use, and legacy. This is a critical file
     *   `coreAccess`: MUST default to `"private"`.
     *   `ai_training`: Granular consent for use in AI model training, with sub-fields `allowed: boolean` and `anonymized: boolean`. Defaults to `false`.
     *   `remixPolicy`: Defines the terms for derivative works.
-    *   `posthumousRelease`: Specifies the mechanism (e.g., `"guardian_consensus"`) and recipients for releasing content after the creator's death.
+    *   `post-completionRelease`: Specifies the mechanism (e.g., `"guardian_consensus"`) and recipients for releasing content after project completion.
 
 #### **4.3. `context.jsonld`**
 

@@ -1,5 +1,5 @@
 ---
-title: the-musicians-journey-echo-in-the-static
+title: The Musicians Journey Echo in the Static
 sidebar_position: 2
 ---
 

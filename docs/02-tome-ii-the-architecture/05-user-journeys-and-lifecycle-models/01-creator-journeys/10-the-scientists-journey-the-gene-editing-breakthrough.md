@@ -1,5 +1,5 @@
 ---
-title: the-scientists-journey-the-gene-editing-breakthrough
+title: The Scientists Journey the Gene Editing Breakthrough
 sidebar_position: 2
 ---
 

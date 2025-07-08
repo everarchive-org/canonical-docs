@@ -1,5 +1,5 @@
 ---
-title: the-montessori-journey-the-educational-method
+title: The Montessori Journey the Educational Method
 sidebar_position: 2
 ---
 

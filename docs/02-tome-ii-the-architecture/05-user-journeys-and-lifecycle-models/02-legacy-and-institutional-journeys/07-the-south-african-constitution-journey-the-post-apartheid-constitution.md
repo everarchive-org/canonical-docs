@@ -1,5 +1,5 @@
 ---
-title: the-south-african-constitution-journey-the-post-apartheid-constitution
+title: The South African Constitution Journey the Post Apartheid Constitution
 sidebar_position: 2
 ---
 

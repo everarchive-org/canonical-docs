@@ -1,5 +1,5 @@
 ---
-title: the-architects-journey-the-metropolis-blueprint
+title: The Architects Journey the Metropolis Blueprint
 sidebar_position: 2
 ---
 

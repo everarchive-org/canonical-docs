@@ -1,5 +1,5 @@
 ---
-title: the-mckenna-journey-the-visionary-thinker
+title: The Mckenna Journey the Visionary Thinker
 sidebar_position: 2
 ---
 
@@ -74,7 +74,7 @@ This is the heart of the restoration.
 The `v1.0` object is declared a major milestone, representing the most complete assembly of McKenna's thought ever created.
 
 **The Permissions & Consent Configuration:**
-*   **Sovereign Permissions:** The Surface and Process Layers are made public for educational and research use. The Core Layer, containing his most personal letters and journals, is placed under a time-lock, to be released 50 years after his death.
+*   **Sovereign Permissions:** The Surface and Process Layers are made public for educational and research use. The Core Layer, containing his most personal letters and journals, is placed under a time-lock, to be released 50 years after project completion.
 *   **Composable Media & Licensing:** All community-contributed research for the library reconstruction is dedicated to the public domain (`CC0`). Audio clips of his lectures are licensed for non-commercial remixing.
 
 ---

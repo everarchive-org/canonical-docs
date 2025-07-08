@@ -1,5 +1,5 @@
 ---
-title: community-stewardship-guide
+title: Community Stewardship Guide
 sidebar_position: 3
 ---
 

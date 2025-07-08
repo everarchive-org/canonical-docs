@@ -1,5 +1,5 @@
 ---
-title: canonical-library-features-discovery
+title: Canonical Library Features Discovery
 sidebar_position: 999
 ---
 

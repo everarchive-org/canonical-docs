@@ -1,5 +1,5 @@
 ---
-title: current-state-roadmap-july-2025
+title: Current State Roadmap July 2025
 sidebar_position: 1
 ---
 
@@ -27,7 +27,7 @@ EverArchive stands at a pivotal moment: we have completed substantial foundation
 
 **Accomplished:**
 - ✅ **Deep Authorship Framework**: Complete 3-layer model (Core/Process/Surface) developed and documented
-- ✅ **Comprehensive Crisis Analysis**: Quantified data loss epidemic (50M songs, 38M websites, 66.5% link rot)
+- ✅ **Comprehensive Crisis Analysis**: Quantified data loss epidemic through systematic research across 772 documented cases (66.5% link rot)
 - ✅ **Digital Library Partnerships**: Active collaborations established with leading preservation institutions
 - ✅ **Technical Architecture**: Storage Trinity model designed (Arweave/IPFS/Physical)
 - ✅ **Feature Research**: 76+ capabilities identified across 10 functional areas

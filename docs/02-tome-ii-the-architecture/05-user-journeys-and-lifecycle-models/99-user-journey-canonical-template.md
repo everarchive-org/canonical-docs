@@ -1,5 +1,5 @@
 ---
-title: user-journey-canonical-template
+title: User Journey Canonical Template
 sidebar_position: 2
 ---
 
@@ -57,7 +57,7 @@ sidebar_position: 2
 **The Archival Workflow:**
 *(Describe the moment the creator/steward decides the work is "done" and initiates the final preservation. e.g., "Upon completing the final version, the creator initiates the 'Preserve v1.0' workflow...")*
 **The Permissions & Consent Configuration:**
-*   **Sovereign Permissions:** [Detail the access settings for each layer for the permanent archive. e.g., "Core Layer: Private, with posthumous release. Process Layer: Educational Use Only."]
+*   **Sovereign Permissions:** [Detail the access settings for each layer for the permanent archive. e.g., "Core Layer: Private, with post-completion release. Process Layer: Educational Use Only."]
 *   **Composable Media & Licensing:** [Detail the specific rights granted for reuse. e.g., "A sub-folder of texture brushes is licensed CC-BY-NC. A piano stem is licensed for commercial remixing via an on-chain offer file."]
 *   **AI Training Consent:** [Detail the granular AI consent settings. e.g., "YES to non-commercial research analysis. NO to generative use."]
 **The Finalization:**

@@ -1,5 +1,5 @@
 ---
-title: legal-compliance-framework
+title: Legal Compliance Framework
 sidebar_position: 3
 ---
 

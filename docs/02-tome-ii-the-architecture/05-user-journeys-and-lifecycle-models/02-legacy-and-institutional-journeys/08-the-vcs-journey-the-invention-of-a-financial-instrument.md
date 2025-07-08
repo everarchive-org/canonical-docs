@@ -1,5 +1,5 @@
 ---
-title: the-vcs-journey-the-invention-of-a-financial-instrument
+title: The VCs Journey the Invention of a Financial Instrument
 sidebar_position: 2
 ---
 

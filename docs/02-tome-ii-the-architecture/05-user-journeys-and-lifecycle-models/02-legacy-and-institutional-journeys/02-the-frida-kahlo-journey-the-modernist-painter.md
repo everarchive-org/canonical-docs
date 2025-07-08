@@ -1,5 +1,5 @@
 ---
-title: the-frida-kahlo-journey-the-modernist-painter
+title: The Frida Kahlo Journey the Modernist Painter
 sidebar_position: 2
 ---
 

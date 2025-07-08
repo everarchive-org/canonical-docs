@@ -1,5 +1,5 @@
 ---
-title: the-ais-journey-project-genesis
+title: The Ais Journey Project Genesis
 sidebar_position: 2
 ---
 

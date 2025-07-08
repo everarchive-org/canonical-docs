@@ -1,5 +1,5 @@
 ---
-title: the-principles-of-deep-authorship
+title: The Principles of Deep Authorship
 sidebar_position: 1
 ---
 

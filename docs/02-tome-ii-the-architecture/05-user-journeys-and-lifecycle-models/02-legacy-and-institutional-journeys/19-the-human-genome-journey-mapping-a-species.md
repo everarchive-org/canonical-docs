@@ -1,5 +1,5 @@
 ---
-title: the-human-genome-journey-mapping-a-species
+title: The Human Genome Journey Mapping a Species
 sidebar_position: 2
 ---
 

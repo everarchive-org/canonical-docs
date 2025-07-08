@@ -1,5 +1,5 @@
 ---
-title: the-global-research-journey-a-world-of-data
+title: The Global Research Journey a World of Data
 sidebar_position: 2
 ---
 

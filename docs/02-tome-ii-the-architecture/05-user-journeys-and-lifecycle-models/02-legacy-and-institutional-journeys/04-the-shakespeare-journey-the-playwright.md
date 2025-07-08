@@ -1,5 +1,5 @@
 ---
-title: the-shakespeare-journey-the-playwright
+title: The Shakespeare Journey the Playwright
 sidebar_position: 2
 ---
 

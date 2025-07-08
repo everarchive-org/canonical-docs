@@ -1,5 +1,5 @@
 ---
-title: resilience-and-recovery-plan
+title: Resilience and Recovery Plan
 sidebar_position: 3
 ---
 

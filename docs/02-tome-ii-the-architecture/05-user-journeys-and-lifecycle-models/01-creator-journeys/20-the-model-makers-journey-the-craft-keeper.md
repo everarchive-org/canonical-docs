@@ -1,5 +1,5 @@
 ---
-title: the-model-makers-journey-the-craft-keeper
+title: The Model Makers Journey the Craft Keeper
 sidebar_position: 2
 ---
 

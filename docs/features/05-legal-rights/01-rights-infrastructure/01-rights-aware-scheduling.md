@@ -66,7 +66,7 @@ The system manages rights through intelligent automation:
 ## Use Cases
 
 ### For Individual Creators
-- **Author Estate**: Novel enters public domain exactly 70 years after death
+- **Author Estate**: Novel enters public domain exactly 70 years after project completion
 - **Musician**: Recordings release to public domain per jurisdiction
 - **Academic**: Research embargoes lift automatically after patent filing
 - **Artist**: Limited editions expire and become freely available

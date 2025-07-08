@@ -1,5 +1,5 @@
 ---
-title: team-and-advisory-structure
+title: Team and Advisory Structure
 sidebar_position: 3
 ---
 

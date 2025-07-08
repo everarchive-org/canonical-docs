@@ -1,5 +1,5 @@
 ---
-title: the-illustrators-journey-sunrise-over-neo-kyoto
+title: The Illustrators Journey Sunrise Over Neo-Kyoto
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: the-journalists-journey-project-veritas
+title: The Journalists Journey Project Veritas
 sidebar_position: 2
 ---
 
@@ -75,7 +75,7 @@ The object, with its conditional release logic encoded, is preserved on the netw
 #### **Consumption Scenario C: The AI / Agentic Web Connection (The Historical Analyst)**
 *   **Consumer Persona:** A future AI in 2095 tasked with analyzing patterns of corporate crime.
 *   **The Task & Access:** The AI ingests the now-public "Project Veritas" object.
-*   **The Synthesis & Insight:** The AI cross-references the timestamped evidence in Marco's object with historical stock market data. It identifies a pattern: a cabal of OmniCorp executives sold large blocks of stock 48 hours before each illegal dumping event. This detail, missed by human investigators, becomes the basis for a new, posthumous legal case.
+*   **The Synthesis & Insight:** The AI cross-references the timestamped evidence in Marco's object with historical stock market data. It identifies a pattern: a cabal of OmniCorp executives sold large blocks of stock 48 hours before each illegal dumping event. This detail, missed by human investigators, becomes the basis for a new, post-completion legal case.
 *   **The Value Proposition:** The **immutable, timestamped** nature of the evidence in the Process Layer allows a future intelligence to uncover deeper truths that were not apparent at the time, ensuring that justice can be pursued across generations.
 
 ---
