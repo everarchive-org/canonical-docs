@@ -13,7 +13,7 @@ const sidebars: SidebarsConfig = {
           label: 'Creative Control',
           items: [
             'features/creative-control/readme',
-            'features/creative-control/proof-attribution/biometric-proof-creative-origin',
+            'features/creative-control/proof-attribution/collaborative-attribution-tracking',
             'features/creative-control/privacy-control/zero-knowledge-creative-privacy',
             'features/creative-control/economic-returns/direct-author-royalties',
           ],
@@ -24,7 +24,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'features/preservation-permanence/readme',
             'features/preservation-permanence/storage-architecture/blockchain-guaranteed-eternal-storage',
-            'features/preservation-permanence/future-proofing/post-quantum-encryption-future-proofing',
+            'features/preservation-permanence/future-proofing/automatic-format-evolution-infrastructure',
           ],
         },
         {
