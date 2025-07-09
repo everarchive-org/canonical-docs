@@ -5,14 +5,12 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: 'Deep Authorship Model',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
         Capture the complete creative process, not just final outputs. Preserve the journey, 
@@ -23,7 +21,6 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Permanent Preservation',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
         Infrastructure designed for centuries, not quarters. Triple-redundant architecture, 
@@ -34,7 +31,6 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Creator Sovereignty',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
         You own your work completely. Zero-knowledge privacy, granular access controls, 
@@ -45,12 +41,9 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>

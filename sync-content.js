@@ -79,19 +79,9 @@ sidebar_position: ${getSidebarPosition(filename)}
 }
 
 function transformPath(obsidianPath) {
-  // Convert Obsidian path to DocuSaurus path
+  // Convert Obsidian path to DocuSaurus path - keep existing structure
   let transformed = obsidianPath
-    .replace(/^Tome I - The Vision\//, 'tome-i/')
-    .replace(/^Tome II - The Architecture\//, 'tome-ii/')
-    .replace(/^Tome III - The Operations\//, 'tome-iii/')
-    .replace(/^Tome IV - The Implementation\//, 'tome-iv/')
-    .replace(/^Features\//, 'features/')
-    .replace(/^Software-Tools\//, 'tools/')
-    .replace(/^Foundations\//, 'foundations/')
-    .replace(/^00 - Master Index\.md$/, 'index.md')
-    .toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace(/[^\w\-\/\.]/g, '');
+    .replace(/^00 - Master Index\.md$/, '00-master-index.md');
   
   return transformed;
 }
