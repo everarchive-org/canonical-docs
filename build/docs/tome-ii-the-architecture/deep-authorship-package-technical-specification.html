@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-tome-ii-the-architecture/deep-authorship-package-technical-specification" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Deep Authorship Package Technical Specification | EverArchive</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.everarchive.org/docs/tome-ii-the-architecture/deep-authorship-package-technical-specification"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Deep Authorship Package Technical Specification | EverArchive"><meta data-rh="true" name="description" content="Tome II, Document 2.2"><meta data-rh="true" property="og:description" content="Tome II, Document 2.2"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.everarchive.org/docs/tome-ii-the-architecture/deep-authorship-package-technical-specification"><link data-rh="true" rel="alternate" href="https://docs.everarchive.org/docs/tome-ii-the-architecture/deep-authorship-package-technical-specification" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.everarchive.org/docs/tome-ii-the-architecture/deep-authorship-package-technical-specification" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.d8b08674.css">
+<script src="/assets/js/runtime~main.b22a7eef.js" defer="defer"></script>
+<script src="/assets/js/main.b8ea706f.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><b class="navbar__title text--truncate">EverArchive</b></a><a class="navbar__item navbar__link" href="/docs/intro">Docs</a><a href="https://everarchive.org" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Main Site<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/everarchive-org/canonical-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Deep Authorship Package Technical Specification</h1></header><h3 class="anchor anchorWithStickyNavbar_LWe7" id="tome-ii-document-22"><strong>Tome II, Document 2.2</strong><a href="#tome-ii-document-22" class="hash-link" aria-label="Direct link to tome-ii-document-22" title="Direct link to tome-ii-document-22">​</a></h3>
+<h1>The Deep Authorship Package Technical Specification</h1>
+<p><strong>Document ID:</strong> SPEC-DEEP-AUTHORSHIP-2.4
+<strong>Version:</strong> 2.4 (leading digital preservation platforms Integration Update)
+<strong>Date:</strong> 2025-07-04
+<strong>Status:</strong> Canonical Reference</p>
+<p><strong>Changelog:</strong></p>
+<ul>
+<li><strong>v2.4 (2025-07-04)</strong>: Added Chia blockchain book lending infrastructure specifications<!-- -->
+<ul>
+<li>New Section 5.8: Book Lending Infrastructure with peer-to-peer offers and smart contracts</li>
+<li>New Section 6.3: leading digital preservation platforms Integration Layer with ILS compatibility and APIs</li>
+<li>Enhanced Section 4.4: Added MARC21 blockchain fields and CHIP-0007 metadata</li>
+<li>New Section 7.3: Scalability specifications for book lending operations</li>
+</ul>
+</li>
+<li><strong>v2.0 (2025-06-19)</strong>: Initial ratification draft</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-introduction--scope"><strong>1. Introduction &amp; Scope</strong><a href="#1-introduction--scope" class="hash-link" aria-label="Direct link to 1-introduction--scope" title="Direct link to 1-introduction--scope">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="11-purpose"><strong>1.1. Purpose</strong><a href="#11-purpose" class="hash-link" aria-label="Direct link to 11-purpose" title="Direct link to 11-purpose">​</a></h4>
+<p>This document provides the complete technical specification for the <strong>Deep Authorship Package</strong>, version 2.0. The Deep Authorship Package is a canonical, time-interpretable, and sovereign data container designed to preserve the complete cognitive and emotional lineage of a creative work. While it is the preferred format for the EverArchive ecosystem, the system also supports ingestion and preservation of content in established archival formats (METS, MODS, Dublin Core, PREMIS) through the Schema Projector interoperability framework. Adherence to this specification is mandatory for all tools that create, read, or modify native Deep Authorship Packages to ensure universal interoperability and long-term preservation.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="12-core-design-principles"><strong>1.2. Core Design Principles</strong><a href="#12-core-design-principles" class="hash-link" aria-label="Direct link to 12-core-design-principles" title="Direct link to 12-core-design-principles">​</a></h4>
+<ul>
+<li><strong>Self-Contained:</strong> A Deep Authorship Package must contain all information necessary for its own interpretation.</li>
+<li><strong>Layered:</strong> The structure must reflect the Three-Layer Memory Model (Core, Process, Surface).</li>
+<li><strong>Sovereign &amp; Local-First:</strong> The object is designed to be created and managed on a creator&#x27;s local device, with user-controlled, zero-knowledge encryption for its most sensitive layer.</li>
+<li><strong>Interoperable:</strong> Based on open standards (JSON-LD, etc.) to facilitate seamless integration with existing archival formats and workflows. The Schema Projector enables bidirectional translation between Deep Authorship Packages and established standards like METS, MODS, Dublin Core, and PREMIS, allowing institutions to work with familiar formats while preserving the unique features of Deep Authorship when possible.</li>
+<li><strong>Permanent:</strong> Designed for immutable, content-addressed storage networks.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-container-format--structure"><strong>2. Container Format &amp; Structure</strong><a href="#2-container-format--structure" class="hash-link" aria-label="Direct link to 2-container-format--structure" title="Direct link to 2-container-format--structure">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="21-physical-format"><strong>2.1. Physical Format</strong><a href="#21-physical-format" class="hash-link" aria-label="Direct link to 21-physical-format" title="Direct link to 21-physical-format">​</a></h4>
+<p>A Deep Authorship Package is a compressed archive conforming to the <strong>ZIP (.zip)</strong> specification. The use of ZIP ensures broad, cross-platform compatibility and accessibility using standard libraries.</p>
+<ul>
+<li><strong>Compression Algorithm:</strong> All files within the archive (except for already compressed media formats) SHOULD be compressed using <strong>Zstandard (ZSTD)</strong> for its balance of high compression ratio and fast decompression speed.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="22-canonical-directory-structure"><strong>2.2. Canonical Directory Structure</strong><a href="#22-canonical-directory-structure" class="hash-link" aria-label="Direct link to 22-canonical-directory-structure" title="Direct link to 22-canonical-directory-structure">​</a></h4>
+<p>Every valid Deep Authorship Package MUST adhere to the following directory structure at its root:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">my-creative-work/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── manifest.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── metadata/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── authorship.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── permissions.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── context.jsonld</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── core/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── [encrypted blobs]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── process/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── [version diffs, annotations, etc.]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└── surface/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    └── [final work files]</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-the-manifestjson-specification"><strong>3. The <code>manifest.json</code> Specification</strong><a href="#3-the-manifestjson-specification" class="hash-link" aria-label="Direct link to 3-the-manifestjson-specification" title="Direct link to 3-the-manifestjson-specification">​</a></h3>
+<p>The <code>manifest.json</code> file is the entry point and integrity record for the entire object. It MUST be located at the root of the archive.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="31-schema"><strong>3.1. Schema</strong><a href="#31-schema" class="hash-link" aria-label="Direct link to 31-schema" title="Direct link to 31-schema">​</a></h4>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;$schema&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;https://everarchive.org/schemas/dao/manifest/v2.0.json&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;dapVersion&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;2.0&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;dapId&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string (UUID v4)&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;creatorDid&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string (W3C DID)&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;createdAt&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string (ISO 8601)&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;lastModified&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string (ISO 8601)&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;parentDap&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string (dapId of parent, optional)&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;storageProofs&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;arweaveTx&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string (optional)&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;ipfsCid&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string (optional)&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;physicalVaultId&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string (optional)&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;semanticFingerprint&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;embeddingModel&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;coreConcepts&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token string" style="color:#e3116c">&quot;string&quot;</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;emotionalSignature&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;fileIndex&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token property" style="color:#36acaa">&quot;path&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string (relative path within archive)&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token property" style="color:#36acaa">&quot;hash&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string (SHA-256 hash of the file)&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token property" style="color:#36acaa">&quot;mimeType&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token property" style="color:#36acaa">&quot;sizeBytes&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;integer&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;integrity&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;manifestHash&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string (SHA-256 of this manifest, with this field null)&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;signature&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token property" style="color:#36acaa">&quot;type&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string (e.g., &#x27;EcdsaSecp256k1RecoveryMethod2020&#x27;)&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token property" style="color:#36acaa">&quot;signatureValue&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;string (base64 encoded)&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="32-field-definitions"><strong>3.2. Field Definitions</strong><a href="#32-field-definitions" class="hash-link" aria-label="Direct link to 32-field-definitions" title="Direct link to 32-field-definitions">​</a></h4>
+<ul>
+<li><code>dapVersion</code>: The version of the Deep Authorship Package specification this object conforms to. MUST be &quot;2.0&quot;.</li>
+<li><code>dapId</code>: A unique UUID v4 identifying this Deep Authorship Package.</li>
+<li><code>creatorDid</code>: The W3C Decentralized Identifier of the primary creator.</li>
+<li><code>storageProofs</code>: Contains the transaction IDs or content identifiers from the storage networks where this object is archived.</li>
+<li><code>fileIndex</code>: An array of all files contained within the Deep Authorship Package archive. The <code>hash</code> value is critical for verifying the integrity of each file.</li>
+<li><code>integrity.manifestHash</code>: A SHA-256 hash of the canonicalized <code>manifest.json</code> file itself, calculated with the <code>manifestHash</code> and <code>signature</code> fields set to <code>null</code>. This proves the manifest has not been tampered with.</li>
+<li><code>integrity.signature</code>: The creator&#x27;s digital signature over the <code>manifestHash</code>, proving authenticity.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-the-metadata-directory"><strong>4. The <code>metadata/</code> Directory</strong><a href="#4-the-metadata-directory" class="hash-link" aria-label="Direct link to 4-the-metadata-directory" title="Direct link to 4-the-metadata-directory">​</a></h3>
+<p>This directory contains human- and machine-readable metadata that describes the work. All files SHOULD be in <strong>JSON-LD</strong> format to support semantic web technologies.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="41-authorshipjson"><strong>4.1. <code>authorship.json</code></strong><a href="#41-authorshipjson" class="hash-link" aria-label="Direct link to 41-authorshipjson" title="Direct link to 41-authorshipjson">​</a></h4>
+<p>Contains descriptive metadata about the work&#x27;s creation.</p>
+<ul>
+<li><strong>Fields:</strong> <code>title</code>, <code>description</code>, <code>tags</code>, <code>language</code>, <code>collaborators: [{did, role}]</code>, <code>influences: [{workId, type}]</code>.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="42-permissionsjson"><strong>4.2. <code>permissions.json</code></strong><a href="#42-permissionsjson" class="hash-link" aria-label="Direct link to 42-permissionsjson" title="Direct link to 42-permissionsjson">​</a></h4>
+<p>Defines the creator&#x27;s rules for access, use, and legacy. This is a critical file for enforcing sovereignty.</p>
+<ul>
+<li><strong>Fields:</strong>
+<ul>
+<li><code>coreAccess</code>: MUST default to <code>&quot;private&quot;</code>.</li>
+<li><code>ai_training</code>: Granular consent for use in AI model training, with sub-fields <code>allowed: boolean</code> and <code>anonymized: boolean</code>. Defaults to <code>false</code>.</li>
+<li><code>remixPolicy</code>: Defines the terms for derivative works.</li>
+<li><code>post-completionRelease</code>: Specifies the mechanism (e.g., <code>&quot;guardian_consensus&quot;</code>) and recipients for releasing content after project completion.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="43-contextjsonld"><strong>4.3. <code>context.jsonld</code></strong><a href="#43-contextjsonld" class="hash-link" aria-label="Direct link to 43-contextjsonld" title="Direct link to 43-contextjsonld">​</a></h4>
+<p>Captures the rich milieu surrounding the creation.</p>
+<ul>
+<li><strong>Fields:</strong>
+<ul>
+<li><code>environment</code>: <code>location</code> (privacy-preserving geohash), <code>toolsUsed: [{name, version}]</code>, <code>worldEvents</code>.</li>
+<li><code>emotionalJourney</code>: <code>moodTimeline: [{timestamp, emotion}]</code>, <code>breakthroughMoments</code>, <code>strugglePoints</code>.</li>
+<li><code>creativeIntent</code>: <code>whyCreating</code>, <code>forWhom</code>, <code>hopedImpact</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="44-bibliographicjsonld-for-literary-works"><strong>4.4. <code>bibliographic.jsonld</code> (For Literary Works)</strong><a href="#44-bibliographicjsonld-for-literary-works" class="hash-link" aria-label="Direct link to 44-bibliographicjsonld-for-literary-works" title="Direct link to 44-bibliographicjsonld-for-literary-works">​</a></h4>
+<p>Contains book-specific metadata mappings for library and archival systems, enabling seamless integration with major digital libraries and library catalogs worldwide.</p>
+<ul>
+<li><strong>Fields:</strong>
+<ul>
+<li><code>marc21</code>: Complete MARC21 field mappings for library catalog integration<!-- -->
+<ul>
+<li><code>leader</code>, <code>controlFields: [{tag, value}]</code>, <code>dataFields: [{tag, indicators, subfields}]</code></li>
+<li><strong>Enhanced blockchain fields:</strong>
+<div class="language-xml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-xml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">datafield</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">tag</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">856</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">ind1</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">4</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">ind2</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">0</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">subfield</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">code</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">u</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">https://archive.org/details/book_id</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">subfield</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">subfield</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">code</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">z</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">Available for blockchain lending</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">subfield</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">subfield</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">code</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">3</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">EverArchive enabled</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">subfield</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">datafield</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">datafield</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">tag</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">506</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">ind1</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">0</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">ind2</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c"> </span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">subfield</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">code</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">a</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">Lending managed by smart contract</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">subfield</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">subfield</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">code</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">f</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">One copy, one user</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">subfield</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">datafield</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li><code>dublinCore</code>: Dublin Core element mappings<!-- -->
+<ul>
+<li><code>dc:title</code>, <code>dc:creator</code>, <code>dc:subject</code>, <code>dc:description</code>, <code>dc:publisher</code>, <code>dc:date</code>, <code>dc:type</code>, <code>dc:format</code>, <code>dc:identifier</code>, <code>dc:source</code>, <code>dc:language</code>, <code>dc:relation</code>, <code>dc:coverage</code>, <code>dc:rights</code></li>
+</ul>
+</li>
+<li><code>mods</code>: MODS (Metadata Object Description Schema) elements for academic libraries</li>
+<li><code>identifiers</code>: Standard book identifiers<!-- -->
+<ul>
+<li><code>isbn</code>: International Standard Book Number(s) - array for multiple editions</li>
+<li><code>lccn</code>: Library of Congress Control Number</li>
+<li><code>oclc</code>: OCLC number for WorldCat integration</li>
+<li><code>doi</code>: Digital Object Identifier for academic works</li>
+</ul>
+</li>
+<li><code>chip0007</code>: CHIP-0007 NFT metadata structure for blockchain representation<!-- -->
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;format&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;CHIP-0007&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;name&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Book Title&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;attributes&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">{</span><span class="token property" style="color:#36acaa">&quot;trait_type&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;ISBN&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token property" style="color:#36acaa">&quot;value&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;978-3-16-148410-0&quot;</span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">{</span><span class="token property" style="color:#36acaa">&quot;trait_type&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Author&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token property" style="color:#36acaa">&quot;value&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Author Name&quot;</span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">{</span><span class="token property" style="color:#36acaa">&quot;trait_type&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;License Type&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token property" style="color:#36acaa">&quot;value&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Library Lending&quot;</span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">{</span><span class="token property" style="color:#36acaa">&quot;trait_type&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Edition&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token property" style="color:#36acaa">&quot;value&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;1/1000&quot;</span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;license_uri&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;https://everarchive.org/licenses/book/{id}&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;data_uris&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token string" style="color:#e3116c">&quot;ipfs://...&quot;</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">&quot;data_hash&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;0x...&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
+</li>
+<li><code>lending</code>: Blockchain-based lending metadata<!-- -->
+<ul>
+<li><code>lendingPolicy</code>: One of <code>&quot;single-copy&quot;</code>, <code>&quot;multi-copy&quot;</code>, <code>&quot;unlimited&quot;</code></li>
+<li><code>royaltyAddress</code>: Chia wallet address for automated payments</li>
+<li><code>lendingPeriod</code>: Default loan duration in days</li>
+<li><code>simultaneousLoans</code>: Maximum concurrent checkouts allowed</li>
+<li><code>dataLayerIntegration</code>: Key-value pairs for real-time availability tracking</li>
+</ul>
+</li>
+<li><code>rights</code>: Enhanced rights management for books<!-- -->
+<ul>
+<li><code>copyrightStatus</code>: One of <code>&quot;in-copyright&quot;</code>, <code>&quot;public-domain&quot;</code>, <code>&quot;orphan-work&quot;</code></li>
+<li><code>copyrightHolder</code>: DID or traditional identifier</li>
+<li><code>licenseTerms</code>: Machine-readable license (e.g., Creative Commons)</li>
+<li><code>territorialRights</code>: Geographic restrictions if applicable</li>
+<li><code>royaltyDistribution</code>: Automated payment split configuration for estates and beneficiaries</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-identity--attribution-layer"><strong>5. Identity &amp; Attribution Layer</strong><a href="#5-identity--attribution-layer" class="hash-link" aria-label="Direct link to 5-identity--attribution-layer" title="Direct link to 5-identity--attribution-layer">​</a></h3>
+<p>The Identity &amp; Attribution Layer provides the cryptographic and legal foundation for establishing and verifying creator identity while supporting both anonymous creation and progressive trust verification. This system serves as the trust anchor for the entire EverArchive ecosystem.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="51-progressive-trust-framework"><strong>5.1. Progressive Trust Framework</strong><a href="#51-progressive-trust-framework" class="hash-link" aria-label="Direct link to 51-progressive-trust-framework" title="Direct link to 51-progressive-trust-framework">​</a></h4>
+<p>EverArchive implements a <strong>four-tier verification system</strong> that balances permissive access with robust IP protection:</p>
+<p><strong>Tier 0 (MVP - Anonymous Creation):</strong></p>
+<ul>
+<li>Email verification with cryptographic content signatures</li>
+<li>Rate limiting for spam prevention (maximum 10 uploads per email per day)</li>
+<li>GPG/SSH cryptographic signing for content integrity</li>
+<li>Basic attribution claims and community features</li>
+<li>No identity verification required beyond functional email address</li>
+</ul>
+<p><strong>Tier 1 (Social Verification):</strong></p>
+<ul>
+<li>Connected social media accounts (Twitter/LinkedIn/GitHub) via OAuth</li>
+<li>Cross-platform identity consistency validation</li>
+<li>Community reputation scoring based on creation history</li>
+<li>Enhanced discoverability in creator economy features</li>
+<li>Reduced rate limiting (100 uploads per day)</li>
+</ul>
+<p><strong>Tier 2 (Professional Verification):</strong></p>
+<ul>
+<li>ORCID integration for academics (public API tier)</li>
+<li>Adobe ID verification for creative professionals</li>
+<li>Domain ownership verification for institutions</li>
+<li>Optional government ID with zero-knowledge proofs</li>
+<li>Verified badge display and priority API access</li>
+</ul>
+<p><strong>Tier 3 (Full KYC Verification):</strong></p>
+<ul>
+<li>Government ID verification with biometric cross-checks</li>
+<li>Proof of address and professional credential validation</li>
+<li>Enables monetization features and high-value transactions</li>
+<li>Priority legal dispute resolution and DMCA counter-notification rights</li>
+<li>Unlimited upload capacity with priority processing</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="52-authorship-verification-workflow"><strong>5.2. Authorship Verification Workflow</strong><a href="#52-authorship-verification-workflow" class="hash-link" aria-label="Direct link to 52-authorship-verification-workflow" title="Direct link to 52-authorship-verification-workflow">​</a></h4>
+<p><strong>Phase 1: Content Authenticity (Immediate)</strong></p>
+<ol>
+<li><strong>Cryptographic Signatures:</strong> All DAP packages include GPG/SSH signatures in <code>manifest.json</code></li>
+<li><strong>Content Credentials:</strong> C2PA (Coalition for Content Provenance and Authenticity) integration for tamper-evident metadata</li>
+<li><strong>Hash Chain Integrity:</strong> SHA-256 verification of all contained files and manifest consistency</li>
+<li><strong>Timestamp Verification:</strong> RFC 3161 timestamping for creation date validation</li>
+</ol>
+<p><strong>Phase 2: Identity Binding (Progressive)</strong></p>
+<ol>
+<li><strong>Email Verification:</strong> Functional email required for basic account creation</li>
+<li><strong>Social Account Linking:</strong> OAuth integration with major platforms for consistency checking</li>
+<li><strong>Professional Credentials:</strong> ORCID API integration for academic verification</li>
+<li><strong>Behavioral Analytics:</strong> Machine learning for fraud detection and account takeover prevention</li>
+</ol>
+<p><strong>Phase 3: Legal Compliance (Responsive)</strong></p>
+<ol>
+<li><strong>DMCA Infrastructure:</strong> Designated agent registration and 24-hour response capability</li>
+<li><strong>EU DSM Article 17:</strong> &quot;Best efforts&quot; rightsholder authorization systems</li>
+<li><strong>Content Recognition:</strong> AI-powered duplicate detection for potential IP conflicts</li>
+<li><strong>Fair Use Protection:</strong> Human review requirements for parody, criticism, and educational use</li>
+</ol>
+<p><strong>Phase 4: Dispute Resolution (Escalated)</strong></p>
+<ol>
+<li><strong>Automated Intake:</strong> Web form with AI-powered initial assessment</li>
+<li><strong>Human Review:</strong> Mandatory human oversight for all removal decisions</li>
+<li><strong>Counter-Notification:</strong> 10-14 day appeal process for contested removals</li>
+<li><strong>Legal Escalation:</strong> Clear procedures for court involvement when necessary</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="53-dispute-resolution-protocol"><strong>5.3. Dispute Resolution Protocol</strong><a href="#53-dispute-resolution-protocol" class="hash-link" aria-label="Direct link to 53-dispute-resolution-protocol" title="Direct link to 53-dispute-resolution-protocol">​</a></h4>
+<p><strong>Four-Step Resolution Process with Evidence-Based Design:</strong></p>
+<p><strong>Step 1: Initial Complaint (0-24 hours)</strong></p>
+<ul>
+<li>Automated intake via structured web form requiring specific evidence</li>
+<li>AI-powered assessment for obvious false positives (parody, fair use indicators)</li>
+<li>Immediate notification to content creator with 24-hour voluntary response window</li>
+<li>Priority handling for verified rightsholders (Tier 2+ verification)</li>
+</ul>
+<p><strong>Step 2: Review Process (Days 1-3)</strong></p>
+<ul>
+<li><strong>Mandatory human review</strong> of all disputes to prevent automated errors</li>
+<li>Identity verification level weighted in credibility assessment</li>
+<li>Fair use analysis using four-factor test for borderline cases</li>
+<li>Clear communication timelines to all parties throughout process</li>
+</ul>
+<p><strong>Step 3: Resolution (Days 3-10)</strong></p>
+<ul>
+<li>Final removal/restoration decision with detailed written reasoning</li>
+<li>Counter-notification opportunity provision with full legal protections</li>
+<li>Appeals process availability through independent review board</li>
+<li>Verification level upgrade opportunities for creators seeking enhanced protection</li>
+</ul>
+<p><strong>Step 4: Long-term Actions</strong></p>
+<ul>
+<li>Repeat infringer tracking with progressive enforcement (3-strike system)</li>
+<li>Fraud detection system training and improvement based on resolved cases</li>
+<li>Community guideline updates reflecting new dispute patterns</li>
+<li>Legal precedent documentation for consistency in future cases</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="54-privacy-and-inclusion-framework"><strong>5.4. Privacy and Inclusion Framework</strong><a href="#54-privacy-and-inclusion-framework" class="hash-link" aria-label="Direct link to 54-privacy-and-inclusion-framework" title="Direct link to 54-privacy-and-inclusion-framework">​</a></h4>
+<p><strong>Anonymous Creation Protection:</strong></p>
+<ul>
+<li>Support for pseudonymous creation acknowledging UN Special Rapporteur recognition of anonymous speech</li>
+<li>Zero-knowledge proof implementation for age verification without identity disclosure</li>
+<li>Protection for vulnerable creators including transgender, whistleblower, and domestic violence survivor communities</li>
+<li>Cryptographic attribution without personal data exposure</li>
+</ul>
+<p><strong>Progressive Disclosure Design:</strong></p>
+<ul>
+<li>No mandatory identity verification for basic functionality</li>
+<li>Incentive structure for voluntary verification through enhanced features</li>
+<li>Clear data minimization principles with purpose limitation</li>
+<li>User control over verification level display and privacy settings</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="55-security-and-fraud-prevention"><strong>5.5. Security and Fraud Prevention</strong><a href="#55-security-and-fraud-prevention" class="hash-link" aria-label="Direct link to 55-security-and-fraud-prevention" title="Direct link to 55-security-and-fraud-prevention">​</a></h4>
+<p><strong>Primary Attack Vector Mitigation:</strong></p>
+<p><strong>Impersonation Prevention (82.47% of fraud cases):</strong></p>
+<ul>
+<li>Multi-modal verification combining behavioral, biometric, and document analysis</li>
+<li>Cross-platform consistency checking for social verification tiers</li>
+<li>Community-driven verification through established creator networks</li>
+<li>Cryptographic proof requirements for high-value content claims</li>
+</ul>
+<p><strong>Account Takeover Protection (427% increase in Q1 2023):</strong></p>
+<ul>
+<li>Behavioral analytics for anomalous activity detection</li>
+<li>Multi-factor authentication requirements for verified accounts</li>
+<li>Session management with geolocation and device fingerprinting</li>
+<li>Immediate notification and recovery protocols for compromised accounts</li>
+</ul>
+<p><strong>Synthetic Identity Detection (85% of financial fraud):</strong></p>
+<ul>
+<li>Document authenticity verification using government databases where available</li>
+<li>Biometric liveness detection for identity document submissions</li>
+<li>Social graph analysis for artificial account network detection</li>
+<li>Machine learning models trained on known synthetic identity patterns</li>
+</ul>
+<p><strong>Sleepminting/Attribution Exploit Prevention:</strong></p>
+<ul>
+<li>Smart contract audit requirements for blockchain-based attribution claims</li>
+<li>Temporal consistency checking for creation date claims</li>
+<li>Technical metadata analysis for digital content authenticity</li>
+<li>Community challenge mechanisms for suspicious attribution claims</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="56-legal-compliance-architecture"><strong>5.6. Legal Compliance Architecture</strong><a href="#56-legal-compliance-architecture" class="hash-link" aria-label="Direct link to 56-legal-compliance-architecture" title="Direct link to 56-legal-compliance-architecture">​</a></h4>
+<p><strong>DMCA Compliance (US):</strong></p>
+<ul>
+<li>Designated agent registered with US Copyright Office</li>
+<li>24-hour expeditious removal capability with human oversight</li>
+<li>10-14 day counter-notification procedures with legal protection</li>
+<li>Repeat infringer policies with graduated enforcement</li>
+<li>Good faith fair use consideration in all removal decisions</li>
+</ul>
+<p><strong>EU DSM Directive Article 17:</strong></p>
+<ul>
+<li>&quot;Best efforts&quot; rightsholder authorization systems</li>
+<li>Content recognition with human appeal review</li>
+<li>Protection for legitimate uses (quotation, parody, criticism, review)</li>
+<li>Proportionality requirements for automated filtering systems</li>
+</ul>
+<p><strong>Cross-Jurisdictional Framework:</strong></p>
+<ul>
+<li>Jurisdiction-specific compliance modules based on user location</li>
+<li>International treaty recognition (Berne Convention, WIPO)</li>
+<li>Cultural sensitivity provisions for indigenous and traditional knowledge</li>
+<li>Multi-language support for dispute resolution in creator&#x27;s native language</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="57-implementation-roadmap"><strong>5.7. Implementation Roadmap</strong><a href="#57-implementation-roadmap" class="hash-link" aria-label="Direct link to 57-implementation-roadmap" title="Direct link to 57-implementation-roadmap">​</a></h4>
+<p><strong>Months 0-3 (MVP Foundation):</strong></p>
+<ul>
+<li>Email verification with basic rate limiting</li>
+<li>GPG/SSH cryptographic signing integration</li>
+<li>C2PA Content Credentials implementation</li>
+<li>Basic DMCA compliance infrastructure</li>
+</ul>
+<p><strong>Months 3-6 (Progressive Verification):</strong></p>
+<ul>
+<li>OAuth social platform integration</li>
+<li>ORCID API implementation (public tier)</li>
+<li>Behavioral analytics for fraud detection</li>
+<li>Zero-knowledge proof pilot for privacy-preserving verification</li>
+</ul>
+<p><strong>Months 6-12 (Advanced Features):</strong></p>
+<ul>
+<li>Full ORCID membership and advanced API integration</li>
+<li>Government ID verification with biometric cross-checks</li>
+<li>AI-powered content recognition for IP conflict detection</li>
+<li>Comprehensive dispute resolution platform with human oversight</li>
+</ul>
+<p><strong>Year 2+ (Enterprise Scale):</strong></p>
+<ul>
+<li>SAML/SSO integration for institutional customers</li>
+<li>Custom verification workflows for enterprise clients</li>
+<li>Cross-platform identity federation protocols</li>
+<li>Advanced legal automation with court system integration</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="58-book-lending-infrastructure"><strong>5.8. Book Lending Infrastructure</strong><a href="#58-book-lending-infrastructure" class="hash-link" aria-label="Direct link to 58-book-lending-infrastructure" title="Direct link to 58-book-lending-infrastructure">​</a></h4>
+<p>EverArchive enables decentralized book lending through integration with the Chia blockchain, providing mathematical guarantees for &quot;one copy, one user&quot; digital lending while preserving patron privacy and enabling automated royalty distribution.</p>
+<p><strong>Core Components:</strong></p>
+<p><strong>Peer-to-Peer Offers Mechanism:</strong></p>
+<ul>
+<li>Direct wallet-to-wallet book transfers without intermediaries</li>
+<li>Atomic execution ensuring both sides of trade complete simultaneously</li>
+<li>Distribution through Chia&#x27;s Splash network, direct files, or QR codes</li>
+<li>No escrow risk through blockchain-native settlement</li>
+</ul>
+<p><strong>Time-Bound NFT Lending Contracts:</strong></p>
+<ul>
+<li>Chialisp smart contracts enforce automatic return at block height expiry</li>
+<li>Multi-signature support enables consortium library operations</li>
+<li>Conditional spending rules differentiate checkout and return states</li>
+<li>State tracking through coin destruction/recreation cycles</li>
+</ul>
+<p><strong>Smart Contract Architecture Example:</strong></p>
+<div class="language-lisp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-lisp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">(mod (LIBRARY_PUBKEY PATRON_PUBKEY RETURN_DATE)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    (defun check-out-book (current_height)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        (if (&lt; current_height RETURN_DATE)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            (list (list AGG_SIG_ME PATRON_PUBKEY))</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            (list (list AGG_SIG_ME LIBRARY_PUBKEY))</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        )</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    )</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">)</span><br></span></code></pre></div></div>
+<p><strong>Privacy-Preserving Patron Data:</strong></p>
+<ul>
+<li>Anonymous lending IDs generated using daily-rotating salts</li>
+<li>SHA-256 hashing ensures patron identity cannot be reversed</li>
+<li>Only library system and temporal data included in blockchain records</li>
+<li>Compliance with library patron privacy regulations</li>
+</ul>
+<p><strong>Multi-Signature Consortium Operations:</strong></p>
+<ul>
+<li>Weighted signature requirements for shared collections</li>
+<li>Configurable thresholds for different operation types</li>
+<li>Atomic verification of consortium member agreement</li>
+<li>Support for complex library system hierarchies</li>
+</ul>
+<p><strong>Double-Spending Prevention:</strong></p>
+<ul>
+<li>Blockchain-enforced single checkout verification</li>
+<li>Atomic state transitions prevent simultaneous loans</li>
+<li>Cryptographic nonces prevent replay attacks</li>
+<li>Block height validation ensures temporal consistency</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6-the-core-directory--encryption-protocol"><strong>6. The <code>core/</code> Directory &amp; Encryption Protocol</strong><a href="#6-the-core-directory--encryption-protocol" class="hash-link" aria-label="Direct link to 6-the-core-directory--encryption-protocol" title="Direct link to 6-the-core-directory--encryption-protocol">​</a></h3>
+<p>This directory holds the raw, unfiltered, and most sensitive data from the creator&#x27;s process.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61-encryption-is-mandatory"><strong>6.1. Encryption is Mandatory</strong><a href="#61-encryption-is-mandatory" class="hash-link" aria-label="Direct link to 61-encryption-is-mandatory" title="Direct link to 61-encryption-is-mandatory">​</a></h4>
+<p>All files within the <code>core/</code> directory MUST be encrypted. Plaintext storage in this directory is a violation of the specification.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="62-the-everarchive-encryption-standard-ees-10"><strong>6.2. The EverArchive Encryption Standard (EES-1.0)</strong><a href="#62-the-everarchive-encryption-standard-ees-10" class="hash-link" aria-label="Direct link to 62-the-everarchive-encryption-standard-ees-10" title="Direct link to 62-the-everarchive-encryption-standard-ees-10">​</a></h4>
+<ol>
+<li><strong>Key Derivation:</strong> A high-entropy passphrase, known only to the creator, is used as input to the <strong>Argon2id</strong> key derivation function to generate a 256-bit symmetric encryption key (<code>symKey</code>). This process MUST be performed client-side.</li>
+<li><strong>Content Encryption:</strong> Each file in the <code>core/</code> directory is encrypted using <strong>AES-256-GCM</strong>. This provides both confidentiality and authenticity. A unique nonce must be used for each encryption operation.</li>
+<li><strong>Post-Quantum Key Protection (Key Encapsulation):</strong> To protect against future attacks by quantum computers, the <code>symKey</code> is itself protected.
+a. A public/private key pair is generated using the <strong>CRYSTALS-Kyber</strong> algorithm (a NIST PQC standard).
+b. The <code>symKey</code> is encapsulated using the Kyber public key, resulting in a ciphertext (<code>encapsulatedKey</code>).
+c. The Kyber private key is encrypted with the <code>symKey</code> (or another derived key) and can be sharded for social recovery using Shamir&#x27;s Secret Sharing.</li>
+<li><strong>Storage:</strong> The encrypted file content, the GCM authentication tag, the nonce, and the <code>encapsulatedKey</code> are stored. To decrypt, a user must provide their passphrase to derive <code>symKey</code>, use <code>symKey</code> to decrypt the Kyber private key, and then use the Kyber private/public key pair to decapsulate <code>encapsulatedKey</code> and retrieve the original <code>symKey</code> for decrypting the content.</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="63-leading-digital-preservation-platforms-integration-layer"><strong>6.3. leading digital preservation platforms Integration Layer</strong><a href="#63-leading-digital-preservation-platforms-integration-layer" class="hash-link" aria-label="Direct link to 63-leading-digital-preservation-platforms-integration-layer" title="Direct link to 63-leading-digital-preservation-platforms-integration-layer">​</a></h4>
+<p>EverArchive provides seamless integration with leading digital preservation platforms&#x27;s infrastructure, enabling libraries worldwide to adopt blockchain-based lending while maintaining compatibility with existing Integrated Library Systems (ILS).</p>
+<p><strong>ILS Compatibility Matrix:</strong></p>
+<ul>
+<li>
+<p><strong>Full Support (Native API Integration):</strong></p>
+<ul>
+<li><strong>Koha</strong>: Open source with RESTful API support for real-time synchronization</li>
+<li><strong>Evergreen</strong>: Complete API integration with webhook capabilities</li>
+<li><strong>Sierra</strong>: Z39.50 protocol support plus modern REST APIs</li>
+</ul>
+</li>
+<li>
+<p><strong>Partial Support (Customization Required):</strong></p>
+<ul>
+<li><strong>Symphony</strong>: Limited API access, requires middleware adaptation</li>
+<li><strong>Alma</strong>: Complex enterprise integration, vendor coordination needed</li>
+</ul>
+</li>
+</ul>
+<p><strong>API Endpoints for Book Operations:</strong></p>
+<ul>
+<li>
+<p><strong>Book Registration:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">POST /everarchive/api/register_book</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;ia_identifier&quot;: &quot;isbn_1234567890&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;marc21_data&quot;: {...},</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;ownership_proof&quot;: &quot;physical_book_scan_hash&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;lending_policy&quot;: &quot;single_copy&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Checkout Operation:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">POST /everarchive/api/checkout</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;ia_identifier&quot;: &quot;isbn_1234567890&quot;, </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;patron_id&quot;: &quot;hashed_library_id&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;loan_period&quot;: 14,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;library_system&quot;: &quot;seattle_public&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Return Operation:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">POST /everarchive/api/return</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;lending_nft_id&quot;: &quot;nft_abc123&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;return_type&quot;: &quot;automatic_expiry&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+</li>
+</ul>
+<p><strong>Performance Specifications:</strong></p>
+<ul>
+<li><strong>API Capacity</strong>: 70,000+ daily operations with sub-2 second response times</li>
+<li><strong>Cache Layer</strong>: Redis cluster maintaining 5-minute synchronization windows</li>
+<li><strong>Blockchain Finality</strong>: 15-minute settlement cycles for permanent record</li>
+<li><strong>Success Rate</strong>: 99.9% uptime with graceful degradation protocols</li>
+</ul>
+<p><strong>Batch Processing Strategies:</strong></p>
+<ul>
+<li><strong>Checkout Batching</strong>: 15-minute cycles processing up to 730 operations per batch</li>
+<li><strong>Return Processing</strong>: 5-minute cycles for time-sensitive returns</li>
+<li><strong>Royalty Settlement</strong>: Daily batch processing to minimize transaction fees</li>
+<li><strong>Merkle Tree Aggregation</strong>: Compress multiple operations into single blockchain commits</li>
+</ul>
+<p><strong>Three-Layer Integration Architecture:</strong></p>
+<p><strong>Layer 1 - Data Bridge:</strong></p>
+<ul>
+<li>MARC21 metadata synchronization with blockchain fields</li>
+<li>JSON-LD transformation for semantic interoperability</li>
+<li>BookReader API integration for seamless patron experience</li>
+<li>Event stream processing for real-time state updates</li>
+</ul>
+<p><strong>Layer 2 - State Management:</strong></p>
+<ul>
+<li>Physical book availability mirrors NFT minting state</li>
+<li>Checkout status synchronized across ILS and blockchain</li>
+<li>Automatic expiry handling with graceful return flows</li>
+<li>Conflict resolution protocols for network partitions</li>
+</ul>
+<p><strong>Layer 3 - User Experience:</strong></p>
+<ul>
+<li>Transparent blockchain operations invisible to patrons</li>
+<li>Existing ILS interfaces maintained without modification</li>
+<li>Progressive enhancement for blockchain-aware systems</li>
+<li>Offline lending certificates for resilient access</li>
+</ul>
+<p><strong>Scalability Infrastructure:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Local ILS ↔ EverArchive Cache ↔ Chia Blockchain</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓              ↓                   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Real-time      5-minute sync      Batch commits</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">responses      availability       (15 min cycles)</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="7-the-process--surface-directories"><strong>7. The <code>process/</code> &amp; <code>surface/</code> Directories</strong><a href="#7-the-process--surface-directories" class="hash-link" aria-label="Direct link to 7-the-process--surface-directories" title="Direct link to 7-the-process--surface-directories">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="71-process"><strong>7.1. <code>process/</code></strong><a href="#71-process" class="hash-link" aria-label="Direct link to 71-process" title="Direct link to 71-process">​</a></h4>
+<p>This directory holds the evidence of the work&#x27;s evolution.</p>
+<ul>
+<li><strong>Content:</strong> May contain version diffs, git-style patch files, annotated drafts, video recordings of work sessions, or any other data that shows <em>how</em> the work was made.</li>
+<li><strong>Format:</strong> Open, non-proprietary formats are strongly recommended.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="72-surface"><strong>7.2. <code>surface/</code></strong><a href="#72-surface" class="hash-link" aria-label="Direct link to 72-surface" title="Direct link to 72-surface">​</a></h4>
+<p>This directory holds the final, polished artifact(s) that the creator intends to share.</p>
+<ul>
+<li><strong>Content:</strong> The final <code>.pdf</code>, <code>.mp3</code>, <code>.png</code>, etc. High-resolution, archival-quality formats are recommended.</li>
+<li><strong>Plaintext:</strong> Files in this directory are stored in plaintext and are considered publicly accessible, subject to the rules in <code>permissions.json</code>.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="73-scalability-for-book-lending-operations"><strong>7.3. Scalability for Book Lending Operations</strong><a href="#73-scalability-for-book-lending-operations" class="hash-link" aria-label="Direct link to 73-scalability-for-book-lending-operations" title="Direct link to 73-scalability-for-book-lending-operations">​</a></h4>
+<p>EverArchive&#x27;s book lending infrastructure scales to support library systems worldwide through optimized architecture and efficient resource utilization.</p>
+<p><strong>Performance Targets:</strong></p>
+<ul>
+<li><strong>Transaction Volume</strong>: Support for 70,000+ daily lending operations across all participating libraries</li>
+<li><strong>Response Time</strong>: Sub-2 second API responses for patron-facing operations</li>
+<li><strong>Blockchain Settlement</strong>: 15-minute finality for permanent record keeping</li>
+<li><strong>System Availability</strong>: 99.9% uptime with automatic failover capabilities</li>
+</ul>
+<p><strong>5-Minute Sync Architecture:</strong></p>
+<ul>
+<li><strong>Cache Layer Design</strong>: Redis cluster maintaining real-time book availability</li>
+<li><strong>Event Stream Processing</strong>: Apache Kafka for distributed state synchronization</li>
+<li><strong>Optimistic Locking</strong>: Immediate patron feedback with eventual blockchain consistency</li>
+<li><strong>Conflict Resolution</strong>: Automated reconciliation for network partition scenarios</li>
+</ul>
+<p><strong>Cost Analysis for Library Operations:</strong></p>
+<ul>
+<li><strong>NFT Minting</strong>: One-time cost of ~0.1 XCH ($3-5) per book title</li>
+<li><strong>Transaction Fees</strong>: ~0.00001 XCH (fraction of cent) per lending operation</li>
+<li><strong>Daily Batch Operations</strong>: $5-10 for complete library system operations</li>
+<li><strong>Annual Savings</strong>: 70% reduction compared to traditional DRM licensing costs</li>
+</ul>
+<p><strong>Batch Processing Optimization:</strong></p>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic"># Daily royalty settlement example</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">daily_royalty_batch </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token string" style="color:#e3116c">&quot;settlement_date&quot;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;2025-07-03&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token string" style="color:#e3116c">&quot;total_lendings&quot;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">67_832</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token string" style="color:#e3116c">&quot;total_royalties&quot;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">6_783.20</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic"># $0.10 * 67,832</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token string" style="color:#e3116c">&quot;merkle_root&quot;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;0xabc123...&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token string" style="color:#e3116c">&quot;recipients&quot;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">{</span><span class="token string" style="color:#e3116c">&quot;author_did&quot;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;author_1&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;amount&quot;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">234.50</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;lendings&quot;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2345</span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">{</span><span class="token string" style="color:#e3116c">&quot;author_did&quot;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;author_2&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;amount&quot;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">156.70</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;lendings&quot;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1567</span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
+<p><strong>Infrastructure Requirements:</strong></p>
+<ul>
+<li><strong>Load Balancers</strong>: Distributed across multiple regions for global access</li>
+<li><strong>Database Sharding</strong>: PostgreSQL partitioned by library system ID</li>
+<li><strong>Blockchain Nodes</strong>: Minimum 3 Chia full nodes for redundancy</li>
+<li><strong>Monitoring Stack</strong>: Prometheus + Grafana for real-time performance tracking</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="8-versioning--extensibility"><strong>8. Versioning &amp; Extensibility</strong><a href="#8-versioning--extensibility" class="hash-link" aria-label="Direct link to 8-versioning--extensibility" title="Direct link to 8-versioning--extensibility">​</a></h3>
+<ul>
+<li><strong>Versioning of a Deep Authorship Package:</strong> A new version of a work is created by generating a <em>new</em> Deep Authorship Package and setting its <code>parentDap</code> field to the <code>dapId</code> of the previous version. This creates an immutable, backward-linked chain of provenance.</li>
+<li><strong>Extensibility:</strong> Custom metadata fields can be added to any JSON file, ideally within a custom namespace (e.g., <code>&quot;my-app:customField&quot;: &quot;value&quot;</code>) to avoid conflicts. All extensions should be documented using JSON Schema.</li>
+<li><strong>Format Interoperability:</strong> While Deep Authorship Package (DAP) is the native format, EverArchive supports preservation of content in multiple formats. The Schema Projector (detailed in Doc 2.3) enables:<!-- -->
+<ul>
+<li>Import from standard archival formats (METS, MODS, Dublin Core, PREMIS)</li>
+<li>Export to standard formats with documented data loss analysis</li>
+<li>Hybrid preservation strategies maintaining both native Deep Authorship Package and institutional formats</li>
+<li>Progressive enhancement where content starts in standard formats and gains Deep Authorship features over time</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="9-conclusion"><strong>9. Conclusion</strong><a href="#9-conclusion" class="hash-link" aria-label="Direct link to 9-conclusion" title="Direct link to 9-conclusion">​</a></h3>
+<p>The DAP v2.0 specification provides a robust, secure, and philosophically-aligned framework for the preservation of deep creative memory. It balances the need for rich, complex data capture with the non-negotiable requirements of creator sovereignty and long-term durability. Its successful implementation is the cornerstone of the EverArchive&#x27;s mission.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/everarchive-org/canonical-docs/tree/main/docs/02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#tome-ii-document-22" class="table-of-contents__link toc-highlight"><strong>Tome II, Document 2.2</strong></a></li><li><a href="#1-introduction--scope" class="table-of-contents__link toc-highlight"><strong>1. Introduction &amp; Scope</strong></a></li><li><a href="#2-container-format--structure" class="table-of-contents__link toc-highlight"><strong>2. Container Format &amp; Structure</strong></a></li><li><a href="#3-the-manifestjson-specification" class="table-of-contents__link toc-highlight"><strong>3. The <code>manifest.json</code> Specification</strong></a></li><li><a href="#4-the-metadata-directory" class="table-of-contents__link toc-highlight"><strong>4. The <code>metadata/</code> Directory</strong></a></li><li><a href="#5-identity--attribution-layer" class="table-of-contents__link toc-highlight"><strong>5. Identity &amp; Attribution Layer</strong></a></li><li><a href="#6-the-core-directory--encryption-protocol" class="table-of-contents__link toc-highlight"><strong>6. The <code>core/</code> Directory &amp; Encryption Protocol</strong></a></li><li><a href="#7-the-process--surface-directories" class="table-of-contents__link toc-highlight"><strong>7. The <code>process/</code> &amp; <code>surface/</code> Directories</strong></a></li><li><a href="#8-versioning--extensibility" class="table-of-contents__link toc-highlight"><strong>8. Versioning &amp; Extensibility</strong></a></li><li><a href="#9-conclusion" class="table-of-contents__link toc-highlight"><strong>9. Conclusion</strong></a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Vision</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/features/features-overview">Features</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Project</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://everarchive.org" target="_blank" rel="noopener noreferrer" class="footer__link-item">Main Site<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/everarchive-org" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 EverArchive. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

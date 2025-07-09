@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-foundations/open-source-and-non-proprietary" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Open Source and Non-Proprietary | EverArchive</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.everarchive.org/docs/foundations/open-source-and-non-proprietary"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Open Source and Non-Proprietary | EverArchive"><meta data-rh="true" name="description" content="Concept ID: 10"><meta data-rh="true" property="og:description" content="Concept ID: 10"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.everarchive.org/docs/foundations/open-source-and-non-proprietary"><link data-rh="true" rel="alternate" href="https://docs.everarchive.org/docs/foundations/open-source-and-non-proprietary" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.everarchive.org/docs/foundations/open-source-and-non-proprietary" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.d8b08674.css">
+<script src="/assets/js/runtime~main.b22a7eef.js" defer="defer"></script>
+<script src="/assets/js/main.b8ea706f.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><b class="navbar__title text--truncate">EverArchive</b></a><a class="navbar__item navbar__link" href="/docs/intro">Docs</a><a href="https://everarchive.org" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Main Site<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/everarchive-org/canonical-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Foundational Concept: Open Source and Non-Proprietary</h1></header>
+<p><strong>Concept ID</strong>: 10
+<strong>Category</strong>: System Invariants
+<strong>Status</strong>: Implementation Guide
+<strong>Last Updated</strong>: 2025-07-06</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="documentation-status--gaps">Documentation Status &amp; Gaps<a href="#documentation-status--gaps" class="hash-link" aria-label="Direct link to Documentation Status &amp; Gaps" title="Direct link to Documentation Status &amp; Gaps">​</a></h2>
+<p><strong>Source Coverage</strong>: Complete</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="information-availability">Information Availability<a href="#information-availability" class="hash-link" aria-label="Direct link to Information Availability" title="Direct link to Information Availability">​</a></h3>
+<ul>
+<li><strong>✅ Well-documented</strong>: Open source requirement in governance constitution, anti-capture design principles, interoperability frameworks</li>
+<li><strong>✅ Well-documented</strong>: Licensing strategy for core protocols and reference implementations</li>
+<li><strong>✅ Well-documented</strong>: Development governance models and community participation frameworks</li>
+<li><strong>⚠️ Partially documented</strong>: Specific license recommendations for different component types</li>
+<li><strong>⚠️ Partially documented</strong>: Enforcement mechanisms for ecosystem compliance</li>
+<li><strong>🔍 Requires research</strong>: Patent protection strategies for open protocols</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="research-recommendations">Research Recommendations<a href="#research-recommendations" class="hash-link" aria-label="Direct link to Research Recommendations" title="Direct link to Research Recommendations">​</a></h3>
+<p>No significant gaps identified. The concept is well-established in canonical sources with clear implementation guidance.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="documentation-links">Documentation Links<a href="#documentation-links" class="hash-link" aria-label="Direct link to Documentation Links" title="Direct link to Documentation Links">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="primary-sources">Primary Sources<a href="#primary-sources" class="hash-link" aria-label="Direct link to Primary Sources" title="Direct link to Primary Sources">​</a></h3>
+<p><em>Link to the specific canonical documents where this concept is explicitly discussed</em></p>
+<ul>
+<li><a href="/docs/foundations/-distributed-creatives-everarchive-canonical-libraryfoundationsreadme">🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical Library/Foundations/README</a> - Foundational concepts overview (System Invariant #10)</li>
+<li><a href="/docs/foundations/03-tome-iii-the-operations01-governance-constitutionmd">03-tome-iii-the-operations/01-governance-constitution.md</a> - Article I, Principle #6 (Openness)</li>
+<li><a href="/docs/foundations/01-tome-i-the-vision02-the-everarchive-manifestomd">01-tome-i-the-vision/02-the-everarchive-manifesto.md</a> - Open infrastructure principles</li>
+<li><a href="/docs/foundations/02-tome-ii-the-architecture02-deep-authorship-package-technical-specificationmd">02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md</a> - Open format specifications</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="supporting-context">Supporting Context<a href="#supporting-context" class="hash-link" aria-label="Direct link to Supporting Context" title="Direct link to Supporting Context">​</a></h3>
+<p><em>Additional documents that provide context, examples, or related information</em></p>
+<ul>
+<li><a href="/docs/foundations/-canonical-librarytome-ii---the-architecture27---standards-interoperability-strategy-for-dap-ecosystemmd">📚 Canonical Library/Tome II - The Architecture/2.7 - Standards Interoperability Strategy for DAP Ecosystem.md</a> - Interoperability framework</li>
+<li><a href="/docs/foundations/-canonical-libraryfeatures3-research-reproducibility32-institutional-integration25-standards-interoperability-without-lockinmd">📚 Canonical Library/Features/3 Research Reproducibility/3.2 Institutional Integration/25-standards-interoperability-without-lockin.md</a> - Anti-lock-in mechanisms</li>
+<li><a href="/docs/foundations/2025-07-06-foundations-index">2025-07-06-Foundations-Index</a> - Complete foundations context and dependencies</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="related-documentation">Related Documentation<a href="#related-documentation" class="hash-link" aria-label="Direct link to Related Documentation" title="Direct link to Related Documentation">​</a></h3>
+<p><em>Documents that reference or build upon this concept</em></p>
+<ul>
+<li><a href="/docs/foundations/02-tome-ii-the-architecture01-canonical-architecturemd">02-tome-ii-the-architecture/01-canonical-architecture.md</a> - How open protocols enable distributed infrastructure</li>
+<li><a href="/docs/foundations/-canonical-librarytome-iii---the-operations36---technical-evolution-frameworkmd">📚 Canonical Library/Tome III - The Operations/3.6 - Technical Evolution Framework.md</a> - Community-driven evolution processes</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
+<p>The Open Source and Non-Proprietary invariant ensures that EverArchive&#x27;s core infrastructure remains permanently accessible, modifiable, and uncontrolled by any single entity. This foundational concept prevents ecosystem capture while enabling distributed innovation, long-term format viability, and universal interoperability. Unlike traditional open source projects that may later become proprietary, this invariant makes openness a constitutional requirement that cannot be changed without fundamental reconsideration of EverArchive&#x27;s mission.</p>
+<p>This concept addresses the civilizational threat of digital formats becoming inaccessible due to proprietary control, ensuring that humanity&#x27;s creative memory remains readable and preservable regardless of corporate or institutional failures. By making openness a system invariant rather than a policy preference, EverArchive creates mathematical guarantees of long-term accessibility.</p>
+<p>Within the System Invariants category, this concept works alongside Zero-Knowledge Encryption and Permanent Preservation Guarantee to create a foundation of trust: creators can be confident their work will remain accessible (through open formats), private (through encryption), and permanent (through preservation guarantees), with no single entity able to compromise these promises.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="concept-specifications">Concept Specifications<a href="#concept-specifications" class="hash-link" aria-label="Direct link to Concept Specifications" title="Direct link to Concept Specifications">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="core-definition--requirements">Core Definition &amp; Requirements<a href="#core-definition--requirements" class="hash-link" aria-label="Direct link to Core Definition &amp; Requirements" title="Direct link to Core Definition &amp; Requirements">​</a></h3>
+<p><em>What this concept means and what it requires to be properly implemented</em></p>
+<p>The Open Source and Non-Proprietary invariant mandates that all core protocols, data formats, and reference implementations remain open source under permissive licenses. This creates legal and technical impossibility for any entity to capture or control the EverArchive ecosystem.</p>
+<p><strong>Core Requirements:</strong></p>
+<ol>
+<li><strong>Protocol Openness</strong>: All core protocols (DAP format, API specifications, discovery algorithms) must be published under open licenses</li>
+<li><strong>Reference Implementation Availability</strong>: Complete reference implementations must be available under permissive open source licenses</li>
+<li><strong>Format Transparency</strong>: All data formats must be fully documented with open specifications</li>
+<li><strong>Interoperability Standards</strong>: Translation layers between proprietary and open formats must be open source</li>
+<li><strong>Governance Transparency</strong>: All governance processes, decisions, and technical evolution must be publicly documented</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="essential-characteristics">Essential Characteristics<a href="#essential-characteristics" class="hash-link" aria-label="Direct link to Essential Characteristics" title="Direct link to Essential Characteristics">​</a></h3>
+<p><em>The non-negotiable aspects that define this concept</em></p>
+<ol>
+<li><strong>Constitutional Protection</strong>: Open source requirement is enshrined in governance constitution as inviolable principle, requiring supermajority to modify</li>
+<li><strong>Permissive Licensing</strong>: Core components use licenses that permit commercial use, modification, and distribution without copyleft requirements</li>
+<li><strong>No Capture Mechanisms</strong>: No part of the core infrastructure can be made proprietary retroactively through licensing changes or corporate acquisition</li>
+<li><strong>Community Governance</strong>: Technical evolution happens through transparent community processes with no single entity controlling decisions</li>
+<li><strong>Format Immortality</strong>: Open documentation ensures formats remain readable even if original maintainers disappear</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="boundaries--constraints">Boundaries &amp; Constraints<a href="#boundaries--constraints" class="hash-link" aria-label="Direct link to Boundaries &amp; Constraints" title="Direct link to Boundaries &amp; Constraints">​</a></h3>
+<p><em>What this concept does NOT include, and what would violate it</em></p>
+<ul>
+<li><strong>What it is NOT</strong>: Not a prohibition on proprietary applications built on open protocols; not a requirement for all content to be open access</li>
+<li><strong>Violation conditions</strong>: Making core protocols proprietary; introducing licensing fees for reference implementations; restricting access to format specifications; centralizing governance under single entity control</li>
+<li><strong>Non-negotiable elements</strong>: Core DAP format specification; reference implementation availability; interoperability layer openness; governance transparency</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="technical-implications">Technical Implications<a href="#technical-implications" class="hash-link" aria-label="Direct link to Technical Implications" title="Direct link to Technical Implications">​</a></h3>
+<p><em>For concepts with technical aspects: specific technical requirements, standards, or constraints</em></p>
+<p><strong>Format Specifications:</strong></p>
+<ul>
+<li>DAP format must be fully specified in open JSON-LD schema</li>
+<li>All compression algorithms must use open standards (ZSTD, not proprietary)</li>
+<li>Cryptographic implementations must use standard libraries with open specifications</li>
+<li>API definitions must be published in OpenAPI format</li>
+</ul>
+<p><strong>Reference Implementations:</strong></p>
+<ul>
+<li>Complete DAP creation/reading libraries in multiple languages</li>
+<li>Schema Projector translation engine with open source core</li>
+<li>Discovery API reference server implementation</li>
+<li>Preservation workflow reference tools</li>
+</ul>
+<p><strong>Interoperability Requirements:</strong></p>
+<ul>
+<li>Bidirectional translation between DAP and established archival formats</li>
+<li>Open source adapters for institutional systems integration</li>
+<li>No lock-in mechanisms that prevent data export</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="application--expression">Application &amp; Expression<a href="#application--expression" class="hash-link" aria-label="Direct link to Application &amp; Expression" title="Direct link to Application &amp; Expression">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-this-concept-manifests">How This Concept Manifests<a href="#how-this-concept-manifests" class="hash-link" aria-label="Direct link to How This Concept Manifests" title="Direct link to How This Concept Manifests">​</a></h3>
+<p><em>The different ways this concept appears in EverArchive systems and decisions</em></p>
+<ol>
+<li>
+<p><strong>Technical Architecture</strong>: Open protocols enable distributed implementation without central control</p>
+<ul>
+<li><strong>Example</strong>: Multiple organizations can run independent DAP storage nodes using open specifications</li>
+<li><strong>Impact</strong>: Prevents single point of failure and enables global preservation network</li>
+</ul>
+</li>
+<li>
+<p><strong>Governance Structure</strong>: Constitutional requirement prevents retroactive capture</p>
+<ul>
+<li><strong>Example</strong>: Governance constitution explicitly prohibits making core protocols proprietary</li>
+<li><strong>Impact</strong>: Creates legal framework ensuring perpetual openness regardless of organizational changes</li>
+</ul>
+</li>
+<li>
+<p><strong>Development Process</strong>: Community-driven evolution with transparent decision-making</p>
+<ul>
+<li><strong>Example</strong>: Technical standards evolve through open EverArchive Proposal System (EAPS)</li>
+<li><strong>Impact</strong>: Ensures innovation serves community needs rather than corporate interests</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-approaches">Implementation Approaches<a href="#implementation-approaches" class="hash-link" aria-label="Direct link to Implementation Approaches" title="Direct link to Implementation Approaches">​</a></h3>
+<p><em>For concepts that have technical implementations</em></p>
+<p><strong>Approach 1: Copyleft vs Permissive Licensing Strategy</strong></p>
+<ul>
+<li><strong>Context</strong>: Different components require different licensing approaches</li>
+<li><strong>Method</strong>:<!-- -->
+<ul>
+<li>Core protocols: MIT/Apache 2.0 for maximum adoption</li>
+<li>Reference implementations: MIT/Apache 2.0 for commercial compatibility</li>
+<li>Community tools: GPL/AGPL for ecosystem protection</li>
+<li>Documentation: Creative Commons BY-SA for knowledge sharing</li>
+</ul>
+</li>
+<li><strong>Benefits</strong>: Balances adoption with ecosystem protection</li>
+<li><strong>Considerations</strong>: Must clearly distinguish between different component types</li>
+</ul>
+<p><strong>Approach 2: Format Specification Governance</strong></p>
+<ul>
+<li><strong>Context</strong>: Ensuring format specifications remain open and evolvable</li>
+<li><strong>Method</strong>:<!-- -->
+<ul>
+<li>Version-controlled specification repository with public access</li>
+<li>Community review process for format changes</li>
+<li>Backwards compatibility requirements</li>
+<li>Reference implementation requirement for format changes</li>
+</ul>
+</li>
+<li><strong>Benefits</strong>: Prevents format capture while enabling evolution</li>
+<li><strong>Considerations</strong>: Balance between stability and innovation</li>
+</ul>
+<p><strong>Approach 3: Anti-Capture Legal Framework</strong></p>
+<ul>
+<li><strong>Context</strong>: Legal mechanisms preventing retroactive proprietary capture</li>
+<li><strong>Method</strong>:<!-- -->
+<ul>
+<li>Perpetual open source licensing with no revocation rights</li>
+<li>Governance constitution requiring supermajority for openness changes</li>
+<li>Patent non-assertion covenants for core technologies</li>
+<li>Community ownership of core intellectual property</li>
+</ul>
+</li>
+<li><strong>Benefits</strong>: Creates legal impossibility of capture</li>
+<li><strong>Considerations</strong>: Must coordinate across multiple jurisdictions</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="decision-making-applications">Decision-Making Applications<a href="#decision-making-applications" class="hash-link" aria-label="Direct link to Decision-Making Applications" title="Direct link to Decision-Making Applications">​</a></h3>
+<p><em>For concepts that guide decisions rather than technical implementation</em></p>
+<ul>
+<li><strong>Partnership Evaluation</strong>: Assess whether potential partners&#x27; practices align with open source principles</li>
+<li><strong>Technology Selection</strong>: Prefer open source dependencies and avoid proprietary lock-in</li>
+<li><strong>Governance Decisions</strong>: Ensure all governance processes remain transparent and community-driven</li>
+<li><strong>Resource Allocation</strong>: Prioritize open source development over proprietary solutions</li>
+<li><strong>Standard Adoption</strong>: Choose open standards for interoperability and avoid proprietary formats</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-misapplications">Common Misapplications<a href="#common-misapplications" class="hash-link" aria-label="Direct link to Common Misapplications" title="Direct link to Common Misapplications">​</a></h3>
+<ul>
+<li><strong>Conflating Access with Openness</strong>: Making content publicly accessible isn&#x27;t the same as open source infrastructure</li>
+<li><strong>Symbolic Openness</strong>: Publishing some code while keeping core protocols proprietary</li>
+<li><strong>Governance Theatre</strong>: Appearing to have open governance while maintaining central control</li>
+<li><strong>License Washing</strong>: Using open source licenses while restricting practical use through patents or terms</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dependencies--relationships">Dependencies &amp; Relationships<a href="#dependencies--relationships" class="hash-link" aria-label="Direct link to Dependencies &amp; Relationships" title="Direct link to Dependencies &amp; Relationships">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="depends-on">Depends On<a href="#depends-on" class="hash-link" aria-label="Direct link to Depends On" title="Direct link to Depends On">​</a></h3>
+<ul>
+<li><strong><a href="/docs/foundations/creator-sovereignty">Creator Sovereignty</a></strong>: Open source enables sovereignty by preventing capture and ensuring exportability</li>
+<li><strong><a href="/docs/foundations/permanent-preservation-guarantee">Permanent Preservation Guarantee</a></strong>: Open formats are essential for long-term preservation and accessibility</li>
+<li><strong><a href="/docs/foundations/antifragility-design-philosophy">Antifragility Design Philosophy</a></strong>: Open systems become stronger through distributed participation</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="enables">Enables<a href="#enables" class="hash-link" aria-label="Direct link to Enables" title="Direct link to Enables">​</a></h3>
+<ul>
+<li><strong><a href="/docs/foundations/storage-trinity-architecture">Storage Trinity Architecture</a></strong>: Open protocols enable multiple storage implementations</li>
+<li><strong><a href="/docs/foundations/schema-projector-framework">Schema Projector Framework</a></strong>: Open translation layers prevent lock-in to proprietary formats</li>
+<li><strong><a href="/docs/foundations/infrastructure-not-platform">Infrastructure not Platform</a></strong>: Open source is essential for infrastructure that enables rather than captures</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="feature-integration">Feature Integration<a href="#feature-integration" class="hash-link" aria-label="Direct link to Feature Integration" title="Direct link to Feature Integration">​</a></h3>
+<ul>
+<li><strong>Standards Interoperability</strong>: Open source translation layers prevent vendor lock-in</li>
+<li><strong>Discovery Systems</strong>: Open APIs enable diverse discovery interfaces and innovations</li>
+<li><strong>Preservation Tools</strong>: Open implementations ensure preservation workflows remain accessible</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cross-concept-interactions">Cross-Concept Interactions<a href="#cross-concept-interactions" class="hash-link" aria-label="Direct link to Cross-Concept Interactions" title="Direct link to Cross-Concept Interactions">​</a></h3>
+<p>This concept creates a foundation of trust that enables other foundational concepts to function. Creator Sovereignty depends on open source to prevent capture of creator data. Permanent Preservation Guarantee relies on open formats to ensure long-term accessibility. The Infrastructure not Platform principle requires open protocols to enable value creation by others rather than capturing it centrally.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="use-cases--examples">Use Cases &amp; Examples<a href="#use-cases--examples" class="hash-link" aria-label="Direct link to Use Cases &amp; Examples" title="Direct link to Use Cases &amp; Examples">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="use-case-1-institutional-adoption-without-lock-in">Use Case 1: Institutional Adoption Without Lock-In<a href="#use-case-1-institutional-adoption-without-lock-in" class="hash-link" aria-label="Direct link to Use Case 1: Institutional Adoption Without Lock-In" title="Direct link to Use Case 1: Institutional Adoption Without Lock-In">​</a></h3>
+<p><strong>Context</strong>: Research university wants to implement EverArchive for faculty research preservation
+<strong>Implementation</strong>: University uses open DAP specifications and reference implementations to build custom integration with existing systems
+<strong>Outcome</strong>: Institution maintains full control over its data and processes while benefiting from EverArchive infrastructure
+<strong>Example</strong>: University of Michigan implements DAP storage using open specifications, integrating with existing DAMS through open Schema Projector, maintaining ability to export all data if priorities change</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="use-case-2-community-innovation-on-open-protocols">Use Case 2: Community Innovation on Open Protocols<a href="#use-case-2-community-innovation-on-open-protocols" class="hash-link" aria-label="Direct link to Use Case 2: Community Innovation on Open Protocols" title="Direct link to Use Case 2: Community Innovation on Open Protocols">​</a></h3>
+<p><strong>Context</strong>: Developer community wants to create new discovery interfaces for creative works
+<strong>Implementation</strong>: Developers use open APIs and format specifications to build innovative applications
+<strong>Outcome</strong>: Ecosystem growth through community innovation without requiring permission from central authority
+<strong>Example</strong>: Independent developers create specialized discovery tools for poetry, music, and visual art using open DAP APIs, with innovations feeding back into core protocol development</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="use-case-3-long-term-format-viability">Use Case 3: Long-Term Format Viability<a href="#use-case-3-long-term-format-viability" class="hash-link" aria-label="Direct link to Use Case 3: Long-Term Format Viability" title="Direct link to Use Case 3: Long-Term Format Viability">​</a></h3>
+<p><strong>Context</strong>: Concern about format obsolescence affecting century-scale preservation
+<strong>Implementation</strong>: Open specifications ensure format remains interpretable even if original maintainers disappear
+<strong>Outcome</strong>: Format immortality through community stewardship and open documentation
+<strong>Example</strong>: In 2075, original EverArchive organization no longer exists, but DAP format remains fully usable because complete specifications and reference implementations are publicly available</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="user-journey-touchpoints">User Journey Touchpoints<a href="#user-journey-touchpoints" class="hash-link" aria-label="Direct link to User Journey Touchpoints" title="Direct link to User Journey Touchpoints">​</a></h3>
+<ul>
+<li><strong>Creator Journey</strong>: Creators trust the system knowing their work won&#x27;t be held hostage by proprietary formats</li>
+<li><strong>Researcher Journey</strong>: Researchers can build custom tools knowing APIs and formats will remain accessible</li>
+<li><strong>Librarian Journey</strong>: Librarians can implement preservation workflows knowing they won&#x27;t be locked into vendor solutions</li>
+<li><strong>Developer Journey</strong>: Developers can innovate on open protocols without permission or licensing fees</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="institutional-adoption-patterns">Institutional Adoption Patterns<a href="#institutional-adoption-patterns" class="hash-link" aria-label="Direct link to Institutional Adoption Patterns" title="Direct link to Institutional Adoption Patterns">​</a></h3>
+<p>Institutions typically adopt EverArchive through gradual integration, starting with pilot projects using open reference implementations, then customizing for local needs using open specifications, and finally contributing improvements back to the community. The open source nature removes adoption barriers and enables institutional sovereignty over their preservation processes.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="validation--assessment">Validation &amp; Assessment<a href="#validation--assessment" class="hash-link" aria-label="Direct link to Validation &amp; Assessment" title="Direct link to Validation &amp; Assessment">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-recognize-proper-implementation">How to Recognize Proper Implementation<a href="#how-to-recognize-proper-implementation" class="hash-link" aria-label="Direct link to How to Recognize Proper Implementation" title="Direct link to How to Recognize Proper Implementation">​</a></h3>
+<p><em>Signs that this concept is being correctly applied</em></p>
+<ol>
+<li><strong>Complete Specification Availability</strong>: All format specifications, protocol definitions, and API documentation are publicly accessible</li>
+<li><strong>Reference Implementation Completeness</strong>: Working implementations of all core functionality are available under permissive licenses</li>
+<li><strong>Community Governance</strong>: Technical decisions happen through transparent community processes with no single entity veto power</li>
+<li><strong>Interoperability Success</strong>: Third parties can successfully implement compatible systems using public specifications</li>
+<li><strong>No Capture Mechanisms</strong>: No part of the system can be made proprietary retroactively</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="assessment-questions">Assessment Questions<a href="#assessment-questions" class="hash-link" aria-label="Direct link to Assessment Questions" title="Direct link to Assessment Questions">​</a></h3>
+<p><em>Questions to ask to determine if this concept is being honored</em></p>
+<ul>
+<li><strong>Can any entity unilaterally make core protocols proprietary?</strong> (Should be impossible)</li>
+<li><strong>Are complete specifications publicly available for all core formats?</strong> (Must be yes)</li>
+<li><strong>Can third parties implement compatible systems without permission?</strong> (Must be yes)</li>
+<li><strong>Is technical evolution governed by transparent community processes?</strong> (Must be yes)</li>
+<li><strong>Can users export their data in open formats?</strong> (Must be yes)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="warning-signs">Warning Signs<a href="#warning-signs" class="hash-link" aria-label="Direct link to Warning Signs" title="Direct link to Warning Signs">​</a></h3>
+<p><em>Indicators that this concept is being violated or compromised</em></p>
+<ul>
+<li><strong>Specification Secrecy</strong>: Core format specifications or protocol definitions are not publicly available</li>
+<li><strong>Reference Implementation Gaps</strong>: Key functionality only available through proprietary implementations</li>
+<li><strong>Governance Centralization</strong>: Technical decisions made by single entity without community input</li>
+<li><strong>License Restrictions</strong>: Core protocols require licensing fees or have restrictive terms</li>
+<li><strong>Export Limitations</strong>: Users cannot export data in open formats or migrate to alternative systems</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="measurement-approaches">Measurement Approaches<a href="#measurement-approaches" class="hash-link" aria-label="Direct link to Measurement Approaches" title="Direct link to Measurement Approaches">​</a></h3>
+<p><em>For concepts that can be measured or monitored</em></p>
+<ul>
+<li><strong>Specification Completeness</strong>: Percentage of core functionality with public specifications</li>
+<li><strong>Implementation Diversity</strong>: Number of independent implementations of core protocols</li>
+<li><strong>Community Participation</strong>: Number of organizations participating in governance processes</li>
+<li><strong>Interoperability Success</strong>: Rate of successful third-party integrations</li>
+<li><strong>Format Accessibility</strong>: Percentage of archived content accessible through open tools</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="evolution--maintenance">Evolution &amp; Maintenance<a href="#evolution--maintenance" class="hash-link" aria-label="Direct link to Evolution &amp; Maintenance" title="Direct link to Evolution &amp; Maintenance">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="concept-evolution">Concept Evolution<a href="#concept-evolution" class="hash-link" aria-label="Direct link to Concept Evolution" title="Direct link to Concept Evolution">​</a></h3>
+<p>This concept maintains its essential nature while evolving through improved implementation strategies. The core requirement of openness remains constant, but the methods for achieving and protecting openness may improve over time. Evolution focuses on strengthening anti-capture mechanisms and improving interoperability rather than changing the fundamental commitment to openness.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="backward-compatibility">Backward Compatibility<a href="#backward-compatibility" class="hash-link" aria-label="Direct link to Backward Compatibility" title="Direct link to Backward Compatibility">​</a></h3>
+<p>All evolution must maintain backward compatibility with existing open specifications. New versions of formats or protocols must be implementable using previously published specifications, and legacy content must remain accessible through open tools. This ensures that openness commitment extends to all previously created content.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="migration-strategies">Migration Strategies<a href="#migration-strategies" class="hash-link" aria-label="Direct link to Migration Strategies" title="Direct link to Migration Strategies">​</a></h3>
+<p>When protocols evolve, migration tools must be provided under open source licenses. Users must be able to migrate their content between format versions using open tools, preventing lock-in to any particular version. Migration processes themselves must be documented and implementable by third parties.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="long-term-sustainability">Long-term Sustainability<a href="#long-term-sustainability" class="hash-link" aria-label="Direct link to Long-term Sustainability" title="Direct link to Long-term Sustainability">​</a></h3>
+<p>The openness commitment must survive organizational changes, including dissolution of the original EverArchive organization. This requires distributing governance across multiple entities, ensuring specifications are maintained by the community, and creating legal frameworks that prevent retroactive capture of previously open protocols.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="version-management">Version Management<a href="#version-management" class="hash-link" aria-label="Direct link to Version Management" title="Direct link to Version Management">​</a></h3>
+<p>Different versions of protocols and formats must be clearly distinguished and documented. Version management must be transparent and community-driven, with clear migration paths between versions. All versions must remain implementable using open specifications, preventing version lock-in.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="related-concepts">Related Concepts<a href="#related-concepts" class="hash-link" aria-label="Direct link to Related Concepts" title="Direct link to Related Concepts">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="within-same-category">Within Same Category<a href="#within-same-category" class="hash-link" aria-label="Direct link to Within Same Category" title="Direct link to Within Same Category">​</a></h3>
+<ul>
+<li><strong><a href="/docs/foundations/zero-knowledge-encryption-for-core-layer">Zero-Knowledge Encryption for Core Layer</a></strong>: Open encryption implementations ensure privacy guarantees remain verifiable</li>
+<li><strong><a href="/docs/foundations/permanent-preservation-guarantee">Permanent Preservation Guarantee</a></strong>: Open formats are essential for long-term preservation viability</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cross-category-dependencies">Cross-Category Dependencies<a href="#cross-category-dependencies" class="hash-link" aria-label="Direct link to Cross-Category Dependencies" title="Direct link to Cross-Category Dependencies">​</a></h3>
+<ul>
+<li><strong><a href="/docs/foundations/creator-sovereignty">Creator Sovereignty</a></strong>: Open source prevents capture that would undermine creator control</li>
+<li><strong><a href="/docs/foundations/infrastructure-not-platform">Infrastructure not Platform</a></strong>: Open protocols enable infrastructure that serves rather than captures</li>
+<li><strong><a href="/docs/foundations/schema-projector-framework">Schema Projector Framework</a></strong>: Open translation layers prevent interoperability lock-in</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="emergent-properties">Emergent Properties<a href="#emergent-properties" class="hash-link" aria-label="Direct link to Emergent Properties" title="Direct link to Emergent Properties">​</a></h3>
+<p>When combined with other foundational concepts, openness creates trust cascades: creators trust the system because they can verify its openness, institutions adopt because they can avoid lock-in, and developers innovate because they can build on open protocols. This creates a virtuous cycle of ecosystem growth.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="faq">FAQ<a href="#faq" class="hash-link" aria-label="Direct link to FAQ" title="Direct link to FAQ">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-questions">Implementation Questions<a href="#implementation-questions" class="hash-link" aria-label="Direct link to Implementation Questions" title="Direct link to Implementation Questions">​</a></h3>
+<ol>
+<li>
+<p><strong>Q</strong>: What specific licenses should be used for different components?
+<strong>A</strong>: Core protocols and reference implementations should use permissive licenses (MIT/Apache 2.0) for maximum adoption. Community tools may use copyleft licenses (GPL/AGPL) for ecosystem protection. Documentation should use Creative Commons BY-SA for knowledge sharing.</p>
+</li>
+<li>
+<p><strong>Q</strong>: How do we prevent someone from creating proprietary extensions that fragment the ecosystem?
+<strong>A</strong>: Through strong core specifications, reference implementations, and community governance. While proprietary extensions are allowed, they cannot modify core protocols, and the community maintains canonical implementations that serve as the ecosystem foundation.</p>
+</li>
+<li>
+<p><strong>Q</strong>: What happens if a commercial entity tries to embrace-extend-extinguish the open protocols?
+<strong>A</strong>: Constitutional protection and community governance make this impossible. Core protocols cannot be made proprietary, and the community maintains canonical implementations. Commercial entities can build on the protocols but cannot capture them.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="conceptual-questions">Conceptual Questions<a href="#conceptual-questions" class="hash-link" aria-label="Direct link to Conceptual Questions" title="Direct link to Conceptual Questions">​</a></h3>
+<ol>
+<li>
+<p><strong>Q</strong>: Why is open source a system invariant rather than just a policy preference?
+<strong>A</strong>: Because the long-term preservation mission requires formats and protocols to remain accessible even if organizations fail. By making openness a constitutional requirement, we ensure the infrastructure survives any single entity&#x27;s decisions.</p>
+</li>
+<li>
+<p><strong>Q</strong>: How does open source relate to creator privacy and control?
+<strong>A</strong>: Open source applies to the infrastructure (formats, protocols, tools) not the content. Creators maintain full control over their work through encryption and permissions, while the infrastructure remains open to prevent capture.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="complete-reference-index">Complete Reference Index<a href="#complete-reference-index" class="hash-link" aria-label="Direct link to Complete Reference Index" title="Direct link to Complete Reference Index">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="canonical-library-references">Canonical Library References<a href="#canonical-library-references" class="hash-link" aria-label="Direct link to Canonical Library References" title="Direct link to Canonical Library References">​</a></h3>
+<p><em>All EverArchive canonical documents referenced in this concept document</em></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tome-i---the-vision">Tome I - The Vision<a href="#tome-i---the-vision" class="hash-link" aria-label="Direct link to Tome I - The Vision" title="Direct link to Tome I - The Vision">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/01-tome-i-the-vision02-the-everarchive-manifestomd">01-tome-i-the-vision/02-the-everarchive-manifesto.md</a> - Lines 69-70 - &quot;Every tool is open source, every protocol documented, every standard freely available&quot;</li>
+<li><a href="/docs/foundations/-canonical-librarytome-i---the-vision10---essence-and-visionmd">📚 Canonical Library/Tome I - The Vision/1.0 - Essence and Vision.md</a> - Infrastructure principles section</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tome-ii---the-architecture">Tome II - The Architecture<a href="#tome-ii---the-architecture" class="hash-link" aria-label="Direct link to Tome II - The Architecture" title="Direct link to Tome II - The Architecture">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/02-tome-ii-the-architecture02-deep-authorship-package-technical-specificationmd">02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md</a> - Section 1.2 - Interoperability principle based on open standards</li>
+<li><a href="/docs/foundations/-canonical-librarytome-ii---the-architecture27---standards-interoperability-strategy-for-dap-ecosystemmd">📚 Canonical Library/Tome II - The Architecture/2.7 - Standards Interoperability Strategy for DAP Ecosystem.md</a> - Open interoperability framework</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tome-iii---the-operations">Tome III - The Operations<a href="#tome-iii---the-operations" class="hash-link" aria-label="Direct link to Tome III - The Operations" title="Direct link to Tome III - The Operations">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/03-tome-iii-the-operations01-governance-constitutionmd">03-tome-iii-the-operations/01-governance-constitution.md</a> - Article I, Principle #6 - &quot;All core protocols, formats, and reference software implementations shall be open-source&quot;</li>
+<li><a href="/docs/foundations/-canonical-librarytome-iii---the-operations36---technical-evolution-frameworkmd">📚 Canonical Library/Tome III - The Operations/3.6 - Technical Evolution Framework.md</a> - Community-driven technical evolution</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="features-documentation">Features Documentation<a href="#features-documentation" class="hash-link" aria-label="Direct link to Features Documentation" title="Direct link to Features Documentation">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/-canonical-libraryfeatures3-research-reproducibility32-institutional-integration25-standards-interoperability-without-lockinmd">📚 Canonical Library/Features/3 Research Reproducibility/3.2 Institutional Integration/25-standards-interoperability-without-lockin.md</a> - Anti-lock-in mechanisms</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="other-canonical-sources">Other Canonical Sources<a href="#other-canonical-sources" class="hash-link" aria-label="Direct link to Other Canonical Sources" title="Direct link to Other Canonical Sources">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/-distributed-creatives-everarchive-canonical-libraryfoundationsreadme">🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical Library/Foundations/README</a> - System Invariant #10 definition</li>
+<li><a href="/docs/foundations/2025-07-06-foundations-index">2025-07-06-Foundations-Index</a> - Complete foundational concepts context</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="external-references">External References<a href="#external-references" class="hash-link" aria-label="Direct link to External References" title="Direct link to External References">​</a></h3>
+<p><em>Non-EverArchive sources referenced</em></p>
+<ul>
+<li>Open Source Initiative (OSI) License Definitions - License classification standards</li>
+<li>W3C Open Standards Principles - Interoperability standards framework</li>
+<li>Internet Architecture Board RFC 5218 - Open protocol design principles</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cross-references-within-this-document">Cross-References Within This Document<a href="#cross-references-within-this-document" class="hash-link" aria-label="Direct link to Cross-References Within This Document" title="Direct link to Cross-References Within This Document">​</a></h3>
+<p><em>Other foundational concepts referenced</em></p>
+<ul>
+<li><a href="/docs/foundations/05-creator-sovereignty">05-creator-sovereignty</a> - How openness enables sovereignty</li>
+<li><a href="/docs/foundations/09-permanent-preservation-guarantee">09-permanent-preservation-guarantee</a> - How open formats enable preservation</li>
+<li><a href="/docs/foundations/foundations06-infrastructure-not-platform">Foundations/06-infrastructure-not-platform</a> - How openness enables infrastructure approach</li>
+</ul>
+<hr>
+<p><em>Note: This document represents the constitutional requirement for openness in EverArchive&#x27;s infrastructure, ensuring no single entity can capture or control the ecosystem that preserves humanity&#x27;s creative memory.</em></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/everarchive-org/canonical-docs/tree/main/docs/foundations/10-open-source-and-non-proprietary.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#documentation-status--gaps" class="table-of-contents__link toc-highlight">Documentation Status &amp; Gaps</a><ul><li><a href="#information-availability" class="table-of-contents__link toc-highlight">Information Availability</a></li><li><a href="#research-recommendations" class="table-of-contents__link toc-highlight">Research Recommendations</a></li></ul></li><li><a href="#documentation-links" class="table-of-contents__link toc-highlight">Documentation Links</a><ul><li><a href="#primary-sources" class="table-of-contents__link toc-highlight">Primary Sources</a></li><li><a href="#supporting-context" class="table-of-contents__link toc-highlight">Supporting Context</a></li><li><a href="#related-documentation" class="table-of-contents__link toc-highlight">Related Documentation</a></li></ul></li><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#concept-specifications" class="table-of-contents__link toc-highlight">Concept Specifications</a><ul><li><a href="#core-definition--requirements" class="table-of-contents__link toc-highlight">Core Definition &amp; Requirements</a></li><li><a href="#essential-characteristics" class="table-of-contents__link toc-highlight">Essential Characteristics</a></li><li><a href="#boundaries--constraints" class="table-of-contents__link toc-highlight">Boundaries &amp; Constraints</a></li><li><a href="#technical-implications" class="table-of-contents__link toc-highlight">Technical Implications</a></li></ul></li><li><a href="#application--expression" class="table-of-contents__link toc-highlight">Application &amp; Expression</a><ul><li><a href="#how-this-concept-manifests" class="table-of-contents__link toc-highlight">How This Concept Manifests</a></li><li><a href="#implementation-approaches" class="table-of-contents__link toc-highlight">Implementation Approaches</a></li><li><a href="#decision-making-applications" class="table-of-contents__link toc-highlight">Decision-Making Applications</a></li><li><a href="#common-misapplications" class="table-of-contents__link toc-highlight">Common Misapplications</a></li></ul></li><li><a href="#dependencies--relationships" class="table-of-contents__link toc-highlight">Dependencies &amp; Relationships</a><ul><li><a href="#depends-on" class="table-of-contents__link toc-highlight">Depends On</a></li><li><a href="#enables" class="table-of-contents__link toc-highlight">Enables</a></li><li><a href="#feature-integration" class="table-of-contents__link toc-highlight">Feature Integration</a></li><li><a href="#cross-concept-interactions" class="table-of-contents__link toc-highlight">Cross-Concept Interactions</a></li></ul></li><li><a href="#use-cases--examples" class="table-of-contents__link toc-highlight">Use Cases &amp; Examples</a><ul><li><a href="#use-case-1-institutional-adoption-without-lock-in" class="table-of-contents__link toc-highlight">Use Case 1: Institutional Adoption Without Lock-In</a></li><li><a href="#use-case-2-community-innovation-on-open-protocols" class="table-of-contents__link toc-highlight">Use Case 2: Community Innovation on Open Protocols</a></li><li><a href="#use-case-3-long-term-format-viability" class="table-of-contents__link toc-highlight">Use Case 3: Long-Term Format Viability</a></li><li><a href="#user-journey-touchpoints" class="table-of-contents__link toc-highlight">User Journey Touchpoints</a></li><li><a href="#institutional-adoption-patterns" class="table-of-contents__link toc-highlight">Institutional Adoption Patterns</a></li></ul></li><li><a href="#validation--assessment" class="table-of-contents__link toc-highlight">Validation &amp; Assessment</a><ul><li><a href="#how-to-recognize-proper-implementation" class="table-of-contents__link toc-highlight">How to Recognize Proper Implementation</a></li><li><a href="#assessment-questions" class="table-of-contents__link toc-highlight">Assessment Questions</a></li><li><a href="#warning-signs" class="table-of-contents__link toc-highlight">Warning Signs</a></li><li><a href="#measurement-approaches" class="table-of-contents__link toc-highlight">Measurement Approaches</a></li></ul></li><li><a href="#evolution--maintenance" class="table-of-contents__link toc-highlight">Evolution &amp; Maintenance</a><ul><li><a href="#concept-evolution" class="table-of-contents__link toc-highlight">Concept Evolution</a></li><li><a href="#backward-compatibility" class="table-of-contents__link toc-highlight">Backward Compatibility</a></li><li><a href="#migration-strategies" class="table-of-contents__link toc-highlight">Migration Strategies</a></li><li><a href="#long-term-sustainability" class="table-of-contents__link toc-highlight">Long-term Sustainability</a></li><li><a href="#version-management" class="table-of-contents__link toc-highlight">Version Management</a></li></ul></li><li><a href="#related-concepts" class="table-of-contents__link toc-highlight">Related Concepts</a><ul><li><a href="#within-same-category" class="table-of-contents__link toc-highlight">Within Same Category</a></li><li><a href="#cross-category-dependencies" class="table-of-contents__link toc-highlight">Cross-Category Dependencies</a></li><li><a href="#emergent-properties" class="table-of-contents__link toc-highlight">Emergent Properties</a></li></ul></li><li><a href="#faq" class="table-of-contents__link toc-highlight">FAQ</a><ul><li><a href="#implementation-questions" class="table-of-contents__link toc-highlight">Implementation Questions</a></li><li><a href="#conceptual-questions" class="table-of-contents__link toc-highlight">Conceptual Questions</a></li></ul></li><li><a href="#complete-reference-index" class="table-of-contents__link toc-highlight">Complete Reference Index</a><ul><li><a href="#canonical-library-references" class="table-of-contents__link toc-highlight">Canonical Library References</a></li><li><a href="#external-references" class="table-of-contents__link toc-highlight">External References</a></li><li><a href="#cross-references-within-this-document" class="table-of-contents__link toc-highlight">Cross-References Within This Document</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Vision</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/features/features-overview">Features</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Project</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://everarchive.org" target="_blank" rel="noopener noreferrer" class="footer__link-item">Main Site<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/everarchive-org" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 EverArchive. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

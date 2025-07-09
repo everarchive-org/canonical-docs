@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-foundations/schema-projector-framework" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Schema Projector Framework | EverArchive</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.everarchive.org/docs/foundations/schema-projector-framework"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Schema Projector Framework | EverArchive"><meta data-rh="true" name="description" content="Concept ID: 4"><meta data-rh="true" property="og:description" content="Concept ID: 4"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.everarchive.org/docs/foundations/schema-projector-framework"><link data-rh="true" rel="alternate" href="https://docs.everarchive.org/docs/foundations/schema-projector-framework" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.everarchive.org/docs/foundations/schema-projector-framework" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.d8b08674.css">
+<script src="/assets/js/runtime~main.b22a7eef.js" defer="defer"></script>
+<script src="/assets/js/main.b8ea706f.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><b class="navbar__title text--truncate">EverArchive</b></a><a class="navbar__item navbar__link" href="/docs/intro">Docs</a><a href="https://everarchive.org" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Main Site<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/everarchive-org/canonical-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Foundational Concept: Schema Projector Framework</h1></header>
+<p><strong>Concept ID</strong>: 4
+<strong>Category</strong>: Architectural Primitives
+<strong>Status</strong>: Implementation Guide
+<strong>Last Updated</strong>: 2025-07-06</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="documentation-status--gaps">Documentation Status &amp; Gaps<a href="#documentation-status--gaps" class="hash-link" aria-label="Direct link to Documentation Status &amp; Gaps" title="Direct link to Documentation Status &amp; Gaps">​</a></h2>
+<p><strong>Source Coverage</strong>: Complete</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="information-availability">Information Availability<a href="#information-availability" class="hash-link" aria-label="Direct link to Information Availability" title="Direct link to Information Availability">​</a></h3>
+<ul>
+<li><strong>✅ Well-documented</strong>: Core architecture, translation matrix, METS/MODS/Dublin Core mappings, technical specifications</li>
+<li><strong>✅ Well-documented</strong>: Implementation patterns, validation approaches, institutional integration strategies</li>
+<li><strong>✅ Well-documented</strong>: Bidirectional conversion protocols, semantic preservation methods, security considerations</li>
+<li><strong>⚠️ Partially documented</strong>: Performance optimization patterns, caching strategies for large-scale institutional deployments</li>
+<li><strong>⚠️ Partially documented</strong>: Custom schema extension mechanisms, institutional-specific mapping protocols</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="research-recommendations">Research Recommendations<a href="#research-recommendations" class="hash-link" aria-label="Direct link to Research Recommendations" title="Direct link to Research Recommendations">​</a></h3>
+<p>No significant gaps identified. Minor optimization and customization patterns require additional documentation as implementation scales.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="documentation-links">Documentation Links<a href="#documentation-links" class="hash-link" aria-label="Direct link to Documentation Links" title="Direct link to Documentation Links">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="primary-sources">Primary Sources<a href="#primary-sources" class="hash-link" aria-label="Direct link to Primary Sources" title="Direct link to Primary Sources">​</a></h3>
+<ul>
+<li><a href="/docs/foundations/-distributed-creatives-everarchive-canonical-libraryfoundationsreadme">🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical Library/Foundations/README</a> - Foundational concepts overview (Schema Projector #4)</li>
+<li><a href="/docs/foundations/-canonical-librarytome-ii---the-architecture27---standards-interoperability-strategy-for-dap-ecosystemmd">📚 Canonical Library/Tome II - The Architecture/2.7 - Standards Interoperability Strategy for DAP Ecosystem.md</a> - Complete technical architecture and research foundation</li>
+<li><a href="/docs/foundations/02-tome-ii-the-architecture02-deep-authorship-package-technical-specificationmd">02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md</a> - DAP format specifications and interoperability design</li>
+<li><a href="/docs/foundations/-canonical-librarytome-ii---the-architecture23---discovery--access-infrastructuremd">📚 Canonical Library/Tome II - The Architecture/2.3 - Discovery &amp; Access Infrastructure.md</a> - Discovery system integration with Schema Projector</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="supporting-context">Supporting Context<a href="#supporting-context" class="hash-link" aria-label="Direct link to Supporting Context" title="Direct link to Supporting Context">​</a></h3>
+<ul>
+<li><a href="/docs/foundations/-canonical-libraryfeatures3-research-reproducibility32-institutional-integration28-archival-standards-mappingmd">📚 Canonical Library/Features/3 Research Reproducibility/3.2 Institutional Integration/28-archival-standards-mapping.md</a> - Archival standards mapping feature implementation</li>
+<li><a href="/docs/foundations/-canonical-libraryfeatures3-research-reproducibility32-institutional-integration25-standards-interoperability-without-lockinmd">📚 Canonical Library/Features/3 Research Reproducibility/3.2 Institutional Integration/25-standards-interoperability-without-lockin.md</a> - Standards interoperability without vendor lock-in</li>
+<li><a href="/docs/foundations/2025-07-06-foundations-index">2025-07-06-Foundations-Index</a> - Complete foundations context and dependencies</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="related-documentation">Related Documentation<a href="#related-documentation" class="hash-link" aria-label="Direct link to Related Documentation" title="Direct link to Related Documentation">​</a></h3>
+<ul>
+<li><a href="/docs/foundations/03-tome-iii-the-operations01-governance-constitutionmd">03-tome-iii-the-operations/01-governance-constitution.md</a> - Open source invariant requirements</li>
+<li><a href="/docs/foundations/-canonical-libraryfeatures8-emerging-capabilities81-advanced-publishing-content67-schema-projector-rendering-enginemd">📚 Canonical Library/Features/8 Emerging Capabilities/8.1 Advanced Publishing Content/67-schema-projector-rendering-engine.md</a> - Advanced Schema Projector capabilities</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
+<p>The Schema Projector Framework is EverArchive&#x27;s universal translation engine that enables seamless bidirectional conversion between Deep Authorship Package (DAP) format and established archival standards including METS, MODS, Dublin Core, PREMIS, BagIt, and EAD. This framework solves the fundamental challenge of institutional adoption by eliminating the choice between innovation and standards compliance.</p>
+<p>Rather than forcing institutions to abandon decades of investment in metadata schemas, workflows, and preservation networks, the Schema Projector allows organizations to leverage EverArchive&#x27;s advanced preservation capabilities while maintaining full compatibility with existing systems. This approach enables gradual adoption rather than disruptive replacement, accelerating EverArchive&#x27;s integration into the global preservation ecosystem.</p>
+<p>The framework goes beyond simple format conversion by preserving semantic meaning, maintaining provenance chains, and ensuring that the rich context captured by EverArchive&#x27;s Deep Authorship model can be expressed within traditional archival frameworks. This bidirectional capability means institutions can work in either system while retaining the benefits of blockchain verification, permanent storage, and creator sovereignty that define EverArchive&#x27;s unique value proposition.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="concept-specifications">Concept Specifications<a href="#concept-specifications" class="hash-link" aria-label="Direct link to Concept Specifications" title="Direct link to Concept Specifications">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="core-definition--requirements">Core Definition &amp; Requirements<a href="#core-definition--requirements" class="hash-link" aria-label="Direct link to Core Definition &amp; Requirements" title="Direct link to Core Definition &amp; Requirements">​</a></h3>
+<p>The Schema Projector Framework is a sophisticated semantic mapping and translation system that maintains the integrity of Deep Authorship Package format while providing lossless conversion to and from established archival standards. It requires:</p>
+<ol>
+<li><strong>Bidirectional Translation</strong>: Complete round-trip conversion capability preserving all semantic meaning</li>
+<li><strong>Semantic Preservation</strong>: Maintaining the meaning and context of metadata across format boundaries</li>
+<li><strong>Standards Compliance</strong>: Output that passes official validation for target archival standards</li>
+<li><strong>Extensibility</strong>: Ability to add new standards and custom institutional schemas</li>
+<li><strong>Security</strong>: Cryptographic integrity preservation through translation processes</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="essential-characteristics">Essential Characteristics<a href="#essential-characteristics" class="hash-link" aria-label="Direct link to Essential Characteristics" title="Direct link to Essential Characteristics">​</a></h3>
+<ol>
+<li><strong>Format Agnostic Core</strong>: The framework operates on semantic metadata models rather than specific format structures, enabling translation between any supported standards</li>
+<li><strong>Lossless Conversion</strong>: All information present in source format is preserved in target format, either directly mapped or stored as supplemental metadata</li>
+<li><strong>Validation Integration</strong>: Built-in validation against official schemas ensures output compliance with archival standards</li>
+<li><strong>Provenance Preservation</strong>: Translation events are recorded as part of the object&#x27;s provenance chain</li>
+<li><strong>Extensible Architecture</strong>: Plugin-based design allows addition of new standards without core system changes</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="boundaries--constraints">Boundaries &amp; Constraints<a href="#boundaries--constraints" class="hash-link" aria-label="Direct link to Boundaries &amp; Constraints" title="Direct link to Boundaries &amp; Constraints">​</a></h3>
+<ul>
+<li><strong>What it is NOT</strong>: Not a format replacement or migration tool - DAP remains the native format</li>
+<li><strong>Violation conditions</strong>: Converting formats in ways that lose semantic meaning or creator sovereignty metadata</li>
+<li><strong>Non-negotiable elements</strong>: Preservation of Deep Authorship 3-layer structure, creator sovereignty metadata, and cryptographic integrity</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="technical-implications">Technical Implications<a href="#technical-implications" class="hash-link" aria-label="Direct link to Technical Implications" title="Direct link to Technical Implications">​</a></h3>
+<p>The framework requires:</p>
+<ul>
+<li><strong>XSLT 3.0</strong> transformation engines for complex structural mappings</li>
+<li><strong>JSON-LD</strong> semantic preservation mechanisms</li>
+<li><strong>GraphQL APIs</strong> for query-based metadata extraction</li>
+<li><strong>Docker containers</strong> for isolated conversion environments</li>
+<li><strong>Cryptographic signing</strong> for all translation operations</li>
+<li><strong>Blockchain anchors</strong> preserved across all format conversions</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="application--expression">Application &amp; Expression<a href="#application--expression" class="hash-link" aria-label="Direct link to Application &amp; Expression" title="Direct link to Application &amp; Expression">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-this-concept-manifests">How This Concept Manifests<a href="#how-this-concept-manifests" class="hash-link" aria-label="Direct link to How This Concept Manifests" title="Direct link to How This Concept Manifests">​</a></h3>
+<ol>
+<li>
+<p><strong>Institutional Integration</strong>: Libraries can ingest existing METS/MODS records into EverArchive while maintaining catalog compatibility</p>
+<ul>
+<li><strong>Example</strong>: Yale University Library processes 10,000 EAD finding aids through Schema Projector</li>
+<li><strong>Impact</strong>: Zero staff retraining required, full ArchivesSpace compatibility maintained</li>
+</ul>
+</li>
+<li>
+<p><strong>Creator Portability</strong>: Artists can export their work to standard formats for submission to institutions</p>
+<ul>
+<li><strong>Example</strong>: Musician exports album archive to Library of Congress METS format while preserving studio session data</li>
+<li><strong>Impact</strong>: Enables institutional donation without losing creative process documentation</li>
+</ul>
+</li>
+<li>
+<p><strong>Consortium Participation</strong>: Organizations can participate in preservation networks using their preferred standards</p>
+<ul>
+<li><strong>Example</strong>: University archives shares collections with international partners using Dublin Core</li>
+<li><strong>Impact</strong>: Maintains consortium membership while upgrading to blockchain preservation</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-approaches">Implementation Approaches<a href="#implementation-approaches" class="hash-link" aria-label="Direct link to Implementation Approaches" title="Direct link to Implementation Approaches">​</a></h3>
+<p><strong>Approach 1: METS Profile Translation</strong></p>
+<ul>
+<li><strong>Context</strong>: When institutions require METS-compliant packages for preservation workflows</li>
+<li><strong>Method</strong>:<!-- -->
+<div class="language-xml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-xml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token entity named-entity" style="color:#36acaa">&amp;lt;</span><span class="token plain">mets:mets xmlns:mets=&quot;http://www.loc.gov/METS/&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">           xmlns:dap=&quot;https://everarchive.org/schemas/dap/v1.0&quot;</span><span class="token entity named-entity" style="color:#36acaa">&amp;gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token entity named-entity" style="color:#36acaa">&amp;lt;</span><span class="token plain">mets:amdSec ID=&quot;dap-layers&quot;</span><span class="token entity named-entity" style="color:#36acaa">&amp;gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token entity named-entity" style="color:#36acaa">&amp;lt;</span><span class="token plain">mets:digiprovMD ID=&quot;core-layer&quot;</span><span class="token entity named-entity" style="color:#36acaa">&amp;gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token entity named-entity" style="color:#36acaa">&amp;lt;</span><span class="token plain">mets:mdWrap MDTYPE=&quot;OTHER&quot; OTHERMDTYPE=&quot;DAP-CORE&quot;</span><span class="token entity named-entity" style="color:#36acaa">&amp;gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token entity named-entity" style="color:#36acaa">&amp;lt;</span><span class="token plain">mets:xmlData</span><span class="token entity named-entity" style="color:#36acaa">&amp;gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          </span><span class="token entity named-entity" style="color:#36acaa">&amp;lt;</span><span class="token plain">dap:coreLayer encrypted=&quot;true&quot; sovereignty=&quot;creator&quot;/</span><span class="token entity named-entity" style="color:#36acaa">&amp;gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token entity named-entity" style="color:#36acaa">&amp;lt;</span><span class="token plain">/mets:xmlData</span><span class="token entity named-entity" style="color:#36acaa">&amp;gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token entity named-entity" style="color:#36acaa">&amp;lt;</span><span class="token plain">/mets:mdWrap</span><span class="token entity named-entity" style="color:#36acaa">&amp;gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token entity named-entity" style="color:#36acaa">&amp;lt;</span><span class="token plain">/mets:digiprovMD</span><span class="token entity named-entity" style="color:#36acaa">&amp;gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token entity named-entity" style="color:#36acaa">&amp;lt;</span><span class="token plain">/mets:amdSec</span><span class="token entity named-entity" style="color:#36acaa">&amp;gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token entity named-entity" style="color:#36acaa">&amp;lt;</span><span class="token plain">/mets:mets</span><span class="token entity named-entity" style="color:#36acaa">&amp;gt;</span><br></span></code></pre></div></div>
+</li>
+<li><strong>Benefits</strong>: Maintains METS compliance while preserving DAP unique features</li>
+<li><strong>Considerations</strong>: Requires custom METS profile registration with Library of Congress</li>
+</ul>
+<p><strong>Approach 2: Dublin Core Crosswalk</strong></p>
+<ul>
+<li><strong>Context</strong>: When simple metadata export is needed for discovery systems</li>
+<li><strong>Method</strong>: Direct field mapping with extended namespaces for DAP-specific metadata</li>
+<li><strong>Benefits</strong>: Universally compatible, simple implementation</li>
+<li><strong>Considerations</strong>: Some Deep Authorship metadata may require custom extensions</li>
+</ul>
+<p><strong>Approach 3: BagIt Container Wrapping</strong></p>
+<ul>
+<li><strong>Context</strong>: When institutions use BagIt for transfer and storage workflows</li>
+<li><strong>Method</strong>: Preserve DAP structure within BagIt payload directory with supplemental metadata</li>
+<li><strong>Benefits</strong>: Format-agnostic container, widely supported</li>
+<li><strong>Considerations</strong>: Requires careful handling of DAP encryption within BagIt structure</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="decision-making-applications">Decision-Making Applications<a href="#decision-making-applications" class="hash-link" aria-label="Direct link to Decision-Making Applications" title="Direct link to Decision-Making Applications">​</a></h3>
+<ul>
+<li><strong>Format Selection</strong>: Choose target format based on institutional requirements and capability preservation needs</li>
+<li><strong>Metadata Mapping</strong>: Determine which DAP metadata elements map directly vs. require custom extensions</li>
+<li><strong>Workflow Integration</strong>: Decide whether to use Schema Projector for export-only or bidirectional workflows</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-misapplications">Common Misapplications<a href="#common-misapplications" class="hash-link" aria-label="Direct link to Common Misapplications" title="Direct link to Common Misapplications">​</a></h3>
+<ul>
+<li><strong>Using Schema Projector as primary storage format</strong>: DAP should remain the native format with conversions for interoperability</li>
+<li><strong>Lossy conversion acceptance</strong>: All translations must preserve semantic meaning and creator sovereignty</li>
+<li><strong>Ignoring validation requirements</strong>: All output must pass official schema validation for target standards</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dependencies--relationships">Dependencies &amp; Relationships<a href="#dependencies--relationships" class="hash-link" aria-label="Direct link to Dependencies &amp; Relationships" title="Direct link to Dependencies &amp; Relationships">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="depends-on">Depends On<a href="#depends-on" class="hash-link" aria-label="Direct link to Depends On" title="Direct link to Depends On">​</a></h3>
+<ul>
+<li><strong><a href="/docs/foundations/01-deep-authorship-3-layer-model">01-deep-authorship-3-layer-model</a></strong>: The 3-layer structure that Schema Projector must preserve in all translations</li>
+<li><strong><a href="/docs/foundations/02-deep-authorship-package-format">02-deep-authorship-package-format</a></strong>: The DAP format specifications that define the source format for all conversions</li>
+<li><strong><a href="/docs/foundations/10-open-source-and-non-proprietary">10-open-source-and-non-proprietary</a></strong>: Framework must be open source to prevent vendor lock-in</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="enables">Enables<a href="#enables" class="hash-link" aria-label="Direct link to Enables" title="Direct link to Enables">​</a></h3>
+<ul>
+<li><strong><a href="/docs/foundations/25-standards-interoperability-without-lockin">25-standards-interoperability-without-lockin</a></strong>: Core feature enabled by Schema Projector translation capabilities</li>
+<li><strong><a href="/docs/foundations/28-archival-standards-mapping">28-archival-standards-mapping</a></strong>: Specific implementation of Schema Projector for institutional integration</li>
+<li><strong><a href="/docs/foundations/33-library-ils-integration">33-library-ils-integration</a></strong>: Library system integration enabled by standards-compliant output</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="feature-integration">Feature Integration<a href="#feature-integration" class="hash-link" aria-label="Direct link to Feature Integration" title="Direct link to Feature Integration">​</a></h3>
+<ul>
+<li><strong>Institutional Integration</strong>: Enables all features in category 3.2 by providing standards-compliant interfaces</li>
+<li><strong>Research Reproducibility</strong>: Supports academic workflows by maintaining format compatibility</li>
+<li><strong>Discovery Infrastructure</strong>: Integrates with existing discovery systems through standards compliance</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cross-concept-interactions">Cross-Concept Interactions<a href="#cross-concept-interactions" class="hash-link" aria-label="Direct link to Cross-Concept Interactions" title="Direct link to Cross-Concept Interactions">​</a></h3>
+<p>The Schema Projector Framework works with Creator Sovereignty (concept #5) to ensure that translation never compromises creator control over their work. It integrates with the Storage Trinity (concept #3) by maintaining blockchain verification data through format conversions. The framework supports Infrastructure not Platform (concept #6) by enabling institutional choice in formats rather than forcing DAP adoption.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="use-cases--examples">Use Cases &amp; Examples<a href="#use-cases--examples" class="hash-link" aria-label="Direct link to Use Cases &amp; Examples" title="Direct link to Use Cases &amp; Examples">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="use-case-1-university-library-integration">Use Case 1: University Library Integration<a href="#use-case-1-university-library-integration" class="hash-link" aria-label="Direct link to Use Case 1: University Library Integration" title="Direct link to Use Case 1: University Library Integration">​</a></h3>
+<p><strong>Context</strong>: Research university needs to preserve faculty creative work while maintaining existing digital library infrastructure
+<strong>Implementation</strong>: Schema Projector converts incoming DAP files to METS packages for storage in existing Fedora repository
+<strong>Outcome</strong>: Faculty can use EverArchive tools while library maintains all existing workflows and systems
+<strong>Example</strong>: Stanford Libraries processes 5,000 faculty research archives through Schema Projector, maintaining DSpace compatibility while adding blockchain preservation</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="use-case-2-museum-collection-sharing">Use Case 2: Museum Collection Sharing<a href="#use-case-2-museum-collection-sharing" class="hash-link" aria-label="Direct link to Use Case 2: Museum Collection Sharing" title="Direct link to Use Case 2: Museum Collection Sharing">​</a></h3>
+<p><strong>Context</strong>: Art museum wants to share digital collections with international partners using different metadata standards
+<strong>Implementation</strong>: Schema Projector generates Dublin Core exports for OAI-PMH harvesting while preserving full DAP internally
+<strong>Outcome</strong>: Museum participates in global discovery networks without losing detailed curatorial metadata
+<strong>Example</strong>: SFMOMA shares 15,000 artist process documentation files with Tate Modern using Dublin Core while maintaining full creative provenance in DAP format</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="use-case-3-leading-digital-preservation-platforms-partnership">Use Case 3: leading digital preservation platforms Partnership<a href="#use-case-3-leading-digital-preservation-platforms-partnership" class="hash-link" aria-label="Direct link to Use Case 3: leading digital preservation platforms Partnership" title="Direct link to Use Case 3: leading digital preservation platforms Partnership">​</a></h3>
+<p><strong>Context</strong>: leading digital preservation platforms requires specific metadata formats for book lending system integration
+<strong>Implementation</strong>: Schema Projector converts DAP book packages to MARC21 records with blockchain verification metadata
+<strong>Outcome</strong>: Seamless integration with existing leading digital preservation platforms infrastructure while maintaining EverArchive benefits
+<strong>Example</strong>: 100,000 digitized books from EverArchive appear in leading digital preservation platforms catalog with full lending functionality</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="user-journey-touchpoints">User Journey Touchpoints<a href="#user-journey-touchpoints" class="hash-link" aria-label="Direct link to User Journey Touchpoints" title="Direct link to User Journey Touchpoints">​</a></h3>
+<ul>
+<li><strong>Creator Journey</strong>: Artists export work to standard formats for institutional submission without losing process documentation</li>
+<li><strong>Researcher Journey</strong>: Academics access collections through familiar discovery interfaces regardless of underlying preservation format</li>
+<li><strong>Librarian Journey</strong>: Information professionals work with standard metadata tools while gaining blockchain preservation benefits</li>
+<li><strong>Developer Journey</strong>: Software developers integrate with EverArchive using familiar archival standards rather than learning new formats</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="institutional-adoption-patterns">Institutional Adoption Patterns<a href="#institutional-adoption-patterns" class="hash-link" aria-label="Direct link to Institutional Adoption Patterns" title="Direct link to Institutional Adoption Patterns">​</a></h3>
+<p>Organizations typically adopt Schema Projector in three phases: (1) Export-only integration for collection sharing, (2) Bidirectional workflows for specific projects, (3) Full integration with Schema Projector handling all format conversions transparently.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="validation--assessment">Validation &amp; Assessment<a href="#validation--assessment" class="hash-link" aria-label="Direct link to Validation &amp; Assessment" title="Direct link to Validation &amp; Assessment">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-recognize-proper-implementation">How to Recognize Proper Implementation<a href="#how-to-recognize-proper-implementation" class="hash-link" aria-label="Direct link to How to Recognize Proper Implementation" title="Direct link to How to Recognize Proper Implementation">​</a></h3>
+<ol>
+<li><strong>Standards Compliance</strong>: All output passes official validation for target archival standards</li>
+<li><strong>Semantic Preservation</strong>: Round-trip conversions maintain all original meaning and context</li>
+<li><strong>Performance Standards</strong>: Conversion completes within institutional workflow timeframes</li>
+<li><strong>Integration Success</strong>: Converted formats work seamlessly with existing institutional systems</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="assessment-questions">Assessment Questions<a href="#assessment-questions" class="hash-link" aria-label="Direct link to Assessment Questions" title="Direct link to Assessment Questions">​</a></h3>
+<ul>
+<li><strong>Does the conversion preserve all semantic meaning from the source format?</strong></li>
+<li><strong>Can the output be processed by standard archival tools without modification?</strong></li>
+<li><strong>Are creator sovereignty and blockchain verification data preserved through conversion?</strong></li>
+<li><strong>Does the system support bidirectional conversion without data loss?</strong></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="warning-signs">Warning Signs<a href="#warning-signs" class="hash-link" aria-label="Direct link to Warning Signs" title="Direct link to Warning Signs">​</a></h3>
+<ul>
+<li><strong>Conversion failures</strong>: Output that doesn&#x27;t validate against target schemas</li>
+<li><strong>Semantic loss</strong>: Translations that lose meaning or context from source format</li>
+<li><strong>Performance issues</strong>: Conversion times that disrupt institutional workflows</li>
+<li><strong>Compatibility problems</strong>: Converted formats that require custom tools or modifications</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="measurement-approaches">Measurement Approaches<a href="#measurement-approaches" class="hash-link" aria-label="Direct link to Measurement Approaches" title="Direct link to Measurement Approaches">​</a></h3>
+<ul>
+<li><strong>Validation Rate</strong>: Percentage of conversions that pass official schema validation</li>
+<li><strong>Round-trip Accuracy</strong>: Percentage of semantic meaning preserved in bidirectional conversions</li>
+<li><strong>Performance Metrics</strong>: Average conversion time for standard archive sizes</li>
+<li><strong>Integration Success</strong>: Number of institutions successfully using converted formats</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="evolution--maintenance">Evolution &amp; Maintenance<a href="#evolution--maintenance" class="hash-link" aria-label="Direct link to Evolution &amp; Maintenance" title="Direct link to Evolution &amp; Maintenance">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="concept-evolution">Concept Evolution<a href="#concept-evolution" class="hash-link" aria-label="Direct link to Concept Evolution" title="Direct link to Concept Evolution">​</a></h3>
+<p>The Schema Projector Framework will evolve to support new archival standards as they emerge, with particular focus on semantic web technologies and AI-readable metadata formats. The core translation principles remain constant while expanding the range of supported formats.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="backward-compatibility">Backward Compatibility<a href="#backward-compatibility" class="hash-link" aria-label="Direct link to Backward Compatibility" title="Direct link to Backward Compatibility">​</a></h3>
+<p>All versions of Schema Projector must support conversion to and from earlier versions of supported standards. Migration paths must be provided when standards themselves evolve.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="migration-strategies">Migration Strategies<a href="#migration-strategies" class="hash-link" aria-label="Direct link to Migration Strategies" title="Direct link to Migration Strategies">​</a></h3>
+<p>When new standards are added, existing translations remain available while new capabilities are introduced. Institutions can migrate to new standards at their own pace without disrupting workflows.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="long-term-sustainability">Long-term Sustainability<a href="#long-term-sustainability" class="hash-link" aria-label="Direct link to Long-term Sustainability" title="Direct link to Long-term Sustainability">​</a></h3>
+<p>The framework&#x27;s open-source nature ensures long-term sustainability independent of any single organization. Plugin architecture allows community development of new standard support.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="version-management">Version Management<a href="#version-management" class="hash-link" aria-label="Direct link to Version Management" title="Direct link to Version Management">​</a></h3>
+<p>Schema Projector uses semantic versioning with clear compatibility guarantees. Major versions may introduce new standards support, minor versions add features, and patch versions fix bugs without changing behavior.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="related-concepts">Related Concepts<a href="#related-concepts" class="hash-link" aria-label="Direct link to Related Concepts" title="Direct link to Related Concepts">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="within-same-category">Within Same Category<a href="#within-same-category" class="hash-link" aria-label="Direct link to Within Same Category" title="Direct link to Within Same Category">​</a></h3>
+<ul>
+<li><strong><a href="/docs/foundations/01-deep-authorship-3-layer-model">01-deep-authorship-3-layer-model</a></strong>: Provides the structure that Schema Projector must preserve in all translations</li>
+<li><strong><a href="/docs/foundations/02-deep-authorship-package-format">02-deep-authorship-package-format</a></strong>: Defines the native format that serves as the source for all conversions</li>
+<li><strong><a href="/docs/foundations/03-storage-trinity-architecture">03-storage-trinity-architecture</a></strong>: Ensures blockchain verification data is preserved through format conversions</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cross-category-dependencies">Cross-Category Dependencies<a href="#cross-category-dependencies" class="hash-link" aria-label="Direct link to Cross-Category Dependencies" title="Direct link to Cross-Category Dependencies">​</a></h3>
+<ul>
+<li><strong><a href="/docs/foundations/05-creator-sovereignty">05-creator-sovereignty</a></strong>: Ensures translation never compromises creator control over their work</li>
+<li><strong><a href="/docs/foundations/foundations06-infrastructure-not-platform">Foundations/06-infrastructure-not-platform</a></strong>: Enables institutional choice in formats rather than forcing DAP adoption</li>
+<li><strong><a href="/docs/foundations/10-open-source-and-non-proprietary">10-open-source-and-non-proprietary</a></strong>: Prevents vendor lock-in through open translation specifications</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="emergent-properties">Emergent Properties<a href="#emergent-properties" class="hash-link" aria-label="Direct link to Emergent Properties" title="Direct link to Emergent Properties">​</a></h3>
+<p>When combined with Progressive Trust and Sovereignty (concept #14), Schema Projector enables institutions to work with anonymous creators while maintaining archival standards compliance. Integration with Civilizational Memory Infrastructure (concept #12) ensures format translations preserve cultural context across centuries.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="faq">FAQ<a href="#faq" class="hash-link" aria-label="Direct link to FAQ" title="Direct link to FAQ">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-questions">Implementation Questions<a href="#implementation-questions" class="hash-link" aria-label="Direct link to Implementation Questions" title="Direct link to Implementation Questions">​</a></h3>
+<ol>
+<li>
+<p><strong>Q</strong>: How do I add support for a new archival standard?
+<strong>A</strong>: Create a new plugin implementing the standard&#x27;s schema mapping interface. The plugin defines field mappings, validation rules, and any custom extensions needed for DAP compatibility.</p>
+</li>
+<li>
+<p><strong>Q</strong>: What happens to encrypted Core Layer data in standard format exports?
+<strong>A</strong>: Core Layer data remains encrypted with metadata indicating access restrictions. Standard formats that don&#x27;t support encryption store the encrypted data as binary attachments with appropriate access control metadata.</p>
+</li>
+<li>
+<p><strong>Q</strong>: Can I modify the translation mappings for my institution&#x27;s specific needs?
+<strong>A</strong>: Yes, the framework supports custom mapping profiles that extend or modify standard translations while maintaining core semantic preservation requirements.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="conceptual-questions">Conceptual Questions<a href="#conceptual-questions" class="hash-link" aria-label="Direct link to Conceptual Questions" title="Direct link to Conceptual Questions">​</a></h3>
+<ol>
+<li>
+<p><strong>Q</strong>: Why not just use standard formats as the native EverArchive format?
+<strong>A</strong>: Standard formats lack the sophisticated 3-layer structure, creator sovereignty mechanisms, and blockchain integration that define EverArchive&#x27;s unique value. Schema Projector provides the best of both worlds.</p>
+</li>
+<li>
+<p><strong>Q</strong>: How does Schema Projector handle metadata that doesn&#x27;t exist in target standards?
+<strong>A</strong>: Extended metadata is preserved in custom namespaces or supplemental files that standard tools can ignore but preserve, ensuring no data loss while maintaining standards compliance.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="complete-reference-index">Complete Reference Index<a href="#complete-reference-index" class="hash-link" aria-label="Direct link to Complete Reference Index" title="Direct link to Complete Reference Index">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="canonical-library-references">Canonical Library References<a href="#canonical-library-references" class="hash-link" aria-label="Direct link to Canonical Library References" title="Direct link to Canonical Library References">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tome-i---the-vision">Tome I - The Vision<a href="#tome-i---the-vision" class="hash-link" aria-label="Direct link to Tome I - The Vision" title="Direct link to Tome I - The Vision">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/01-tome-i-the-vision02-the-everarchive-manifestomd">01-tome-i-the-vision/02-the-everarchive-manifesto.md</a> - Infrastructure vision and interoperability principles</li>
+<li><a href="/docs/foundations/01-tome-i-the-vision03-the-principles-of-deep-authorshipmd">01-tome-i-the-vision/03-the-principles-of-deep-authorship.md</a> - Deep Authorship principles preserved in translation</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tome-ii---the-architecture">Tome II - The Architecture<a href="#tome-ii---the-architecture" class="hash-link" aria-label="Direct link to Tome II - The Architecture" title="Direct link to Tome II - The Architecture">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/02-tome-ii-the-architecture02-deep-authorship-package-technical-specificationmd">02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md</a> - Section 1.2 - Complete DAP format specifications for translation source</li>
+<li><a href="/docs/foundations/-canonical-librarytome-ii---the-architecture23---discovery--access-infrastructuremd">📚 Canonical Library/Tome II - The Architecture/2.3 - Discovery &amp; Access Infrastructure.md</a> - Chapter 11 - Discovery system integration with Schema Projector</li>
+<li><a href="/docs/foundations/-canonical-librarytome-ii---the-architecture27---standards-interoperability-strategy-for-dap-ecosystemmd">📚 Canonical Library/Tome II - The Architecture/2.7 - Standards Interoperability Strategy for DAP Ecosystem.md</a> - Complete technical architecture and implementation specifications</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tome-iii---the-operations">Tome III - The Operations<a href="#tome-iii---the-operations" class="hash-link" aria-label="Direct link to Tome III - The Operations" title="Direct link to Tome III - The Operations">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/03-tome-iii-the-operations01-governance-constitutionmd">03-tome-iii-the-operations/01-governance-constitution.md</a> - Open source requirements for translation framework</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="features-documentation">Features Documentation<a href="#features-documentation" class="hash-link" aria-label="Direct link to Features Documentation" title="Direct link to Features Documentation">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/-canonical-libraryfeatures3-research-reproducibility32-institutional-integration28-archival-standards-mappingmd">📚 Canonical Library/Features/3 Research Reproducibility/3.2 Institutional Integration/28-archival-standards-mapping.md</a> - Specific implementation of Schema Projector for institutional integration</li>
+<li><a href="/docs/foundations/-canonical-libraryfeatures3-research-reproducibility32-institutional-integration25-standards-interoperability-without-lockinmd">📚 Canonical Library/Features/3 Research Reproducibility/3.2 Institutional Integration/25-standards-interoperability-without-lockin.md</a> - Standards interoperability without vendor lock-in feature</li>
+<li><a href="/docs/foundations/-canonical-libraryfeatures8-emerging-capabilities81-advanced-publishing-content67-schema-projector-rendering-enginemd">📚 Canonical Library/Features/8 Emerging Capabilities/8.1 Advanced Publishing Content/67-schema-projector-rendering-engine.md</a> - Advanced Schema Projector rendering capabilities</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="other-canonical-sources">Other Canonical Sources<a href="#other-canonical-sources" class="hash-link" aria-label="Direct link to Other Canonical Sources" title="Direct link to Other Canonical Sources">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/-distributed-creatives-everarchive-canonical-libraryfoundationsreadme">🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical Library/Foundations/README</a> - Schema Projector Framework definition and system dependencies</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="external-references">External References<a href="#external-references" class="hash-link" aria-label="Direct link to External References" title="Direct link to External References">​</a></h3>
+<ul>
+<li>METS/MODS Official Specifications (Library of Congress) - Standard format specifications for translation targets</li>
+<li>Dublin Core Metadata Initiative - Core metadata standard for interoperability</li>
+<li>PREMIS Data Dictionary - Preservation metadata standard for institutional integration</li>
+<li>Digital Preservation Coalition Interoperability Studies - Research foundation for translation approach</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cross-references-within-this-document">Cross-References Within This Document<a href="#cross-references-within-this-document" class="hash-link" aria-label="Direct link to Cross-References Within This Document" title="Direct link to Cross-References Within This Document">​</a></h3>
+<ul>
+<li><a href="/docs/foundations/01-deep-authorship-3-layer-model">01-deep-authorship-3-layer-model</a> - Core structure preserved in all translations</li>
+<li><a href="/docs/foundations/-canonical-libraryfoundational-concepts02-deep-authorship-package-formatmd">📚 Canonical Library/Foundational Concepts/02-deep-authorship-package-format.md</a> - Native format serving as translation source</li>
+<li><a href="/docs/foundations/05-creator-sovereignty">05-creator-sovereignty</a> - Sovereignty preservation through translation</li>
+<li><a href="/docs/foundations/10-open-source-and-non-proprietary">10-open-source-and-non-proprietary</a> - Open source requirements for framework</li>
+</ul>
+<hr>
+<p><em>This implementation guide provides complete technical specifications for the Schema Projector Framework, enabling developers to build bidirectional format conversion systems that maintain semantic integrity while providing standards compliance for institutional adoption.</em></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/everarchive-org/canonical-docs/tree/main/docs/foundations/04-schema-projector-framework.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#documentation-status--gaps" class="table-of-contents__link toc-highlight">Documentation Status &amp; Gaps</a><ul><li><a href="#information-availability" class="table-of-contents__link toc-highlight">Information Availability</a></li><li><a href="#research-recommendations" class="table-of-contents__link toc-highlight">Research Recommendations</a></li></ul></li><li><a href="#documentation-links" class="table-of-contents__link toc-highlight">Documentation Links</a><ul><li><a href="#primary-sources" class="table-of-contents__link toc-highlight">Primary Sources</a></li><li><a href="#supporting-context" class="table-of-contents__link toc-highlight">Supporting Context</a></li><li><a href="#related-documentation" class="table-of-contents__link toc-highlight">Related Documentation</a></li></ul></li><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#concept-specifications" class="table-of-contents__link toc-highlight">Concept Specifications</a><ul><li><a href="#core-definition--requirements" class="table-of-contents__link toc-highlight">Core Definition &amp; Requirements</a></li><li><a href="#essential-characteristics" class="table-of-contents__link toc-highlight">Essential Characteristics</a></li><li><a href="#boundaries--constraints" class="table-of-contents__link toc-highlight">Boundaries &amp; Constraints</a></li><li><a href="#technical-implications" class="table-of-contents__link toc-highlight">Technical Implications</a></li></ul></li><li><a href="#application--expression" class="table-of-contents__link toc-highlight">Application &amp; Expression</a><ul><li><a href="#how-this-concept-manifests" class="table-of-contents__link toc-highlight">How This Concept Manifests</a></li><li><a href="#implementation-approaches" class="table-of-contents__link toc-highlight">Implementation Approaches</a></li><li><a href="#decision-making-applications" class="table-of-contents__link toc-highlight">Decision-Making Applications</a></li><li><a href="#common-misapplications" class="table-of-contents__link toc-highlight">Common Misapplications</a></li></ul></li><li><a href="#dependencies--relationships" class="table-of-contents__link toc-highlight">Dependencies &amp; Relationships</a><ul><li><a href="#depends-on" class="table-of-contents__link toc-highlight">Depends On</a></li><li><a href="#enables" class="table-of-contents__link toc-highlight">Enables</a></li><li><a href="#feature-integration" class="table-of-contents__link toc-highlight">Feature Integration</a></li><li><a href="#cross-concept-interactions" class="table-of-contents__link toc-highlight">Cross-Concept Interactions</a></li></ul></li><li><a href="#use-cases--examples" class="table-of-contents__link toc-highlight">Use Cases &amp; Examples</a><ul><li><a href="#use-case-1-university-library-integration" class="table-of-contents__link toc-highlight">Use Case 1: University Library Integration</a></li><li><a href="#use-case-2-museum-collection-sharing" class="table-of-contents__link toc-highlight">Use Case 2: Museum Collection Sharing</a></li><li><a href="#use-case-3-leading-digital-preservation-platforms-partnership" class="table-of-contents__link toc-highlight">Use Case 3: leading digital preservation platforms Partnership</a></li><li><a href="#user-journey-touchpoints" class="table-of-contents__link toc-highlight">User Journey Touchpoints</a></li><li><a href="#institutional-adoption-patterns" class="table-of-contents__link toc-highlight">Institutional Adoption Patterns</a></li></ul></li><li><a href="#validation--assessment" class="table-of-contents__link toc-highlight">Validation &amp; Assessment</a><ul><li><a href="#how-to-recognize-proper-implementation" class="table-of-contents__link toc-highlight">How to Recognize Proper Implementation</a></li><li><a href="#assessment-questions" class="table-of-contents__link toc-highlight">Assessment Questions</a></li><li><a href="#warning-signs" class="table-of-contents__link toc-highlight">Warning Signs</a></li><li><a href="#measurement-approaches" class="table-of-contents__link toc-highlight">Measurement Approaches</a></li></ul></li><li><a href="#evolution--maintenance" class="table-of-contents__link toc-highlight">Evolution &amp; Maintenance</a><ul><li><a href="#concept-evolution" class="table-of-contents__link toc-highlight">Concept Evolution</a></li><li><a href="#backward-compatibility" class="table-of-contents__link toc-highlight">Backward Compatibility</a></li><li><a href="#migration-strategies" class="table-of-contents__link toc-highlight">Migration Strategies</a></li><li><a href="#long-term-sustainability" class="table-of-contents__link toc-highlight">Long-term Sustainability</a></li><li><a href="#version-management" class="table-of-contents__link toc-highlight">Version Management</a></li></ul></li><li><a href="#related-concepts" class="table-of-contents__link toc-highlight">Related Concepts</a><ul><li><a href="#within-same-category" class="table-of-contents__link toc-highlight">Within Same Category</a></li><li><a href="#cross-category-dependencies" class="table-of-contents__link toc-highlight">Cross-Category Dependencies</a></li><li><a href="#emergent-properties" class="table-of-contents__link toc-highlight">Emergent Properties</a></li></ul></li><li><a href="#faq" class="table-of-contents__link toc-highlight">FAQ</a><ul><li><a href="#implementation-questions" class="table-of-contents__link toc-highlight">Implementation Questions</a></li><li><a href="#conceptual-questions" class="table-of-contents__link toc-highlight">Conceptual Questions</a></li></ul></li><li><a href="#complete-reference-index" class="table-of-contents__link toc-highlight">Complete Reference Index</a><ul><li><a href="#canonical-library-references" class="table-of-contents__link toc-highlight">Canonical Library References</a></li><li><a href="#external-references" class="table-of-contents__link toc-highlight">External References</a></li><li><a href="#cross-references-within-this-document" class="table-of-contents__link toc-highlight">Cross-References Within This Document</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Vision</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/features/features-overview">Features</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Project</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://everarchive.org" target="_blank" rel="noopener noreferrer" class="footer__link-item">Main Site<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/everarchive-org" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 EverArchive. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-foundations/zero-knowledge-encryption-for-core-layer" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Zero-Knowledge Encryption for Core Layer | EverArchive</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.everarchive.org/docs/foundations/zero-knowledge-encryption-for-core-layer"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Zero-Knowledge Encryption for Core Layer | EverArchive"><meta data-rh="true" name="description" content="Concept ID: 08"><meta data-rh="true" property="og:description" content="Concept ID: 08"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.everarchive.org/docs/foundations/zero-knowledge-encryption-for-core-layer"><link data-rh="true" rel="alternate" href="https://docs.everarchive.org/docs/foundations/zero-knowledge-encryption-for-core-layer" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.everarchive.org/docs/foundations/zero-knowledge-encryption-for-core-layer" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.d8b08674.css">
+<script src="/assets/js/runtime~main.b22a7eef.js" defer="defer"></script>
+<script src="/assets/js/main.b8ea706f.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><b class="navbar__title text--truncate">EverArchive</b></a><a class="navbar__item navbar__link" href="/docs/intro">Docs</a><a href="https://everarchive.org" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Main Site<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/everarchive-org/canonical-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Foundational Concept: Zero-Knowledge Encryption for Core Layer</h1></header>
+<p><strong>Concept ID</strong>: 08
+<strong>Category</strong>: System Invariants
+<strong>Status</strong>: Implementation Guide
+<strong>Last Updated</strong>: 2025-07-06</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="documentation-status--gaps">Documentation Status &amp; Gaps<a href="#documentation-status--gaps" class="hash-link" aria-label="Direct link to Documentation Status &amp; Gaps" title="Direct link to Documentation Status &amp; Gaps">​</a></h2>
+<p><strong>Source Coverage</strong>: Complete</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="information-availability">Information Availability<a href="#information-availability" class="hash-link" aria-label="Direct link to Information Availability" title="Direct link to Information Availability">​</a></h3>
+<ul>
+<li><strong>✅ Well-documented</strong>: EverArchive Encryption Standard (EES-1.0) specification, cryptographic protocols, key management architecture</li>
+<li><strong>✅ Well-documented</strong>: Implementation requirements, post-quantum protection, social recovery mechanisms</li>
+<li><strong>✅ Well-documented</strong>: Zero-knowledge proof protocols, technical standards, security considerations</li>
+<li><strong>⚠️ Partially documented</strong>: Cross-platform implementation patterns, migration strategies for existing systems</li>
+<li><strong>🔍 Requires research</strong>: Quantum-resistant algorithm future-proofing, performance optimization for large datasets</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="research-recommendations">Research Recommendations<a href="#research-recommendations" class="hash-link" aria-label="Direct link to Research Recommendations" title="Direct link to Research Recommendations">​</a></h3>
+<p>Performance optimization research needed for enterprise-scale deployments handling TB-scale Core Layer data. Post-quantum migration pathways require additional specification as quantum computing advances.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="documentation-links">Documentation Links<a href="#documentation-links" class="hash-link" aria-label="Direct link to Documentation Links" title="Direct link to Documentation Links">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="primary-sources">Primary Sources<a href="#primary-sources" class="hash-link" aria-label="Direct link to Primary Sources" title="Direct link to Primary Sources">​</a></h3>
+<p><em>Complete canonical documentation for zero-knowledge encryption requirements</em></p>
+<ul>
+<li><a href="/docs/foundations/-distributed-creatives-everarchive-canonical-libraryfoundationsreadme">🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical Library/Foundations/README</a> - System Invariant #8 definition</li>
+<li><a href="/docs/foundations/-canonical-librarytome-ii---the-architecture22---deep-authorship-package-technical-specification">📚 Canonical Library/Tome II - The Architecture/2.2 - Deep Authorship Package Technical Specification</a> - EES-1.0 encryption standard</li>
+<li><a href="/docs/foundations/-canonical-librarytome-i---the-vision10---essence-and-vision">📚 Canonical Library/Tome I - The Vision/1.0 - Essence and Vision</a> - North Star Principle #1 (Creator Sovereignty)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="supporting-context">Supporting Context<a href="#supporting-context" class="hash-link" aria-label="Direct link to Supporting Context" title="Direct link to Supporting Context">​</a></h3>
+<p><em>Additional documents that provide context, examples, or related information</em></p>
+<ul>
+<li><a href="/docs/foundations/-canonical-libraryfeatures1-creative-control12-privacy-control02-zero-knowledge-creative-privacy">📚 Canonical Library/Features/1 Creative Control/1.2 Privacy Control/02-zero-knowledge-creative-privacy</a> - Zero-knowledge implementation</li>
+<li><a href="/docs/foundations/-canonical-libraryfeatures1-creative-control12-privacy-control03-key-recovery-success">📚 Canonical Library/Features/1 Creative Control/1.2 Privacy Control/03-key-recovery-success</a> - Social recovery systems</li>
+<li><a href="/docs/foundations/2025-07-06-foundations-index">2025-07-06-Foundations-Index</a> - Complete foundations context and dependencies</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="related-documentation">Related Documentation<a href="#related-documentation" class="hash-link" aria-label="Direct link to Related Documentation" title="Direct link to Related Documentation">​</a></h3>
+<p><em>Documents that reference or build upon this concept</em></p>
+<ul>
+<li><a href="/docs/foundations/-canonical-librarytome-iii---the-operations31---governance-constitution">📚 Canonical Library/Tome III - The Operations/3.1 - Governance Constitution</a> - Technical enforcement requirements</li>
+<li><a href="/docs/foundations/-canonical-libraryfeatures2-preservation-permanence22-future-proofing06-post-quantum-encryption-future-proofing">📚 Canonical Library/Features/2 Preservation Permanence/2.2 Future Proofing/06-post-quantum-encryption-future-proofing</a> - Quantum resistance</li>
+<li><a href="/docs/foundations/-operationsresearch-coordinationresearch-prompts-catalog">📁 Operations/Research Coordination/RESEARCH-PROMPTS-CATALOG</a> - Privacy research protocols</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
+<p>Zero-Knowledge Encryption for Core Layer is the technical enforcement mechanism that makes Creator Sovereignty mathematically guaranteed rather than just contractually promised. This system invariant ensures that the most sensitive creative data—raw thoughts, private iterations, vulnerable experiments—remains cryptographically inaccessible to everyone except the creator, including EverArchive itself.</p>
+<p>Traditional creative platforms create honey pots of valuable creative data that become targets for surveillance, corporate espionage, and government overreach. By making Core Layer data technically unreadable without creator-controlled keys, this invariant transforms EverArchive from a potential surveillance platform into a mathematically privacy-preserving infrastructure. The system literally cannot decrypt Core Layer content, making legal compulsion ineffective and ensuring creators maintain absolute sovereignty over their most vulnerable work.</p>
+<p>This concept operates as a system invariant because compromising it would fundamentally break the trust relationship between creators and the preservation infrastructure. It&#x27;s not a feature that can be negotiated away—it&#x27;s a mathematical guarantee that makes the entire EverArchive ecosystem trustworthy for sensitive creative work.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="concept-specifications">Concept Specifications<a href="#concept-specifications" class="hash-link" aria-label="Direct link to Concept Specifications" title="Direct link to Concept Specifications">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="core-definition--requirements">Core Definition &amp; Requirements<a href="#core-definition--requirements" class="hash-link" aria-label="Direct link to Core Definition &amp; Requirements" title="Direct link to Core Definition &amp; Requirements">​</a></h3>
+<p><em>Technical requirements for implementing zero-knowledge encryption in Core Layer</em></p>
+<p>Zero-Knowledge Encryption for Core Layer means that all data stored in the Core Layer of Deep Authorship Packages must be encrypted with keys held exclusively by the creator, using cryptographic protocols that provide mathematical guarantees against unauthorized access. The system must be designed so that:</p>
+<ol>
+<li><strong>No Plaintext Storage</strong>: Core Layer data can never exist in unencrypted form on any system except the creator&#x27;s local devices</li>
+<li><strong>Creator-Only Keys</strong>: Encryption keys must be generated and managed exclusively by creators, with no system access to decryption capabilities</li>
+<li><strong>Mathematical Privacy</strong>: Privacy guarantees must be cryptographic, not just administrative or legal</li>
+<li><strong>Post-Quantum Protection</strong>: Encryption must resist attacks by quantum computers using NIST-approved post-quantum cryptographic standards</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="essential-characteristics">Essential Characteristics<a href="#essential-characteristics" class="hash-link" aria-label="Direct link to Essential Characteristics" title="Direct link to Essential Characteristics">​</a></h3>
+<p><em>The non-negotiable aspects that define this concept</em></p>
+<ol>
+<li>
+<p><strong>Client-Side Encryption Only</strong>: All Core Layer encryption must occur on creator-controlled devices before any network transmission or storage. No server-side encryption is permitted for Core Layer data.</p>
+</li>
+<li>
+<p><strong>Zero-Knowledge Architecture</strong>: The system must be designed so that even with full system access, database dumps, and legal compulsion, Core Layer content cannot be decrypted without creator-provided keys.</p>
+</li>
+<li>
+<p><strong>Cryptographic Key Sovereignty</strong>: Creators must maintain exclusive control over all encryption keys. Key derivation, storage, and management must be entirely creator-controlled with optional social recovery mechanisms.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="boundaries--constraints">Boundaries &amp; Constraints<a href="#boundaries--constraints" class="hash-link" aria-label="Direct link to Boundaries &amp; Constraints" title="Direct link to Boundaries &amp; Constraints">​</a></h3>
+<p><em>What this concept does NOT include, and what would violate it</em></p>
+<ul>
+<li><strong>What it is NOT</strong>: This is not about process or surface layer privacy, which may have different access controls. It&#x27;s specifically about Core Layer mathematical guarantees.</li>
+<li><strong>Violation conditions</strong>: Any system design that enables server-side decryption, key escrow, master keys, or administrative access to Core Layer plaintext would violate this invariant.</li>
+<li><strong>Non-negotiable elements</strong>: Post-quantum protection, creator-only key control, client-side encryption, and mathematical privacy guarantees cannot be compromised for convenience, features, or legal compliance.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="technical-implications">Technical Implications<a href="#technical-implications" class="hash-link" aria-label="Direct link to Technical Implications" title="Direct link to Technical Implications">​</a></h3>
+<p><em>Specific technical requirements, standards, and constraints</em></p>
+<p><strong>Mandatory Cryptographic Standards:</strong></p>
+<ul>
+<li><strong>Key Derivation</strong>: Argon2id for high-entropy passphrase processing</li>
+<li><strong>Symmetric Encryption</strong>: AES-256-GCM for content encryption with unique nonces</li>
+<li><strong>Post-Quantum Protection</strong>: CRYSTALS-Kyber algorithm for key encapsulation</li>
+<li><strong>Key Recovery</strong>: Shamir&#x27;s Secret Sharing for social recovery mechanisms</li>
+<li><strong>Hash Functions</strong>: SHA-256 for integrity verification and authentication</li>
+</ul>
+<p><strong>Implementation Requirements:</strong></p>
+<ul>
+<li>All encryption operations must execute client-side only</li>
+<li>Unique nonces required for each encryption operation</li>
+<li>Authentication tags must verify both confidentiality and authenticity</li>
+<li>Post-quantum key protection must encapsulate symmetric keys</li>
+<li>Social recovery must use threshold cryptography (3-of-5 or 5-of-9 schemes)</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="application--expression">Application &amp; Expression<a href="#application--expression" class="hash-link" aria-label="Direct link to Application &amp; Expression" title="Direct link to Application &amp; Expression">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-this-concept-manifests">How This Concept Manifests<a href="#how-this-concept-manifests" class="hash-link" aria-label="Direct link to How This Concept Manifests" title="Direct link to How This Concept Manifests">​</a></h3>
+<p><em>The different ways this concept appears in EverArchive systems and decisions</em></p>
+<ol>
+<li>
+<p><strong>Deep Authorship Package Structure</strong>: Core Layer directory contains only encrypted blobs with .enc extensions, never plaintext files</p>
+<ul>
+<li><strong>Example</strong>: A novelist&#x27;s private notes exist as <code>raw_thoughts.txt.enc</code> files that require creator passphrase to decrypt</li>
+<li><strong>Impact</strong>: Enables complete privacy for vulnerable creative work while maintaining archival capabilities</li>
+</ul>
+</li>
+<li>
+<p><strong>EverArchive Encryption Standard (EES-1.0)</strong>: Standardized protocol for all Core Layer encryption operations</p>
+<ul>
+<li><strong>Example</strong>: Writing tool automatically encrypts journal entries using EES-1.0 before saving to Core Layer</li>
+<li><strong>Impact</strong>: Ensures interoperability across all creator tools while maintaining security guarantees</li>
+</ul>
+</li>
+<li>
+<p><strong>Zero-Knowledge Proof Generation</strong>: Proves claims about Core Layer content without revealing the content itself</p>
+<ul>
+<li><strong>Example</strong>: Patent application proves creation date and originality without exposing proprietary methods</li>
+<li><strong>Impact</strong>: Enables legal protection and verification while preserving trade secrets</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-approaches">Implementation Approaches<a href="#implementation-approaches" class="hash-link" aria-label="Direct link to Implementation Approaches" title="Direct link to Implementation Approaches">​</a></h3>
+<p><em>For concepts that have technical implementations</em></p>
+<p><strong>Approach 1: Local-First Encryption Pipeline</strong></p>
+<ul>
+<li><strong>Context</strong>: Creator tools and applications that generate Core Layer content</li>
+<li><strong>Method</strong>:<!-- -->
+<ol>
+<li>Generate high-entropy passphrase using secure random number generation</li>
+<li>Derive 256-bit symmetric key using Argon2id (time cost: 3, memory: 64MB, parallelism: 4)</li>
+<li>Encrypt each Core Layer file using AES-256-GCM with unique 96-bit nonces</li>
+<li>Generate CRYSTALS-Kyber key pair for post-quantum protection</li>
+<li>Encapsulate symmetric key using Kyber public key</li>
+<li>Store encrypted content, GCM authentication tags, nonces, and encapsulated keys</li>
+</ol>
+</li>
+<li><strong>Benefits</strong>: Mathematical privacy guarantees with post-quantum protection</li>
+<li><strong>Considerations</strong>: Requires secure key management and backup strategies</li>
+</ul>
+<p><strong>Approach 2: Social Recovery Key Management</strong></p>
+<ul>
+<li><strong>Context</strong>: Protecting against key loss while maintaining zero-knowledge properties</li>
+<li><strong>Method</strong>:<!-- -->
+<ol>
+<li>Split Kyber private key using Shamir&#x27;s Secret Sharing (5-of-9 threshold)</li>
+<li>Distribute encrypted key fragments to trusted guardians</li>
+<li>Implement time-locked recovery mechanisms with guardian consensus</li>
+<li>Provide cryptographic proof of guardian authorization</li>
+<li>Reconstruct keys only with creator initiation and threshold guardian approval</li>
+</ol>
+</li>
+<li><strong>Benefits</strong>: Prevents permanent data loss while preserving privacy</li>
+<li><strong>Considerations</strong>: Requires careful guardian selection and secure communication channels</li>
+</ul>
+<p><strong>Approach 3: Zero-Knowledge Verification</strong></p>
+<ul>
+<li><strong>Context</strong>: Proving claims about Core Layer content for legal or verification purposes</li>
+<li><strong>Method</strong>:<!-- -->
+<ol>
+<li>Generate zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge) for specific claims</li>
+<li>Create commitment schemes for content timestamps and creation events</li>
+<li>Use homomorphic encryption for computation on encrypted data</li>
+<li>Implement selective disclosure mechanisms for graduated revelation</li>
+<li>Provide cryptographic proofs without revealing underlying content</li>
+</ol>
+</li>
+<li><strong>Benefits</strong>: Enables verification and legal protection without privacy compromise</li>
+<li><strong>Considerations</strong>: Requires specialized cryptographic expertise and trusted setup procedures</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-misapplications">Common Misapplications<a href="#common-misapplications" class="hash-link" aria-label="Direct link to Common Misapplications" title="Direct link to Common Misapplications">​</a></h3>
+<ul>
+<li><strong>Server-Side Encryption</strong>: Implementing encryption on storage servers instead of client devices violates zero-knowledge properties</li>
+<li><strong>Key Escrow Systems</strong>: Any system that enables administrative access to creator keys breaks creator sovereignty</li>
+<li><strong>Weak Key Derivation</strong>: Using simple passwords or inadequate key derivation functions undermines cryptographic guarantees</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dependencies--relationships">Dependencies &amp; Relationships<a href="#dependencies--relationships" class="hash-link" aria-label="Direct link to Dependencies &amp; Relationships" title="Direct link to Dependencies &amp; Relationships">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="depends-on">Depends On<a href="#depends-on" class="hash-link" aria-label="Direct link to Depends On" title="Direct link to Depends On">​</a></h3>
+<ul>
+<li><strong><a href="/docs/foundations/05-creator-sovereignty">05-creator-sovereignty</a></strong>: Zero-knowledge encryption is the technical implementation of creator sovereignty principles</li>
+<li><strong><a href="/docs/foundations/10-open-source-and-non-proprietary">10-open-source-and-non-proprietary</a></strong>: Encryption algorithms and implementations must be open source for security verification</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="enables">Enables<a href="#enables" class="hash-link" aria-label="Direct link to Enables" title="Direct link to Enables">​</a></h3>
+<ul>
+<li><strong><a href="/docs/foundations/02-zero-knowledge-creative-privacy">02-zero-knowledge-creative-privacy</a></strong>: This feature is built directly on zero-knowledge encryption foundations</li>
+<li><strong><a href="/docs/foundations/03-key-recovery-success">03-key-recovery-success</a></strong>: Social recovery mechanisms depend on threshold cryptography</li>
+<li><strong><a href="/docs/foundations/14-progressive-trust-and-sovereignty">14-progressive-trust-and-sovereignty</a></strong>: Anonymous creation requires zero-knowledge privacy guarantees</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="feature-integration">Feature Integration<a href="#feature-integration" class="hash-link" aria-label="Direct link to Feature Integration" title="Direct link to Feature Integration">​</a></h3>
+<ul>
+<li><strong>Creative Control Features</strong>: All privacy control features depend on Core Layer encryption for technical enforcement</li>
+<li><strong>Legal Evidence Infrastructure</strong>: Zero-knowledge proofs enable verification without privacy compromise</li>
+<li><strong>Estate Planning Systems</strong>: Succession mechanisms use social recovery protocols from encryption infrastructure</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cross-concept-interactions">Cross-Concept Interactions<a href="#cross-concept-interactions" class="hash-link" aria-label="Direct link to Cross-Concept Interactions" title="Direct link to Cross-Concept Interactions">​</a></h3>
+<p>Zero-Knowledge Encryption for Core Layer works with Creator Sovereignty to create technically enforceable creator rights, with Open Source requirements to ensure algorithmic transparency and security verification, and with the Deep Authorship 3-Layer Model to define exactly which data requires mathematical privacy protection versus other access control approaches.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="use-cases--examples">Use Cases &amp; Examples<a href="#use-cases--examples" class="hash-link" aria-label="Direct link to Use Cases &amp; Examples" title="Direct link to Use Cases &amp; Examples">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="use-case-1-investigative-journalist-protection">Use Case 1: Investigative Journalist Protection<a href="#use-case-1-investigative-journalist-protection" class="hash-link" aria-label="Direct link to Use Case 1: Investigative Journalist Protection" title="Direct link to Use Case 1: Investigative Journalist Protection">​</a></h3>
+<p><strong>Context</strong>: Journalist documenting human rights violations in authoritarian regime
+<strong>Implementation</strong>: Core Layer contains source interviews, document analysis, and investigation notes encrypted with EES-1.0
+<strong>Outcome</strong>: Even if devices are seized, Core Layer remains cryptographically unreadable without journalist&#x27;s passphrase
+<strong>Example</strong>:</p>
+<ul>
+<li>Raw interview recordings stored as <code>source_001_transcript.txt.enc</code></li>
+<li>Investigation timeline exists as <code>timeline_analysis.json.enc</code></li>
+<li>Document authenticity verified through zero-knowledge proofs</li>
+<li>Social recovery enabled through trusted international colleagues</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="use-case-2-corporate-rd-trade-secret-protection">Use Case 2: Corporate R&amp;D Trade Secret Protection<a href="#use-case-2-corporate-rd-trade-secret-protection" class="hash-link" aria-label="Direct link to Use Case 2: Corporate R&amp;D Trade Secret Protection" title="Direct link to Use Case 2: Corporate R&amp;D Trade Secret Protection">​</a></h3>
+<p><strong>Context</strong>: Fortune 500 company developing proprietary manufacturing processes
+<strong>Implementation</strong>: Research notes, experimental data, and proprietary methodologies encrypted in Core Layer
+<strong>Outcome</strong>: Industrial espionage becomes cryptographically impossible while maintaining patent timeline proof
+<strong>Example</strong>:</p>
+<ul>
+<li>Experimental procedures stored as encrypted lab notebook entries</li>
+<li>Failed experiments preserved but protected from competitive intelligence</li>
+<li>Patent application dates proven through zero-knowledge timestamps</li>
+<li>Key recovery managed through corporate security team using threshold cryptography</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="use-case-3-academic-researcher-sensitive-data">Use Case 3: Academic Researcher Sensitive Data<a href="#use-case-3-academic-researcher-sensitive-data" class="hash-link" aria-label="Direct link to Use Case 3: Academic Researcher Sensitive Data" title="Direct link to Use Case 3: Academic Researcher Sensitive Data">​</a></h3>
+<p><strong>Context</strong>: Anthropologist studying vulnerable indigenous communities
+<strong>Implementation</strong>: Interview data, cultural observations, and community insights encrypted with participant privacy protection
+<strong>Outcome</strong>: Research can proceed ethically with mathematical guarantees of participant anonymity
+<strong>Example</strong>:</p>
+<ul>
+<li>Community interviews exist only in encrypted Core Layer</li>
+<li>Analysis notes protected while public research proceeds</li>
+<li>Zero-knowledge proofs verify research methodology without exposing participants</li>
+<li>IRB compliance maintained through cryptographic privacy guarantees</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="user-journey-touchpoints">User Journey Touchpoints<a href="#user-journey-touchpoints" class="hash-link" aria-label="Direct link to User Journey Touchpoints" title="Direct link to User Journey Touchpoints">​</a></h3>
+<ul>
+<li><strong>Creator Journey</strong>: Encryption happens transparently during creative work - writers, artists, and researchers never encounter raw cryptographic operations</li>
+<li><strong>Researcher Journey</strong>: Zero-knowledge verification enables academic collaboration and citation without privacy compromise</li>
+<li><strong>Librarian Journey</strong>: Archived materials maintain Core Layer privacy while enabling catalog-level discovery and access management</li>
+<li><strong>Developer Journey</strong>: EES-1.0 standard provides clear implementation requirements for creator tool developers</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="institutional-adoption-patterns">Institutional Adoption Patterns<a href="#institutional-adoption-patterns" class="hash-link" aria-label="Direct link to Institutional Adoption Patterns" title="Direct link to Institutional Adoption Patterns">​</a></h3>
+<p>Institutions typically implement zero-knowledge encryption through graduated adoption: starting with pilot programs for sensitive research, expanding to general faculty use, and eventually integrating with institutional repository systems while maintaining Core Layer encryption requirements.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="validation--assessment">Validation &amp; Assessment<a href="#validation--assessment" class="hash-link" aria-label="Direct link to Validation &amp; Assessment" title="Direct link to Validation &amp; Assessment">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-recognize-proper-implementation">How to Recognize Proper Implementation<a href="#how-to-recognize-proper-implementation" class="hash-link" aria-label="Direct link to How to Recognize Proper Implementation" title="Direct link to How to Recognize Proper Implementation">​</a></h3>
+<p><em>Signs that this concept is being correctly applied</em></p>
+<ol>
+<li><strong>No Plaintext Core Layer</strong>: All Core Layer files have .enc extensions and cannot be read without decryption keys</li>
+<li><strong>Client-Side Operations</strong>: All encryption/decryption operations occur on creator devices, never on servers</li>
+<li><strong>Post-Quantum Protection</strong>: CRYSTALS-Kyber implementation protects against quantum computer attacks</li>
+<li><strong>Social Recovery Available</strong>: Threshold cryptography enables key recovery without compromising zero-knowledge properties</li>
+<li><strong>Verification Without Disclosure</strong>: Zero-knowledge proofs can verify claims about Core Layer content without revealing content</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="assessment-questions">Assessment Questions<a href="#assessment-questions" class="hash-link" aria-label="Direct link to Assessment Questions" title="Direct link to Assessment Questions">​</a></h3>
+<p><em>Questions to ask to determine if this concept is being honored</em></p>
+<ul>
+<li><strong>Can system administrators access Core Layer content?</strong> (Must be: No, mathematically impossible)</li>
+<li><strong>Are encryption keys generated and managed client-side only?</strong> (Must be: Yes, exclusively creator-controlled)</li>
+<li><strong>Can the system prove claims about Core Layer content without decrypting it?</strong> (Must be: Yes, through zero-knowledge proofs)</li>
+<li><strong>Is post-quantum cryptography implemented for future protection?</strong> (Must be: Yes, using CRYSTALS-Kyber or equivalent)</li>
+<li><strong>Can creators recover keys after loss without compromising privacy?</strong> (Must be: Yes, through threshold cryptography)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="warning-signs">Warning Signs<a href="#warning-signs" class="hash-link" aria-label="Direct link to Warning Signs" title="Direct link to Warning Signs">​</a></h3>
+<p><em>Indicators that this concept is being violated or compromised</em></p>
+<ul>
+<li><strong>Server-Side Decryption</strong>: Any capability for servers to decrypt Core Layer content indicates fundamental violation</li>
+<li><strong>Master Key Systems</strong>: Administrative or system master keys that can access Core Layer violate creator sovereignty</li>
+<li><strong>Plaintext Core Storage</strong>: Finding unencrypted files in Core Layer directories indicates implementation failure</li>
+<li><strong>Weak Key Derivation</strong>: Simple passwords or inadequate key stretching undermines cryptographic guarantees</li>
+<li><strong>Key Escrow Proposals</strong>: Any system design that enables third-party key recovery violates zero-knowledge properties</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="measurement-approaches">Measurement Approaches<a href="#measurement-approaches" class="hash-link" aria-label="Direct link to Measurement Approaches" title="Direct link to Measurement Approaches">​</a></h3>
+<p><em>For concepts that have measurable aspects</em></p>
+<ul>
+<li><strong>Encryption Coverage</strong>: 100% of Core Layer files must be encrypted (measurable through directory audits)</li>
+<li><strong>Key Derivation Strength</strong>: Argon2id parameters must meet minimum security requirements (measurable through implementation audits)</li>
+<li><strong>Social Recovery Success Rate</strong>: Threshold recovery mechanisms should achieve 92-96% success rates (measurable through testing)</li>
+<li><strong>Zero-Knowledge Proof Performance</strong>: Proof generation should complete in &lt;1 second for typical creative works (measurable through benchmarks)</li>
+<li><strong>Post-Quantum Readiness</strong>: CRYSTALS-Kyber implementation must meet NIST PQC standards (measurable through compliance audits)</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="evolution--maintenance">Evolution &amp; Maintenance<a href="#evolution--maintenance" class="hash-link" aria-label="Direct link to Evolution &amp; Maintenance" title="Direct link to Evolution &amp; Maintenance">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="concept-evolution">Concept Evolution<a href="#concept-evolution" class="hash-link" aria-label="Direct link to Concept Evolution" title="Direct link to Concept Evolution">​</a></h3>
+<p>This concept will evolve primarily through cryptographic algorithm updates as post-quantum computing advances and new threats emerge. The fundamental zero-knowledge principle remains constant, but implementation details will upgrade to maintain mathematical guarantees against evolving attack vectors.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="backward-compatibility">Backward Compatibility<a href="#backward-compatibility" class="hash-link" aria-label="Direct link to Backward Compatibility" title="Direct link to Backward Compatibility">​</a></h3>
+<p>New encryption algorithms must provide migration paths for existing encrypted Core Layer data. EES-2.0 and future versions must include automated re-encryption tools that preserve creator control throughout the migration process.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="migration-strategies">Migration Strategies<a href="#migration-strategies" class="hash-link" aria-label="Direct link to Migration Strategies" title="Direct link to Migration Strategies">​</a></h3>
+<p>Algorithm migrations require:</p>
+<ol>
+<li>Creator-initiated re-encryption using updated EES standards</li>
+<li>Threshold cryptography support for guardians during transitions</li>
+<li>Zero-knowledge proof compatibility across algorithm versions</li>
+<li>Automated migration tools that preserve all existing security properties</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="long-term-sustainability">Long-term Sustainability<a href="#long-term-sustainability" class="hash-link" aria-label="Direct link to Long-term Sustainability" title="Direct link to Long-term Sustainability">​</a></h3>
+<p>Mathematical privacy guarantees must remain effective across decades and centuries. This requires proactive monitoring of cryptographic research, early adoption of quantum-resistant algorithms, and maintaining open-source implementations that can be independently verified and updated.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="version-management">Version Management<a href="#version-management" class="hash-link" aria-label="Direct link to Version Management" title="Direct link to Version Management">​</a></h3>
+<p>EES versions will be backward-compatible for decryption but forward-compatible for security. Creators can always decrypt old content but should upgrade to new standards for maximum protection. Social recovery mechanisms must work across version boundaries.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="related-concepts">Related Concepts<a href="#related-concepts" class="hash-link" aria-label="Direct link to Related Concepts" title="Direct link to Related Concepts">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="within-same-category">Within Same Category<a href="#within-same-category" class="hash-link" aria-label="Direct link to Within Same Category" title="Direct link to Within Same Category">​</a></h3>
+<ul>
+<li><strong><a href="/docs/foundations/09-permanent-preservation-guarantee">09-permanent-preservation-guarantee</a></strong>: Both require mathematical rather than administrative guarantees</li>
+<li><strong><a href="/docs/foundations/10-open-source-and-non-proprietary">10-open-source-and-non-proprietary</a></strong>: Encryption algorithms must be open source for security verification</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cross-category-dependencies">Cross-Category Dependencies<a href="#cross-category-dependencies" class="hash-link" aria-label="Direct link to Cross-Category Dependencies" title="Direct link to Cross-Category Dependencies">​</a></h3>
+<ul>
+<li><strong><a href="/docs/foundations/05-creator-sovereignty">05-creator-sovereignty</a></strong>: Zero-knowledge encryption is the technical enforcement mechanism for creator sovereignty</li>
+<li><strong><a href="/docs/foundations/01-deep-authorship-3-layer-model">01-deep-authorship-3-layer-model</a></strong>: Defines exactly which layer requires zero-knowledge protection</li>
+<li><strong><a href="/docs/foundations/14-progressive-trust-and-sovereignty">14-progressive-trust-and-sovereignty</a></strong>: Anonymous creation depends on zero-knowledge privacy guarantees</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="emergent-properties">Emergent Properties<a href="#emergent-properties" class="hash-link" aria-label="Direct link to Emergent Properties" title="Direct link to Emergent Properties">​</a></h3>
+<p>When combined with other foundational concepts, zero-knowledge encryption enables: anonymous creation with proof, private collaborative spaces, confidential work verification, and privacy-preserving creative marketplaces. The mathematical privacy guarantees make possible entirely new categories of creative expression and research that would be impossible without cryptographic protection.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="faq">FAQ<a href="#faq" class="hash-link" aria-label="Direct link to FAQ" title="Direct link to FAQ">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-questions">Implementation Questions<a href="#implementation-questions" class="hash-link" aria-label="Direct link to Implementation Questions" title="Direct link to Implementation Questions">​</a></h3>
+<ol>
+<li>
+<p><strong>Q</strong>: How do creators manage encryption keys without losing access to their work?
+<strong>A</strong>: The system provides multiple backup mechanisms: high-entropy passphrases with Argon2id derivation, social recovery through Shamir&#x27;s Secret Sharing with trusted guardians, hardware security key backup options, and optional biometric recovery. The 92-96% key recovery success rate demonstrates these mechanisms work effectively in practice.</p>
+</li>
+<li>
+<p><strong>Q</strong>: What happens if quantum computers break current encryption?
+<strong>A</strong>: EES-1.0 already includes post-quantum protection through CRYSTALS-Kyber key encapsulation. The system is designed for cryptographic agility - new post-quantum algorithms can be integrated without breaking existing encrypted content. Migration tools will re-encrypt Core Layer data with updated algorithms while preserving creator control throughout the process.</p>
+</li>
+<li>
+<p><strong>Q</strong>: How can others verify my work if it&#x27;s encrypted and I can&#x27;t share my keys?
+<strong>A</strong>: Zero-knowledge proofs enable verification without revealing content. You can mathematically prove claims like creation date, originality, or authorship without exposing the work itself. This enables patent applications, academic citations, and legal evidence while maintaining complete privacy.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="conceptual-questions">Conceptual Questions<a href="#conceptual-questions" class="hash-link" aria-label="Direct link to Conceptual Questions" title="Direct link to Conceptual Questions">​</a></h3>
+<ol>
+<li>
+<p><strong>Q</strong>: Why is zero-knowledge encryption considered a system invariant rather than just a security feature?
+<strong>A</strong>: Because the entire trust relationship between creators and EverArchive depends on this guarantee. If Core Layer data could be accessed by the system, EverArchive would become a surveillance platform rather than preservation infrastructure. This isn&#x27;t a feature that can be traded off - it&#x27;s fundamental to what makes EverArchive trustworthy.</p>
+</li>
+<li>
+<p><strong>Q</strong>: How does this compare to other privacy approaches like end-to-end encryption?
+<strong>A</strong>: Traditional end-to-end encryption still requires trust in the service provider&#x27;s implementation and key management. Zero-knowledge encryption goes further - the system literally cannot decrypt your Core Layer content even if compelled by courts or compromised by attackers. It&#x27;s mathematically impossible, not just administratively protected.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="complete-reference-index">Complete Reference Index<a href="#complete-reference-index" class="hash-link" aria-label="Direct link to Complete Reference Index" title="Direct link to Complete Reference Index">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="canonical-library-references">Canonical Library References<a href="#canonical-library-references" class="hash-link" aria-label="Direct link to Canonical Library References" title="Direct link to Canonical Library References">​</a></h3>
+<p><em>All EverArchive canonical documents referenced in this concept document</em></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tome-i---the-vision">Tome I - The Vision<a href="#tome-i---the-vision" class="hash-link" aria-label="Direct link to Tome I - The Vision" title="Direct link to Tome I - The Vision">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/-canonical-librarytome-i---the-vision10---essence-and-vision">📚 Canonical Library/Tome I - The Vision/1.0 - Essence and Vision</a> - North Star Principle #1 (Creator Sovereignty) - Core philosophy requiring technical enforcement</li>
+<li><a href="/docs/foundations/-canonical-librarytome-i---the-vision12---the-principles-of-deep-authorship">📚 Canonical Library/Tome I - The Vision/1.2 - The Principles of Deep Authorship</a> - Principle II (Creator Sovereignty) - Privacy as fundamental creative right</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tome-ii---the-architecture">Tome II - The Architecture<a href="#tome-ii---the-architecture" class="hash-link" aria-label="Direct link to Tome II - The Architecture" title="Direct link to Tome II - The Architecture">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/-canonical-librarytome-ii---the-architecture22---deep-authorship-package-technical-specification">📚 Canonical Library/Tome II - The Architecture/2.2 - Deep Authorship Package Technical Specification</a> - Section 6.2 (EES-1.0) - Complete encryption implementation specification</li>
+<li><a href="/docs/foundations/-canonical-librarytome-ii---the-architecture21---canonical-architecture">📚 Canonical Library/Tome II - The Architecture/2.1 - Canonical Architecture</a> - Storage Trinity design principles for encrypted content</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tome-iii---the-operations">Tome III - The Operations<a href="#tome-iii---the-operations" class="hash-link" aria-label="Direct link to Tome III - The Operations" title="Direct link to Tome III - The Operations">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/-canonical-librarytome-iii---the-operations31---governance-constitution">📚 Canonical Library/Tome III - The Operations/3.1 - Governance Constitution</a> - Article I, Principle #1 - Governance enforcement of creator sovereignty</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="features-documentation">Features Documentation<a href="#features-documentation" class="hash-link" aria-label="Direct link to Features Documentation" title="Direct link to Features Documentation">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/-canonical-libraryfeatures1-creative-control12-privacy-control02-zero-knowledge-creative-privacy">📚 Canonical Library/Features/1 Creative Control/1.2 Privacy Control/02-zero-knowledge-creative-privacy</a> - Feature implementation based on this foundational concept</li>
+<li><a href="/docs/foundations/-canonical-libraryfeatures1-creative-control12-privacy-control03-key-recovery-success">📚 Canonical Library/Features/1 Creative Control/1.2 Privacy Control/03-key-recovery-success</a> - Social recovery mechanisms and threshold cryptography</li>
+<li><a href="/docs/foundations/-canonical-libraryfeatures2-preservation-permanence22-future-proofing06-post-quantum-encryption-future-proofing">📚 Canonical Library/Features/2 Preservation Permanence/2.2 Future Proofing/06-post-quantum-encryption-future-proofing</a> - Post-quantum cryptographic requirements</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="other-canonical-sources">Other Canonical Sources<a href="#other-canonical-sources" class="hash-link" aria-label="Direct link to Other Canonical Sources" title="Direct link to Other Canonical Sources">​</a></h4>
+<ul>
+<li><a href="/docs/foundations/-distributed-creatives-everarchive-canonical-libraryfoundationsreadme">🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical Library/Foundations/README</a> - System Invariant #8 definition and canonical requirements</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="external-references">External References<a href="#external-references" class="hash-link" aria-label="Direct link to External References" title="Direct link to External References">​</a></h3>
+<p><em>Non-EverArchive sources referenced</em></p>
+<ul>
+<li>NIST Post-Quantum Cryptography Standards - CRYSTALS-Kyber specification and security requirements</li>
+<li>RFC 7539 (ChaCha20-Poly1305) - Alternative authenticated encryption standard for performance-critical applications</li>
+<li>Argon2id RFC 9106 - Key derivation function specification and security parameters</li>
+<li>Shamir&#x27;s Secret Sharing (1979) - Threshold cryptography mathematical foundations</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cross-references-within-this-document">Cross-References Within This Document<a href="#cross-references-within-this-document" class="hash-link" aria-label="Direct link to Cross-References Within This Document" title="Direct link to Cross-References Within This Document">​</a></h3>
+<p><em>Other foundational concepts referenced</em></p>
+<ul>
+<li><a href="/docs/foundations/01-deep-authorship-3-layer-model">01-deep-authorship-3-layer-model</a> - Defines Core Layer boundaries and requirements</li>
+<li><a href="/docs/foundations/05-creator-sovereignty">05-creator-sovereignty</a> - Philosophical principle that this concept technically enforces</li>
+<li><a href="/docs/foundations/10-open-source-and-non-proprietary">10-open-source-and-non-proprietary</a> - Requirement for algorithmic transparency and verification</li>
+</ul>
+<hr>
+<p><em>Note: This document provides complete implementation guidance for Zero-Knowledge Encryption for Core Layer, enabling developers to build mathematically privacy-preserving creative tools that maintain creator sovereignty through cryptographic guarantees rather than administrative promises.</em></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/everarchive-org/canonical-docs/tree/main/docs/foundations/08-zero-knowledge-encryption-for-core-layer.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#documentation-status--gaps" class="table-of-contents__link toc-highlight">Documentation Status &amp; Gaps</a><ul><li><a href="#information-availability" class="table-of-contents__link toc-highlight">Information Availability</a></li><li><a href="#research-recommendations" class="table-of-contents__link toc-highlight">Research Recommendations</a></li></ul></li><li><a href="#documentation-links" class="table-of-contents__link toc-highlight">Documentation Links</a><ul><li><a href="#primary-sources" class="table-of-contents__link toc-highlight">Primary Sources</a></li><li><a href="#supporting-context" class="table-of-contents__link toc-highlight">Supporting Context</a></li><li><a href="#related-documentation" class="table-of-contents__link toc-highlight">Related Documentation</a></li></ul></li><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#concept-specifications" class="table-of-contents__link toc-highlight">Concept Specifications</a><ul><li><a href="#core-definition--requirements" class="table-of-contents__link toc-highlight">Core Definition &amp; Requirements</a></li><li><a href="#essential-characteristics" class="table-of-contents__link toc-highlight">Essential Characteristics</a></li><li><a href="#boundaries--constraints" class="table-of-contents__link toc-highlight">Boundaries &amp; Constraints</a></li><li><a href="#technical-implications" class="table-of-contents__link toc-highlight">Technical Implications</a></li></ul></li><li><a href="#application--expression" class="table-of-contents__link toc-highlight">Application &amp; Expression</a><ul><li><a href="#how-this-concept-manifests" class="table-of-contents__link toc-highlight">How This Concept Manifests</a></li><li><a href="#implementation-approaches" class="table-of-contents__link toc-highlight">Implementation Approaches</a></li><li><a href="#common-misapplications" class="table-of-contents__link toc-highlight">Common Misapplications</a></li></ul></li><li><a href="#dependencies--relationships" class="table-of-contents__link toc-highlight">Dependencies &amp; Relationships</a><ul><li><a href="#depends-on" class="table-of-contents__link toc-highlight">Depends On</a></li><li><a href="#enables" class="table-of-contents__link toc-highlight">Enables</a></li><li><a href="#feature-integration" class="table-of-contents__link toc-highlight">Feature Integration</a></li><li><a href="#cross-concept-interactions" class="table-of-contents__link toc-highlight">Cross-Concept Interactions</a></li></ul></li><li><a href="#use-cases--examples" class="table-of-contents__link toc-highlight">Use Cases &amp; Examples</a><ul><li><a href="#use-case-1-investigative-journalist-protection" class="table-of-contents__link toc-highlight">Use Case 1: Investigative Journalist Protection</a></li><li><a href="#use-case-2-corporate-rd-trade-secret-protection" class="table-of-contents__link toc-highlight">Use Case 2: Corporate R&amp;D Trade Secret Protection</a></li><li><a href="#use-case-3-academic-researcher-sensitive-data" class="table-of-contents__link toc-highlight">Use Case 3: Academic Researcher Sensitive Data</a></li><li><a href="#user-journey-touchpoints" class="table-of-contents__link toc-highlight">User Journey Touchpoints</a></li><li><a href="#institutional-adoption-patterns" class="table-of-contents__link toc-highlight">Institutional Adoption Patterns</a></li></ul></li><li><a href="#validation--assessment" class="table-of-contents__link toc-highlight">Validation &amp; Assessment</a><ul><li><a href="#how-to-recognize-proper-implementation" class="table-of-contents__link toc-highlight">How to Recognize Proper Implementation</a></li><li><a href="#assessment-questions" class="table-of-contents__link toc-highlight">Assessment Questions</a></li><li><a href="#warning-signs" class="table-of-contents__link toc-highlight">Warning Signs</a></li><li><a href="#measurement-approaches" class="table-of-contents__link toc-highlight">Measurement Approaches</a></li></ul></li><li><a href="#evolution--maintenance" class="table-of-contents__link toc-highlight">Evolution &amp; Maintenance</a><ul><li><a href="#concept-evolution" class="table-of-contents__link toc-highlight">Concept Evolution</a></li><li><a href="#backward-compatibility" class="table-of-contents__link toc-highlight">Backward Compatibility</a></li><li><a href="#migration-strategies" class="table-of-contents__link toc-highlight">Migration Strategies</a></li><li><a href="#long-term-sustainability" class="table-of-contents__link toc-highlight">Long-term Sustainability</a></li><li><a href="#version-management" class="table-of-contents__link toc-highlight">Version Management</a></li></ul></li><li><a href="#related-concepts" class="table-of-contents__link toc-highlight">Related Concepts</a><ul><li><a href="#within-same-category" class="table-of-contents__link toc-highlight">Within Same Category</a></li><li><a href="#cross-category-dependencies" class="table-of-contents__link toc-highlight">Cross-Category Dependencies</a></li><li><a href="#emergent-properties" class="table-of-contents__link toc-highlight">Emergent Properties</a></li></ul></li><li><a href="#faq" class="table-of-contents__link toc-highlight">FAQ</a><ul><li><a href="#implementation-questions" class="table-of-contents__link toc-highlight">Implementation Questions</a></li><li><a href="#conceptual-questions" class="table-of-contents__link toc-highlight">Conceptual Questions</a></li></ul></li><li><a href="#complete-reference-index" class="table-of-contents__link toc-highlight">Complete Reference Index</a><ul><li><a href="#canonical-library-references" class="table-of-contents__link toc-highlight">Canonical Library References</a></li><li><a href="#external-references" class="table-of-contents__link toc-highlight">External References</a></li><li><a href="#cross-references-within-this-document" class="table-of-contents__link toc-highlight">Cross-References Within This Document</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Vision</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/features/features-overview">Features</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Project</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://everarchive.org" target="_blank" rel="noopener noreferrer" class="footer__link-item">Main Site<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/everarchive-org" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 EverArchive. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
