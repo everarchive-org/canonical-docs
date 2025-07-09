@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'EverArchive Canonical Library',
+  title: 'EverArchive',
   tagline: 'Civilizational Memory Infrastructure',
   favicon: 'img/favicon.ico',
 
@@ -62,7 +62,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'EverArchive Canonical Library',
+      title: 'EverArchive',
       // logo: {
       //   alt: 'EverArchive Logo',
       //   src: 'img/logo.svg',
@@ -72,7 +72,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'Docs',
         },
         {
           href: 'https://everarchive.org',
@@ -90,15 +90,15 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Documentation',
+          title: 'Docs',
           items: [
             {
               label: 'Vision',
-              to: '/docs/tome-i/manifesto',
+              to: '/docs/intro',
             },
             {
-              label: 'Architecture',
-              to: '/docs/tome-ii/architecture',
+              label: 'Features',
+              to: '/docs/features/features-overview',
             },
           ],
         },

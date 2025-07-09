@@ -38,7 +38,7 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title="Canonical Library Documentation"
+      title="Documentation"
       description="Complete documentation for EverArchive's infrastructure for preserving human creativity through the Deep Authorship model.">
       <HomepageHeader />
       <main>
