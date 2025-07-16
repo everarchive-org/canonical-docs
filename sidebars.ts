@@ -5,69 +5,54 @@ const sidebars: SidebarsConfig = {
     'intro',
     {
       type: 'category',
-      label: 'Features Overview',
+      label: 'Tome I: The Vision',
       items: [
-        'features/features-overview',
-        {
-          type: 'category',
-          label: 'Creative Control',
-          items: [
-            'features/creative-control/readme',
-            'features/creative-control/proof-attribution/collaborative-attribution-tracking',
-            'features/creative-control/proof-attribution/legal-evidence-infrastructure',
-            'features/creative-control/privacy-control/zero-knowledge-creative-privacy',
-            'features/creative-control/privacy-control/immutable-rights-registry',
-            'features/creative-control/economic-returns/direct-author-royalties',
-            'features/creative-control/economic-returns/instant-payment-settlement',
-            'features/creative-control/legacy-governance/estate-planning-infrastructure',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Preservation & Permanence',
-          items: [
-            'features/preservation-permanence/readme',
-            'features/preservation-permanence/storage-architecture/blockchain-guaranteed-eternal-storage',
-            'features/preservation-permanence/storage-architecture/triple-redundant-antifragile-architecture',
-            'features/preservation-permanence/future-proofing/automatic-format-evolution-infrastructure',
-            'features/preservation-permanence/verification-cost/one-time-payment-permanence',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Research & Reproducibility',
-          items: [
-            'features/research-reproducibility/readme',
-            'features/research-reproducibility/research-infrastructure/reproducibility-crisis-solution',
-            'features/research-reproducibility/research-infrastructure/workflow-preservation-infrastructure',
-            'features/research-reproducibility/institutional-integration/library-cost-reduction',
-            'features/research-reproducibility/institutional-integration/standards-interoperability-without-lockin',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Library & Book Ecosystem',
-          items: [
-            'features/library-book-ecosystem/readme',
-            'features/library-book-ecosystem/user-experience/no-drm-frustration',
-            'features/library-book-ecosystem/lending-infrastructure/time-locked-lending-infrastructure',
-            'features/library-book-ecosystem/lending-infrastructure/automated-hold-waitlist-management',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Economic Infrastructure',
-          items: [
-            'features/economic-infrastructure/readme',
-            'features/economic-infrastructure/institutional-economics/endowment-model',
-            'features/economic-infrastructure/network-sustainability/node-operator-network',
-          ],
-        },
+        'tome-i-the-vision/essence-and-vision',
+        'tome-i-the-vision/the-everarchive-manifesto',
+        'tome-i-the-vision/the-principles-of-deep-authorship',
+        'tome-i-the-vision/current-state-roadmap-updated-july-2025',
       ],
     },
     {
       type: 'category',
-      label: 'Foundations',
+      label: 'Tome II: The Architecture',
+      items: [
+        'tome-ii-the-architecture/canonical-architecture',
+        'tome-ii-the-architecture/deep-authorship-package-technical-specification',
+        'tome-ii-the-architecture/discovery-and-access-infrastructure',
+        'tome-ii-the-architecture/creator-tools-framework',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Tome III: The Operations',
+      items: [
+        'tome-iii-the-operations/governance-constitution',
+        'tome-iii-the-operations/economic-framework',
+        'tome-iii-the-operations/partnership-and-onboarding-protocol',
+        'tome-iii-the-operations/community-stewardship-guide',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Tome IV: The Implementation',
+      items: [
+        'tome-iv-the-implementation/project-and-product-roadmap',
+        'tome-iv-the-implementation/communications-and-fundraising-kit',
+        'tome-iv-the-implementation/research-and-gap-analysis-dossier',
+        'tome-iv-the-implementation/market-analysis-and-positioning',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Features',
+      items: [
+        'features/features-overview',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Foundations', 
       items: [
         'foundations/readme',
       ],

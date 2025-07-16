@@ -6,8 +6,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'EverArchive',
-  tagline: 'Civilizational Memory Infrastructure',
-  favicon: 'img/favicon.ico',
+  tagline: 'Infrastructure for Human Memory',
+  favicon: 'favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -61,10 +61,12 @@ const config: Config = {
   themeConfig: {
     navbar: {
       title: 'EverArchive',
-      // logo: {
-      //   alt: 'EverArchive Logo',
-      //   src: 'img/logo.svg',
-      // },
+      logo: {
+        alt: 'EverArchive Logo',
+        src: 'img/everarchive-logo.svg',
+        width: 32,
+        height: 32,
+      },
       items: [
         {
           type: 'docSidebar',
@@ -88,15 +90,23 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
-              label: 'Vision',
+              label: 'Introduction',
               to: '/docs/intro',
+            },
+            {
+              label: 'The Vision',
+              to: '/docs/tome-i-the-vision/essence-and-vision',
             },
             {
               label: 'Features',
               to: '/docs/features/features-overview',
+            },
+            {
+              label: 'Foundations',
+              to: '/docs/foundations/readme',
             },
           ],
         },
@@ -114,7 +124,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} EverArchive. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} EverArchive. Infrastructure for Human Memory.`,
     },
     prism: {
       theme: prismThemes.github,
