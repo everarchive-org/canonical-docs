@@ -35,12 +35,12 @@
   
   /* Background system */
   --ifm-background-color: var(--everarchive-purple-900);
-  --ifm-background-surface-color: rgba(0, 0, 0, 0.2);
+  --ifm-background-surface-color: rgba(0, 0, 0, 0.4);
   --ifm-color-content: #ffffff;
-  --ifm-color-content-secondary: rgba(255, 255, 255, 0.8);
+  --ifm-color-content-secondary: rgba(255, 255, 255, 0.95);
   
   /* Glass morphism colors */
-  --glass-bg: rgba(0, 0, 0, 0.2);
+  --glass-bg: rgba(0, 0, 0, 0.3);
   --glass-bg-hover: rgba(255, 255, 255, 0.1);
   --glass-border: rgba(255, 255, 255, 0.2);
   --glass-backdrop: blur(12px);
@@ -110,6 +110,7 @@ body {
 
 .navbar__link:hover {
   color: var(--ifm-color-primary);
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.4);
 }
 
 /* Sidebar styling */
@@ -134,6 +135,8 @@ body {
 .theme-doc-sidebar-item-link--active {
   background: linear-gradient(135deg, var(--everarchive-cyan-500), var(--everarchive-purple-600));
   color: white;
+  box-shadow: 0 2px 8px rgba(34, 211, 238, 0.3);
+  font-weight: 600;
 }
 
 /* Main content area */
@@ -386,6 +389,8 @@ body {
 
 .breadcrumbs__link:hover {
   color: var(--ifm-color-primary);
+  text-decoration: underline;
+  text-shadow: 0 0 4px rgba(34, 211, 238, 0.3);
 }
 
 /* Pagination */
