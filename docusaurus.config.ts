@@ -7,7 +7,46 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'EverArchive',
   tagline: 'Infrastructure for Human Memory',
-  favicon: 'img/favicon/favicon.ico',
+  favicon: 'img/favicon/favicon-32x32.png',
+
+  // Custom head tags for high-res favicons
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/img/favicon/favicon-32x32.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '96x96',
+        href: '/img/favicon/favicon-96x96.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/img/favicon/favicon-16x16.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/img/favicon/apple-icon-180x180.png',
+      },
+    },
+  ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -64,8 +103,8 @@ const config: Config = {
       logo: {
         alt: 'EverArchive Logo',
         src: 'img/everarchive-logo.svg',
-        width: 32,
-        height: 32,
+        width: 48,
+        height: 48,
       },
       items: [
         {
