@@ -18,20 +18,20 @@ EverArchive/📚 Canonical Library/Documentation/00 - Canonical Library - Master
 **Status:** Canonical Reference
 ### **Preamble**
 This document is the definitive starting point for any contributor to the EverArchive initiative. It serves as the master table of contents for the entire Canonical Library, providing a high-level overview of the project's foundational knowledge, organized into four primary Tomes.
-To understand the core philosophy and "why" of the project, please read [Documentation/01 - Weighted Insights.md](documentation01---weighted-insightsmd) after reviewing this index.
+To understand the core philosophy and "why" of the project, please read &lt;!-- Link removed - file not found in canonical structure --&gt; after reviewing this index.
 ---
 ### **Tome I: The Vision — The "Why"**
 *(Purpose: To articulate the philosophical, ethical, and moral soul of the project.)*
-*   **[01-tome-i-the-vision/02-the-everarchive-manifesto.md](01-tome-i-the-vision02-the-everarchive-manifestomd)**
-    *   **Title:** The EverArchive Manifesto
+*   **[The EverArchive Manifesto](tome-i-vision11-core-vision02-the-everarchive-manifestomd)**
     *   **Purpose:** The inspirational public declaration of our mission, articulating the crises of Digital Impermanence and AI-driven Cultural Flattening, and presenting Deep Authorship as the solution.
-*   **[01-tome-i-the-vision/03-the-principles-of-deep-authorship.md](01-tome-i-the-vision03-the-principles-of-deep-authorshipmd)**
-    *   **Title:** The Principles of Deep Authorship
+    *   **See Also:** [Essence & Vision](tome-i-vision11-core-vision01-essence-and-visionmd), [Published White Paper](-publications01-white-paperscore-suitesourceseverarchive-core-whitepaper-v7-2025-07-12md)
+*   **[The Principles of Deep Authorship](tome-i-vision11-core-vision03-the-principles-of-deep-authorshipmd)**
     *   **Purpose:** The internal, immutable "constitution" of core beliefs, detailing the eight inviolable principles (Sanctity of Process, Creator Sovereignty, etc.) that must guide all project decisions.
+    *   **See Also:** [3-Layer Model](tome-i-vision13-principlesfoundations01-deep-authorship-3-layer-modelmd), [Technical Specification](tome-ii-architecture21-system-design02-deep-authorship-package-technical-specificationmd)
 ---
 ### **Tome II: The Architecture — The "What"**
 *(Purpose: To provide the complete technical and systemic blueprint for building EverArchive.)*
-*   **[02-tome-ii-the-architecture/01-canonical-architecture.md](02-tome-ii-the-architecture01-canonical-architecturemd)**
+*   **[Tome-II-Architecture/2.1-Core-Architecture/01-canonical-architecture.md](tome-ii-architecture21-core-architecture01-canonical-architecturemd)**
     *   **Title:** Canonical Architecture (Master Blueprint)
     *   **Purpose:** The definitive high-level map of the entire ecosystem, including the master system diagram showing the flow between the Preservation, Operational, Access, and Resilience layers.
 *   **[02-tome-ii-the-architecture/02-deep-authorship-package-technical-specification.md](02-tome-ii-the-architecture02-deep-authorship-package-technical-specificationmd)**
@@ -174,7 +174,7 @@ EverArchive/📚 Canonical Library/Documentation/03 - AI Auditor Prompt Set.md
 **Status:** Tool
 ### **Preamble**
 This document provides a set of structured prompts designed for use with advanced AI models. Its purpose is to systematically audit, stress-test, and identify weaknesses in the EverArchive Canonical Library. By adopting specific, critical personas, the AI can help uncover hidden flaws, unstated assumptions, and potential failure modes that might be missed by the core team.
-This process should be run quarterly and whenever a major change to a core document is proposed. The outputs serve as direct input for the `[Documentation/04 - Research & Gap Analysis Dossier.md](documentation04---research--gap-analysis-dossiermd)`.
+This process should be run quarterly and whenever a major change to a core document is proposed. The outputs serve as direct input for the `&lt;!-- Link removed - file not found in canonical structure --&gt;`.
 ---
 ### **Prompt 1: The Skeptical Economist**
 *   **Persona:** You are a fund manager for a multi-century endowment (e.g., for a university or a church). You are deeply skeptical of techno-optimism and have seen countless "revolutionary" financial models fail. Your primary metric is not short-term growth, but thousand-year capital preservation.

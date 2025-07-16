@@ -4,7 +4,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const { glob } = require('glob');
 
-const OBSIDIAN_PATH = '/Users/grig/work/obsidian-vault/🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical Library';
+const OBSIDIAN_PATH = '/Users/grig/work/obsidian-vault/🧑‍🎨 Distributed Creatives/♾️ EverArchive/📚 Canonical';
 const DOCS_PATH = './docs';
 
 async function syncContent() {
